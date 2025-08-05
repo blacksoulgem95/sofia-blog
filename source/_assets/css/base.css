@@ -1,0 +1,173 @@
+body {
+    font-size: 17px;
+}
+
+a {
+    @apply underline;
+    @apply text-[var(--color-trans-white)]; /* Changed to white for better contrast */
+    @apply hover:text-[var(--color-trans-pink)];
+}
+
+blockquote {
+    @apply pl-8;
+    @apply my-10;
+    @apply text-xl;
+    @apply font-bold;
+    @apply not-italic;
+    @apply text-[var(--color-trans-white)];
+    @apply border-l-8;
+    @apply border-[var(--color-trans-pink)];
+    @apply p-4;
+    background: linear-gradient(
+        90deg,
+        #1a202c,
+        #333333
+    ); /* Subtle dark gradient */
+    box-shadow: 0 0 15px rgba(245, 169, 184, 0.4); /* Pink glow */
+}
+
+code {
+    @apply px-2;
+    @apply py-px;
+    @apply text-sm;
+    @apply bg-gray-800; /* Darker background for inline code */
+    @apply text-[var(--color-trans-white)];
+    @apply rounded-none;
+
+    border: 1px dashed var(--color-trans-light-blue); /* Dashed border for extra retro */
+}
+
+code.hljs {
+    @apply p-0;
+    @apply bg-transparent;
+
+    & .hljs-comment,
+    & .hljs-keyword,
+    & .hljs-meta {
+        /* Remove specific overrides to use Prism defaults or browser defaults */
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply mt-8;
+    @apply mb-4;
+    @apply leading-normal; /* Use normal line height */
+    @apply font-sans; /* Ensure system font */
+    @apply border-b-2; /* Add bottom border to headings */
+    @apply pb-2; /* Padding below the border */
+
+    color: var(--color-trans-white); /* White text on headings */
+
+    &:first-child {
+        @apply mt-0;
+    }
+}
+
+h1 {
+    @apply text-6xl;
+    @apply font-black;
+    @apply border-[var(--color-trans-pink)];
+}
+
+h2 {
+    @apply text-5xl;
+    @apply font-extrabold;
+    @apply border-[var(--color-trans-light-blue)];
+}
+
+h3 {
+    @apply text-4xl;
+    @apply font-bold;
+    @apply border-[var(--color-trans-pink)];
+}
+
+h4 {
+    @apply text-3xl;
+    @apply font-bold;
+    @apply border-[var(--color-trans-light-blue)];
+}
+
+h5 {
+    @apply text-2xl;
+    @apply font-semibold;
+    @apply border-[var(--color-trans-pink)];
+}
+
+h6 {
+    @apply text-xl;
+    @apply font-normal;
+    @apply border-[var(--color-trans-light-blue)];
+    @apply text-[var(--color-trans-white)]; /* White text on headings */
+}
+
+hr {
+    @apply my-12;
+    @apply rounded-none;
+    border: none; /* Remove default border */
+    border-top: 4px double var(--color-trans-pink); /* Double border for retro look */
+    box-shadow: 0 0 10px var(--color-trans-pink); /* Pink glow */
+}
+
+li {
+    & ul,
+    & ol {
+        @apply ml-8;
+        @apply my-0;
+    }
+}
+
+ol,
+ul {
+    @apply my-4;
+}
+
+ol {
+    @apply list-decimal;
+}
+
+ul {
+    @apply list-disc;
+}
+
+p {
+    @apply my-3;
+
+    @media (width >= theme(--breakpoint-md)) {
+        @apply my-6;
+    }
+}
+
+pre {
+    @apply p-4;
+    @apply my-6;
+    @apply text-sm;
+    @apply leading-normal;
+    @apply rounded-none;
+    @apply overflow-x-auto;
+    background: #0d0d0d; /* Even darker background for contrast */
+    border: 2px solid var(--color-trans-light-blue); /* Blue border for code block */
+    box-shadow:
+        inset 0 0 15px rgba(91, 206, 250, 0.5),
+        0 0 15px rgba(91, 206, 250, 0.7); /* Inner and outer blue glow */
+
+    & code {
+        @apply block;
+        @apply p-0;
+        @apply bg-transparent;
+        @apply text-[var(--color-trans-white)];
+    }
+}
+
+::selection {
+    @apply text-gray-900; /* Dark text on selection */
+    @apply bg-[var(--color-trans-light-blue)]; /* Light blue selection background */
+}
+
+[x-cloak] {
+    display: none !important;
+}

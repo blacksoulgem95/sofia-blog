@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "concurrently --prefix \"[{name}]\" --names \"vite,jigsaw\" --kill-others-on-fail \"npm run dev\" \"vendor/bin/jigsaw serve\"",
+    "dev": "vite",
+    "build": "vite build",
+    "prod": "vite build --mode production"
+  },
+  "devDependencies": {
+    "fuse.js": "^6.4.6",
+    "@tighten/jigsaw-vite-plugin": "^1.0.0",
+    "vite": "^6.2.1",
+    "tailwindcss": "^4.1.0",
+    "@tailwindcss/vite": "^4.1.8",
+    "alpinejs": "^3.14.1",
+    "concurrently": "^8.2.2"
+  }
+}

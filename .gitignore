@@ -2,6 +2,7 @@
 /node_modules/
 /source/assets/build/
 /vendor/
+/cache/
 .DS_Store
 hot
 

@@ -38,20 +38,22 @@
     >
         <label for="search" class="hidden">Search</label>
 
-        <input
-            id="search"
-            x-model="query"
-            x-ref="search"
-            class="relative block h-10 w-full lg:w-1/2 lg:focus:w-3/4 bg-gray-800 border-2 border-[var(--color-trans-pink)] focus:border-[var(--color-trans-light-blue)] outline-none cursor-pointer text-[var(--color-trans-white)] px-4 pb-0 pt-px transition-all duration-200 ease-out bg-no-repeat bg-[0.8rem] indent-[1.2em] placeholder-[var(--color-trans-light-blue)]"
-            :class="{ 'rounded-none': query, 'rounded-none': !query }" style="box-shadow: 0 0 10px var(--color-trans-light-blue);"
-            style="background-image: url('/assets/img/magnifying-glass.svg')"
-            autocomplete="off"
-            name="search"
-            placeholder="Search"
-            type="text"
-            @keyup.esc="reset"
-            @blur="reset"
-        >
+        <div class="relative">
+            <i class="nes-icon coin is-small absolute left-0 top-0 bottom-0 flex items-center pl-3 text-gray-400"></i>
+            <input
+                id="search"
+                x-model="query"
+                x-ref="search"
+                class="block h-10 w-full lg:w-1/2 lg:focus:w-3/4 bg-gray-800 border-2 border-[var(--color-trans-pink)] focus:border-[var(--color-trans-light-blue)] outline-none cursor-pointer text-[var(--color-trans-white)] pl-10 pr-4 pb-0 pt-px transition-all duration-200 ease-out placeholder-[var(--color-trans-light-blue)]"
+                :class="{ 'rounded-none': query, 'rounded-none': !query }" style="box-shadow: 0 0 10px var(--color-trans-light-blue);"
+                autocomplete="off"
+                name="search"
+                placeholder="Search"
+                type="text"
+                @keyup.esc="reset"
+                @blur="reset"
+            >
+        </div>
 
         <button
             x-show="query || searching"
@@ -102,6 +104,6 @@
         style="box-shadow: 0 0 10px var(--color-trans-light-blue);"
         @click.prevent="showInput"
     >
-        <img src="/assets/img/magnifying-glass.svg" alt="search icon" class="h-4 w-4 max-w-none">
+        <i class="h-4 w-4 nes-icon coin is-small"></i>
     </button>
 </div>

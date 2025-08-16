@@ -5,36 +5,38 @@
 @endphp
 
 @section('body')
+    <div class="nes-container is-dark is-rounded text-center">
+
     @if ($page->cover_image)
         <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
     @endif
 
-    <h1 class="leading-none mb-2">{{ $page->title }}</h1>
+    <h1 class="leading-none mb-2 retro-text-glow pixel-border border-b-4 text-[var(--color-retro-green)]">{{ $page->title }}</h1>
 
-    <p class="text-gray-700 text-xl md:mt-0">{{ $page->author }}  •  {{ date('F j, Y', $page->date) }}</p>
+    <p class="text-[var(--color-trans-white)] text-xl md:mt-0 retro-text-glow">{{ $page->author }}  •  {{ date('F j, Y', $page->date) }}</p>
 
     @if ($page->categories)
         @foreach ($page->categories as $i => $category)
             <a
                 href="{{ '/blog/categories/' . $category }}"
                 title="View posts in {{ $category }}"
-                class="inline-block bg-gray-300 hover:bg-blue-200 leading-loose tracking-wide text-gray-800 uppercase text-xs font-semibold rounded-sm mr-4 px-3 pt-px"
+                class="inline-block bg-[var(--color-retro-dark)] hover:bg-[var(--color-trans-pink)] leading-loose tracking-wide text-[var(--color-trans-white)] uppercase text-xs font-semibold rounded-sm mr-4 px-3 pt-px pixel-border retro-text-glow"
             >{{ $category }}</a>
         @endforeach
     @endif
 
-    <div class="border-b border-blue-200 mb-10 pb-4" v-pre>
+    <div class="pixel-border border-b mb-10 pb-4" v-pre>
         @yield('content')
     </div>
 
-    <div class="border-b border-blue-200 mb-10 pb-4" v-pre>
+    <div class="pixel-border border-b mb-10 pb-4" v-pre>
         @include('_components.gravatar-hovercard')
     </div>
 
-    <nav class="flex justify-between text-sm md:text-base">
+    <nav class="flex justify-between text-sm md:text-base pixel-border p-4">
         <div>
             @if ($next = $page->getNext())
-                <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}">
+                <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}" class="retro-button">
                     &LeftArrow; {{ $next->title }}
                 </a>
             @endif
@@ -42,10 +44,12 @@
 
         <div>
             @if ($previous = $page->getPrevious())
-                <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}">
+                <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}" class="retro-button">
                     {{ $previous->title }} &RightArrow;
                 </a>
             @endif
         </div>
     </nav>
+
+    </div>
 @endsection

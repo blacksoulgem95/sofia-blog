@@ -8,8 +8,8 @@
     :root {
         --font-sans: "Courier New", Courier, monospace;
         --font-pixel:
-            "Perfect DOS VGA 437", "MS Gothic", "Terminal", "Courier New",
-            monospace;
+            "Press Start 2P", "Perfect DOS VGA 437", "MS Gothic", "Terminal",
+            "Courier New", monospace;
 
         --shadow-search:
             0 -1px 27px 0 rgba(0, 0, 0, 0.04), 0 4px 15px 0 rgba(0, 0, 0, 0.08);
@@ -33,6 +33,12 @@
         --color-retro-blue: #0000ff;
         --color-retro-dark: #1a1a1a;
         --color-retro-gray: #808080;
+
+        /* Low-poly pattern variables */
+        --low-poly-size: 20px;
+        --low-poly-color1: rgba(0, 255, 255, 0.1);
+        --low-poly-color2: rgba(255, 0, 255, 0.1);
+        --low-poly-color3: rgba(0, 255, 0, 0.1);
     }
 
     *,
@@ -55,15 +61,29 @@
                 rgba(26, 26, 26, 0.8) 2px,
                 rgba(0, 0, 0, 0.8) 4px
             ),
+            repeating-linear-gradient(
+                45deg,
+                var(--low-poly-color1) 0,
+                var(--low-poly-color1) var(--low-poly-size),
+                var(--low-poly-color2) var(--low-poly-size),
+                var(--low-poly-color2) calc(var(--low-poly-size) * 2),
+                var(--low-poly-color3) calc(var(--low-poly-size) * 2),
+                var(--low-poly-color3) calc(var(--low-poly-size) * 3)
+            ),
             radial-gradient(circle at 50% 50%, #1a1a1a 0%, #000000 100%);
         background-attachment: fixed;
+        background-size:
+            auto,
+            calc(var(--low-poly-size) * 3) calc(var(--low-poly-size) * 3),
+            cover;
         color: var(--color-trans-white);
         text-rendering: geometricPrecision;
         -webkit-font-smoothing: none;
         -moz-osx-font-smoothing: grayscale;
+        animation: low-poly-shift 20s linear infinite;
     }
 
-    /* Retro CRT screen effect */
+    /* Retro CRT screen effect with animation */
     body::before {
         content: "";
         position: fixed;
@@ -82,6 +102,7 @@
         pointer-events: none;
         z-index: 1;
         mix-blend-mode: overlay;
+        animation: scanlines 0.1s linear infinite;
     }
 }
 
@@ -93,11 +114,21 @@
             inset 0 0 10px rgba(0, 255, 255, 0.2);
         border: 2px solid var(--color-trans-light-blue);
         animation: retro-pulse 2s infinite alternate;
+        image-rendering: pixelated;
     }
 
     .bg-sparkly {
         background:
             var(--site-gradient-background),
+            repeating-linear-gradient(
+                45deg,
+                var(--low-poly-color1) 0,
+                var(--low-poly-color1) var(--low-poly-size),
+                var(--low-poly-color2) var(--low-poly-size),
+                var(--low-poly-color2) calc(var(--low-poly-size) * 2),
+                var(--low-poly-color3) calc(var(--low-poly-size) * 2),
+                var(--low-poly-color3) calc(var(--low-poly-size) * 3)
+            ),
             repeating-conic-gradient(
                 from 0deg at 50% 50%,
                 #000000 0deg 45deg,
@@ -111,6 +142,7 @@
             );
         background-size:
             4px 4px,
+            calc(var(--low-poly-size) * 3) calc(var(--low-poly-size) * 3),
             8px 8px;
         background-repeat: repeat;
         animation: retro-scroll 10s linear infinite;
@@ -125,6 +157,9 @@
         text-shadow: 0 0 5px currentColor;
         transition: all 0.1s ease;
         image-rendering: pixelated;
+        font-family: var(--font-pixel);
+        letter-spacing: 1px;
+        padding: 8px 16px;
     }
 
     .retro-button:hover {
@@ -140,6 +175,7 @@
         box-shadow:
             0 0 5px var(--color-trans-light-blue),
             inset 0 0 10px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(145deg, #222222, #111111);
     }
 
     .pixel-border {
@@ -148,9 +184,12 @@
                 var(--color-trans-light-blue) 0px,
                 var(--color-trans-light-blue) 2px,
                 var(--color-trans-pink) 2px,
-                var(--color-trans-pink) 4px
+                var(--color-trans-pink) 4px,
+                var(--color-retro-green) 4px,
+                var(--color-retro-green) 6px
             )
             2;
+        border-width: 4px;
     }
 
     @keyframes retro-pulse {
@@ -218,6 +257,44 @@
     .retro-text-glow:hover {
         animation-play-state: running;
     }
+
+    .nes-container {
+        background: var(--color-retro-dark);
+        border: 4px solid var(--color-trans-pink);
+        box-shadow: 0 0 15px var(--color-trans-light-blue);
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .nes-btn {
+        font-family: var(--font-pixel);
+        image-rendering: pixelated;
+        animation: retro-pulse 1.5s infinite;
+    }
+
+    @keyframes scanlines {
+        0% {
+            background-position: 0 0;
+        }
+        100% {
+            background-position: 0 8px;
+        }
+    }
+
+    @keyframes low-poly-shift {
+        0% {
+            background-position:
+                0 0,
+                0 0,
+                0 0;
+        }
+        100% {
+            background-position:
+                0 0,
+                100px 100px,
+                0 0;
+        }
+    }
 }
 
 /* Retro PS1/NES Syntax Highlighting */
@@ -235,9 +312,10 @@ pre[class*="language-"] {
     box-shadow:
         inset 0 0 10px rgba(0, 255, 0, 0.3),
         0 0 15px rgba(0, 255, 255, 0.2);
-    border: 2px solid var(--color-trans-light-blue);
+    border: 4px solid var(--color-trans-light-blue);
     font-family: var(--font-pixel);
-    text-shadow: 0 0 3px currentColor;
+    text-shadow: 0 0 5px currentColor;
+    image-rendering: pixelated;
 }
 
 .token.operator,
@@ -325,6 +403,7 @@ pre[class*="language-"]::after {
     position: absolute;
     bottom: 10px;
     right: 10px;
+    text-shadow: 0 0 5px currentColor;
 }
 
 @keyframes blink {

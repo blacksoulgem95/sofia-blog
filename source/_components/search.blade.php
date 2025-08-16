@@ -39,7 +39,7 @@
         <label for="search" class="hidden">Search</label>
 
         <div class="relative">
-            <i class="nes-icon coin is-small absolute left-0 top-0 bottom-0 flex items-center pl-3 text-gray-400"></i>
+            <i class="nes-icon coin is-small h-4 w-4 absolute left-0 top-1/2 -translate-y-1/2 pl-3 text-gray-400"></i>
             <input
                 id="search"
                 x-model="query"

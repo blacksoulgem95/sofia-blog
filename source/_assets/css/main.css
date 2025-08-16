@@ -2,27 +2,37 @@
 
 @import "./base.css" layer(components);
 @import "./blog.css" layer(components);
+@import "nes.css/css/nes.css" layer(components);
 
 @layer base {
     :root {
-        --font-sans:
-            ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-            "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
-            sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-            "Segoe UI Symbol", "Noto Color Emoji";
+        --font-sans: "Courier New", Courier, monospace;
+        --font-pixel:
+            "Perfect DOS VGA 437", "MS Gothic", "Terminal", "Courier New",
+            monospace;
 
         --shadow-search:
             0 -1px 27px 0 rgba(0, 0, 0, 0.04), 0 4px 15px 0 rgba(0, 0, 0, 0.08);
-        --site-gradient-background: linear-gradient(
-            135deg,
-            var(--color-trans-light-blue) 0%,
-            var(--color-trans-pink) 100%
+        --site-gradient-background: repeating-linear-gradient(
+            0deg,
+            #000000 0px,
+            #111111 1px,
+            #222222 2px,
+            #000000 3px
         );
 
-        /* Transgender Flag Colors */
-        --color-trans-light-blue: #5bcefa;
-        --color-trans-pink: #f5a9b8;
+        /* Retro Gaming Colors */
+        --color-trans-light-blue: #00ffff; /* Bright cyan */
+        --color-trans-pink: #ff00ff; /* Magenta */
         --color-trans-white: #ffffff;
+
+        /* Additional PS1/NES colors */
+        --color-retro-green: #00ff00;
+        --color-retro-yellow: #ffff00;
+        --color-retro-red: #ff0000;
+        --color-retro-blue: #0000ff;
+        --color-retro-dark: #1a1a1a;
+        --color-retro-gray: #808080;
     }
 
     *,
@@ -30,11 +40,48 @@
     ::before,
     ::backdrop,
     ::file-selector-button {
-        border-color: var(--color-gray-200, currentcolor);
+        border-color: var(--color-retro-gray, currentcolor);
+        image-rendering: pixelated;
+        image-rendering: -moz-crisp-edges;
+        image-rendering: crisp-edges;
     }
 
     body {
-        font-family: var(--font-sans);
+        font-family: var(--font-pixel);
+        background:
+            repeating-linear-gradient(
+                0deg,
+                rgba(0, 0, 0, 0.8) 0px,
+                rgba(26, 26, 26, 0.8) 2px,
+                rgba(0, 0, 0, 0.8) 4px
+            ),
+            radial-gradient(circle at 50% 50%, #1a1a1a 0%, #000000 100%);
+        background-attachment: fixed;
+        color: var(--color-trans-white);
+        text-rendering: geometricPrecision;
+        -webkit-font-smoothing: none;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Retro CRT screen effect */
+    body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: repeating-linear-gradient(
+            0deg,
+            transparent 0px,
+            rgba(0, 255, 255, 0.02) 1px,
+            transparent 2px,
+            rgba(255, 0, 255, 0.02) 3px,
+            transparent 4px
+        );
+        pointer-events: none;
+        z-index: 1;
+        mix-blend-mode: overlay;
     }
 }
 
@@ -42,57 +89,251 @@
     .shadow-search {
         box-shadow:
             0 0 15px 5px var(--color-trans-light-blue),
-            0 0 25px 10px var(--color-trans-pink);
+            0 0 25px 10px var(--color-trans-pink),
+            inset 0 0 10px rgba(0, 255, 255, 0.2);
+        border: 2px solid var(--color-trans-light-blue);
+        animation: retro-pulse 2s infinite alternate;
     }
 
     .bg-sparkly {
         background:
-            var(--site-gradient-background), url("/assets/img/bg-sparkle.gif");
+            var(--site-gradient-background),
+            repeating-conic-gradient(
+                from 0deg at 50% 50%,
+                #000000 0deg 45deg,
+                #1a1a1a 45deg 90deg,
+                #000000 90deg 135deg,
+                #1a1a1a 135deg 180deg,
+                #000000 180deg 225deg,
+                #1a1a1a 225deg 270deg,
+                #000000 270deg 315deg,
+                #1a1a1a 315deg 360deg
+            );
+        background-size:
+            4px 4px,
+            8px 8px;
         background-repeat: repeat;
+        animation: retro-scroll 10s linear infinite;
+    }
+
+    .retro-button {
+        background: linear-gradient(145deg, #333333, #1a1a1a);
+        border: 3px solid var(--color-trans-light-blue);
+        box-shadow:
+            0 0 10px var(--color-trans-light-blue),
+            inset 0 0 5px rgba(0, 255, 255, 0.3);
+        text-shadow: 0 0 5px currentColor;
+        transition: all 0.1s ease;
+        image-rendering: pixelated;
+    }
+
+    .retro-button:hover {
+        background: linear-gradient(145deg, #444444, #222222);
+        box-shadow:
+            0 0 15px var(--color-trans-pink),
+            inset 0 0 5px rgba(255, 0, 255, 0.3);
+        transform: translateY(-1px);
+    }
+
+    .retro-button:active {
+        transform: translateY(1px);
+        box-shadow:
+            0 0 5px var(--color-trans-light-blue),
+            inset 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .pixel-border {
+        border-image: repeating-linear-gradient(
+                45deg,
+                var(--color-trans-light-blue) 0px,
+                var(--color-trans-light-blue) 2px,
+                var(--color-trans-pink) 2px,
+                var(--color-trans-pink) 4px
+            )
+            2;
+    }
+
+    @keyframes retro-pulse {
+        0% {
+            text-shadow:
+                0 0 3px currentColor,
+                0 0 6px currentColor,
+                0 0 9px currentColor;
+        }
+        100% {
+            text-shadow:
+                0 0 5px currentColor,
+                0 0 10px currentColor,
+                0 0 15px currentColor;
+        }
+    }
+
+    @keyframes retro-scroll {
+        0% {
+            background-position:
+                0px 0px,
+                0px 0px;
+        }
+        100% {
+            background-position:
+                32px 32px,
+                64px 64px;
+        }
+    }
+
+    @keyframes retro-glitch {
+        0%,
+        100% {
+            transform: translate(0);
+            filter: hue-rotate(0deg);
+        }
+        10% {
+            transform: translate(-2px, 2px);
+            filter: hue-rotate(90deg);
+        }
+        20% {
+            transform: translate(2px, -2px);
+            filter: hue-rotate(180deg);
+        }
+        30% {
+            transform: translate(-2px, -2px);
+            filter: hue-rotate(270deg);
+        }
+        40% {
+            transform: translate(2px, 2px);
+            filter: hue-rotate(360deg);
+        }
+    }
+
+    .retro-text-glow {
+        text-shadow:
+            0 0 5px currentColor,
+            0 0 10px currentColor,
+            0 0 15px currentColor,
+            0 0 20px currentColor;
+        animation: retro-glitch 0.3s infinite;
+        animation-play-state: paused;
+    }
+
+    .retro-text-glow:hover {
+        animation-play-state: running;
     }
 }
 
-/* Syntax Highlight by Prism */
-/* https://prismjs.com/ */
-
-/* You can customize the theme of the Prism syntax highlighter below. Adjust colors, backgrounds, and styles as needed for your site. */
+/* Retro PS1/NES Syntax Highlighting */
+/* Pixelated code blocks with retro gaming aesthetics */
 
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
-    background: #0d0d0d; /* Even darker background for contrast */
-    color: var(--color-trans-white); /* Keep white text */
-    box-shadow: inset 0 0 10px rgba(91, 206, 250, 0.5); /* Inner light blue glow */
+    background: repeating-linear-gradient(
+        0deg,
+        #000000 0px,
+        #0a0a0a 1px,
+        #000000 2px
+    );
+    color: var(--color-retro-green);
+    box-shadow:
+        inset 0 0 10px rgba(0, 255, 0, 0.3),
+        0 0 15px rgba(0, 255, 255, 0.2);
+    border: 2px solid var(--color-trans-light-blue);
+    font-family: var(--font-pixel);
+    text-shadow: 0 0 3px currentColor;
 }
 
 .token.operator,
 .token.entity,
 .token.url {
     background: transparent;
-    color: var(--color-trans-light-blue); /* Use light blue for some tokens */
+    color: var(--color-trans-light-blue);
+    text-shadow: 0 0 5px currentColor;
 }
 
 .token.comment {
-    color: #666; /* Slightly darker grey for comments */
+    color: var(--color-retro-gray);
+    font-style: italic;
 }
 
 .token.keyword {
-    color: var(--color-trans-pink); /* Pink for keywords */
+    color: var(--color-trans-pink);
+    font-weight: bold;
+    text-shadow: 0 0 5px currentColor;
 }
 
 .token.string,
 .language-css .token.string,
 .style .token.string {
-    color: #90ee90; /* Brighter green for strings */
+    color: var(--color-retro-green);
+    text-shadow: 0 0 3px currentColor;
 }
 
 .token.function {
-    color: var(--color-trans-white); /* Functions as white with glow */
+    color: var(--color-retro-yellow);
+    font-weight: bold;
+    text-shadow: 0 0 5px currentColor;
 }
 
 .token.number {
-    color: #ffcc00; /* Yellow for numbers */
+    color: var(--color-retro-red);
+    text-shadow: 0 0 3px currentColor;
 }
 
 .token.punctuation {
-    color: #cccccc; /* Lighter grey for punctuation */
+    color: var(--color-trans-white);
+}
+
+.token.boolean,
+.token.constant {
+    color: var(--color-retro-blue);
+    text-shadow: 0 0 5px currentColor;
+}
+
+.token.selector,
+.token.attr-name {
+    color: var(--color-trans-pink);
+    text-shadow: 0 0 3px currentColor;
+}
+
+.token.property {
+    color: var(--color-trans-light-blue);
+}
+
+/* Add retro computer terminal effect */
+pre[class*="language-"] {
+    position: relative;
+}
+
+pre[class*="language-"]::before {
+    content: "TERMINAL v1.0 - READY";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    right: 0;
+    background: var(--color-retro-dark);
+    color: var(--color-retro-green);
+    padding: 5px 10px;
+    font-size: 10px;
+    border: 1px solid var(--color-trans-light-blue);
+    border-bottom: none;
+    text-shadow: 0 0 3px currentColor;
+}
+
+/* Blinking cursor effect */
+pre[class*="language-"]::after {
+    content: "█";
+    color: var(--color-retro-green);
+    animation: blink 1s infinite;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+@keyframes blink {
+    0%,
+    50% {
+        opacity: 1;
+    }
+    51%,
+    100% {
+        opacity: 0;
+    }
 }

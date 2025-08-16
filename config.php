@@ -8,6 +8,8 @@ return [
     "siteName" => 'Sofia\'s Blog',
     "siteDescription" => "The Little Web Corner of Sofia Vicedomini",
     "siteAuthor" => "Sofia Vicedomini",
+    "brevo_api_key" => "", // Replace with your Brevo API key
+    "brevo_list_id" => "", // Replace with your Brevo list ID
 
     // collections
     "collections" => [

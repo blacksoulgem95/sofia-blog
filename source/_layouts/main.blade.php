@@ -49,21 +49,54 @@
 
         @include('_nav.menu-responsive')
 
-        <main role="main" class="flex-auto w-full container max-w-4xl mx-auto border-x-4 border-b-4 border-[var(--color-trans-pink)] px-8 py-12 my-8 bg-black/70">
+        <main role="main" class="flex-auto w-full container max-w-4xl mx-auto border-x-4 border-b-4 border-[var(--color-trans-pink)] px-8 py-12 mb-8 bg-black/70">
             @yield('body')
         </main>
 
-        <footer class="bg-black/70 text-center text-sm mt-12 py-4 border-t-4 border-[var(--color-trans-pink)]" role="contentinfo">
-            <ul class="flex flex-col md:flex-row justify-center list-none">
-                <li class="md:mr-2">
-                    &copy; <a href="https://tighten.co" title="Tighten website" class="text-[var(--color-trans-light-blue)] hover:text-[var(--color-trans-white)]">Tighten</a> {{ date('Y') }}.
-                </li>
+        <footer class="retro-footer bg-black/70 text-center text-sm mt-12 py-8 border-t-4 border-[var(--color-trans-pink)]" role="contentinfo">
+            <div class="container max-w-4xl mx-auto px-4">
+                <div class="mb-6">
+                    <h3 class="text-lg font-bold text-[var(--color-retro-green)] mb-4 retro-text-glow">Sofia Vicedomini</h3>
+                    <p class="text-[var(--color-trans-white)] mb-2">Full Stack Developer & Tech Professional</p>
+                    <p class="text-[var(--color-retro-gray)] text-xs">Available for remote opportunities across Europe</p>
+                </div>
 
-                <li>
-                    Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten" class="text-[var(--color-trans-light-blue)] hover:text-[var(--color-trans-white)]">Jigsaw</a>
-                    and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework" class="text-[var(--color-trans-light-blue)] hover:text-[var(--color-trans-white)]">Tailwind CSS</a>.
-                </li>
-            </ul>
+                <div class="flex flex-wrap justify-center gap-4 mb-6">
+                    <a href="https://sofiavicedomini.me"
+                       class="retro-badge text-[var(--color-retro-green)] hover:text-[var(--color-trans-pink)] inline-flex items-center gap-2"
+                       title="Sofia's Portfolio" target="_blank" rel="noopener">
+                        <i class="nes-icon star"></i> PORTFOLIO
+                    </a>
+                    <a href="https://linkedin.com/in/sofiavicedomini"
+                       class="retro-badge text-[var(--color-trans-light-blue)] hover:text-[var(--color-trans-pink)] inline-flex items-center gap-2"
+                       title="LinkedIn Profile" target="_blank" rel="noopener">
+                        <i class="nes-icon linkedin"></i> LINKEDIN
+                    </a>
+                    <a href="https://github.com/blacksoulgem95"
+                       class="retro-badge text-[var(--color-trans-white)] hover:text-[var(--color-trans-pink)] inline-flex items-center gap-2"
+                       title="GitHub Profile" target="_blank" rel="noopener">
+                        <i class="nes-icon github"></i> GITHUB
+                    </a>
+                    <a href="https://x.com/blacksoulgem95"
+                       class="retro-badge text-[var(--color-retro-yellow)] hover:text-[var(--color-trans-pink)] inline-flex items-center gap-2"
+                       title="X (Twitter) Profile" target="_blank" rel="noopener">
+                        <i class="nes-icon twitter"></i> TWITTER
+                    </a>
+                </div>
+
+                <div class="border-t-2 border-[var(--color-retro-gray)] pt-4 mt-6">
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-2 text-xs text-[var(--color-retro-gray)]">
+                        <div>&copy; {{ date('Y') }} Sofia Vicedomini. All rights reserved.</div>
+                        <div class="hidden md:block">•</div>
+                        <div>
+                            Built with
+                            <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten" class="text-[var(--color-trans-light-blue)] hover:text-[var(--color-trans-pink)]">Jigsaw</a>
+                            &
+                            <a href="https://tailwindcss.com" title="Tailwind CSS" class="text-[var(--color-trans-light-blue)] hover:text-[var(--color-trans-pink)]">Tailwind CSS</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
 
         @include('_components.toaster')

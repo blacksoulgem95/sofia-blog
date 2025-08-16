@@ -1,11 +1,33 @@
 body {
-    font-size: 17px;
+    font-size: 16px;
+    font-family:
+        "Perfect DOS VGA 437", "MS Gothic", "Terminal", "Courier New", monospace;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: geometricPrecision;
 }
 
 a {
-    @apply underline;
-    @apply text-[var(--color-trans-white)]; /* Changed to white for better contrast */
+    @apply no-underline;
+    @apply text-[var(--color-trans-light-blue)];
     @apply hover:text-[var(--color-trans-pink)];
+    text-shadow: 0 0 5px currentColor;
+    transition: all 0.1s ease;
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 1px;
+    font-weight: bold;
+}
+
+a:hover {
+    animation: retro-glitch 0.3s ease-in-out;
+    text-shadow:
+        0 0 5px currentColor,
+        0 0 10px currentColor,
+        2px 0 0 #ff00ff,
+        -2px 0 0 #00ffff;
 }
 
 blockquote {
@@ -14,37 +36,77 @@ blockquote {
     @apply text-xl;
     @apply font-bold;
     @apply not-italic;
-    @apply text-[var(--color-trans-white)];
-    @apply border-l-8;
-    @apply border-[var(--color-trans-pink)];
-    @apply p-4;
-    background: linear-gradient(
-        90deg,
-        #1a202c,
-        #333333
-    ); /* Subtle dark gradient */
-    box-shadow: 0 0 15px rgba(245, 169, 184, 0.4); /* Pink glow */
+    @apply text-[var(--color-retro-green)];
+    @apply p-6;
+    position: relative;
+    background: repeating-linear-gradient(
+        45deg,
+        #000000,
+        #000000 4px,
+        #1a1a1a 4px,
+        #1a1a1a 8px
+    );
+    border: 3px solid var(--color-trans-pink);
+    box-shadow:
+        0 0 20px rgba(255, 0, 255, 0.6),
+        inset 0 0 20px rgba(0, 255, 0, 0.1);
+    text-shadow: 0 0 8px currentColor;
+}
+
+blockquote::before {
+    content: ">>> ";
+    color: var(--color-trans-pink);
+    font-weight: bold;
+    text-shadow: 0 0 5px currentColor;
+}
+
+blockquote::after {
+    content: " <<<";
+    color: var(--color-trans-pink);
+    font-weight: bold;
+    text-shadow: 0 0 5px currentColor;
 }
 
 code {
     @apply px-2;
-    @apply py-px;
+    @apply py-1;
     @apply text-sm;
-    @apply bg-gray-800; /* Darker background for inline code */
-    @apply text-[var(--color-trans-white)];
+    @apply text-[var(--color-retro-green)];
     @apply rounded-none;
-
-    border: 1px dashed var(--color-trans-light-blue); /* Dashed border for extra retro */
+    background: repeating-linear-gradient(
+        0deg,
+        #000000 0px,
+        #0a0a0a 1px,
+        #000000 2px
+    );
+    border: 2px solid var(--color-trans-light-blue);
+    box-shadow:
+        0 0 8px rgba(0, 255, 255, 0.4),
+        inset 0 0 5px rgba(0, 255, 0, 0.2);
+    text-shadow: 0 0 3px currentColor;
+    font-family:
+        "Perfect DOS VGA 437", "MS Gothic", "Terminal", "Courier New", monospace;
 }
 
 code.hljs {
     @apply p-0;
     @apply bg-transparent;
+    text-shadow: 0 0 3px currentColor;
 
-    & .hljs-comment,
-    & .hljs-keyword,
+    & .hljs-comment {
+        color: var(--color-retro-gray);
+        font-style: italic;
+    }
+
+    & .hljs-keyword {
+        color: var(--color-trans-pink);
+        font-weight: bold;
+        text-shadow: 0 0 5px currentColor;
+    }
+
     & .hljs-meta {
-        /* Remove specific overrides to use Prism defaults or browser defaults */
+        color: var(--color-trans-light-blue);
+        text-shadow: 0 0 3px currentColor;
     }
 }
 
@@ -56,61 +118,122 @@ h5,
 h6 {
     @apply mt-8;
     @apply mb-4;
-    @apply leading-normal; /* Use normal line height */
-    @apply font-sans; /* Ensure system font */
-    @apply border-b-2; /* Add bottom border to headings */
-    @apply pb-2; /* Padding below the border */
-
-    color: var(--color-trans-white); /* White text on headings */
+    @apply leading-normal;
+    @apply pb-2;
+    font-family:
+        "Perfect DOS VGA 437", "MS Gothic", "Terminal", "Courier New", monospace;
+    color: var(--color-trans-white);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    text-shadow:
+        0 0 5px currentColor,
+        0 0 10px currentColor,
+        1px 1px 0px var(--color-trans-pink),
+        2px 2px 0px var(--color-trans-light-blue);
 
     &:first-child {
         @apply mt-0;
     }
 }
 
+h1::after,
+h2::after,
+h3::after,
+h4::after,
+h5::after,
+h6::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--color-trans-pink) 0px,
+        var(--color-trans-pink) 8px,
+        var(--color-trans-light-blue) 8px,
+        var(--color-trans-light-blue) 16px
+    );
+    box-shadow: 0 0 10px var(--color-trans-pink);
+}
+
 h1 {
-    @apply text-6xl;
+    @apply text-5xl;
     @apply font-black;
-    @apply border-[var(--color-trans-pink)];
+    color: var(--color-retro-green);
+    text-shadow:
+        0 0 3px currentColor,
+        0 0 6px currentColor,
+        0 0 9px currentColor,
+        1px 1px 0px var(--color-trans-pink),
+        2px 2px 0px var(--color-trans-light-blue);
+    animation: retro-pulse 2s infinite alternate;
 }
 
 h2 {
-    @apply text-5xl;
+    @apply text-4xl;
     @apply font-extrabold;
-    @apply border-[var(--color-trans-light-blue)];
+    color: var(--color-trans-pink);
 }
 
 h3 {
-    @apply text-4xl;
+    @apply text-3xl;
     @apply font-bold;
-    @apply border-[var(--color-trans-pink)];
+    color: var(--color-trans-light-blue);
 }
 
 h4 {
-    @apply text-3xl;
+    @apply text-2xl;
     @apply font-bold;
-    @apply border-[var(--color-trans-light-blue)];
+    color: var(--color-retro-yellow);
 }
 
 h5 {
-    @apply text-2xl;
+    @apply text-xl;
     @apply font-semibold;
-    @apply border-[var(--color-trans-pink)];
+    color: var(--color-retro-red);
 }
 
 h6 {
-    @apply text-xl;
+    @apply text-lg;
     @apply font-normal;
-    @apply border-[var(--color-trans-light-blue)];
-    @apply text-[var(--color-trans-white)]; /* White text on headings */
+    color: var(--color-trans-white);
 }
 
 hr {
     @apply my-12;
     @apply rounded-none;
-    border: none; /* Remove default border */
-    border-top: 4px double var(--color-trans-pink); /* Double border for retro look */
-    box-shadow: 0 0 10px var(--color-trans-pink); /* Pink glow */
+    border: none;
+    height: 8px;
+    background: repeating-linear-gradient(
+        90deg,
+        var(--color-trans-pink) 0px,
+        var(--color-trans-pink) 4px,
+        transparent 4px,
+        transparent 8px,
+        var(--color-trans-light-blue) 8px,
+        var(--color-trans-light-blue) 12px,
+        transparent 12px,
+        transparent 16px
+    );
+    box-shadow:
+        0 0 15px var(--color-trans-pink),
+        0 0 25px var(--color-trans-light-blue);
+    position: relative;
+}
+
+hr::before {
+    content: "◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇◆◇";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--color-trans-white);
+    font-size: 8px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px currentColor;
 }
 
 li {
@@ -143,31 +266,125 @@ p {
 }
 
 pre {
-    @apply p-4;
-    @apply my-6;
+    @apply p-6;
+    @apply my-8;
     @apply text-sm;
     @apply leading-normal;
     @apply rounded-none;
     @apply overflow-x-auto;
-    background: #0d0d0d; /* Even darker background for contrast */
-    border: 2px solid var(--color-trans-light-blue); /* Blue border for code block */
+    position: relative;
+    background: repeating-linear-gradient(
+        0deg,
+        #000000 0px,
+        #0a0a0a 1px,
+        #000000 2px
+    );
+    border: 3px solid var(--color-trans-light-blue);
     box-shadow:
-        inset 0 0 15px rgba(91, 206, 250, 0.5),
-        0 0 15px rgba(91, 206, 250, 0.7); /* Inner and outer blue glow */
+        inset 0 0 20px rgba(0, 255, 0, 0.2),
+        0 0 20px rgba(0, 255, 255, 0.8),
+        0 0 40px rgba(255, 0, 255, 0.4);
+    font-family:
+        "Perfect DOS VGA 437", "MS Gothic", "Terminal", "Courier New", monospace;
 
     & code {
         @apply block;
         @apply p-0;
         @apply bg-transparent;
-        @apply text-[var(--color-trans-white)];
+        @apply text-[var(--color-retro-green)];
+        text-shadow: 0 0 3px currentColor;
+        border: none;
+        box-shadow: none;
     }
 }
 
+pre::before {
+    content: "[SYSTEM TERMINAL - READY]";
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    background: var(--color-retro-dark);
+    color: var(--color-retro-green);
+    padding: 5px 10px;
+    font-size: 10px;
+    border: 2px solid var(--color-trans-light-blue);
+    border-bottom: none;
+    text-shadow: 0 0 5px currentColor;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
 ::selection {
-    @apply text-gray-900; /* Dark text on selection */
-    @apply bg-[var(--color-trans-light-blue)]; /* Light blue selection background */
+    @apply text-black;
+    @apply bg-[var(--color-retro-green)];
+    text-shadow: none;
+}
+
+::selection {
+    background: var(--color-retro-green);
+    color: #000000;
+    text-shadow: 0 0 5px var(--color-retro-green);
 }
 
 [x-cloak] {
     display: none !important;
+}
+
+/* Retro gaming elements */
+.retro-glitch {
+    animation: retro-glitch 0.3s infinite;
+}
+
+@keyframes retro-glitch {
+    0%,
+    100% {
+        transform: translate(0);
+    }
+    10% {
+        transform: translate(-1px, 1px);
+    }
+    20% {
+        transform: translate(1px, -1px);
+    }
+    30% {
+        transform: translate(-1px, -1px);
+    }
+    40% {
+        transform: translate(1px, 1px);
+    }
+}
+
+/* Pixelated images */
+img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-retro-dark);
+    border: 2px solid var(--color-trans-light-blue);
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+        45deg,
+        var(--color-trans-pink),
+        var(--color-trans-light-blue)
+    );
+    border: 2px solid var(--color-retro-dark);
+    box-shadow: inset 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    box-shadow:
+        inset 0 0 5px rgba(255, 255, 255, 0.5),
+        0 0 10px var(--color-trans-pink);
 }

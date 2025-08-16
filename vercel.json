@@ -1,0 +1,6 @@
+{
+  "buildCommand": "./vendor/bin/jigsaw build production",
+  "installCommand": "composer install --no-dev --optimize-autoloader && npm ci",
+  "outputDirectory": "build_production",
+  "framework": null
+}

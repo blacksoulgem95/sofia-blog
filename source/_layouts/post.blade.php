@@ -60,7 +60,7 @@
             @include('_components.gravatar-hovercard')
         </div>
 
-        <nav class="flex justify-between text-sm md:text-base pixel-border p-4">
+        <nav class="flex flex-col items-center justify-between text-sm md:text-base pixel-border p-4">
             <div>
                 @if ($next = $page->getNext())
                     <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}" class="retro-button">

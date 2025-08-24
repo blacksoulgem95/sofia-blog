@@ -4,7 +4,7 @@ section: content
 title: Fighting with Angular Environments
 date: 2022-12-01
 description: Angular has a fantastic way of setting configurations for our application if our application has only one company as its users. But, what if we need to deploy our application, with different variables each time?
-cover_image: /assets/img/post-cover-image-10.png
+cover_image: /assets/images/angular-env/cover.jpg
 featured: false
 categories: [angular, configuration, environment, environments, saas]
 ---

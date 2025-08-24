@@ -4,7 +4,7 @@ section: content
 title: "REST vs GraphQL: Is It Really a War?"
 date: 2024-11-11
 description: Explore the real differences between REST and GraphQL without the hype. Learn when to choose one over the other based on performance, flexibility, and use case.
-cover_image: /assets/img/post-cover-image-28.png
+cover_image: /assets/images/REST-GRAPH/cover.jpg
 featured: false
 categories: [RESTful, OpenAPI, api, GraphQL, backend, M2M]
 ---

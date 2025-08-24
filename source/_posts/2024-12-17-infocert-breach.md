@@ -4,7 +4,7 @@ section: content
 title: "InfoCert sotto attacco: violati i dati di 5,5 milioni di utenti"
 date: 2024-12-27
 description: "Il 27 dicembre 2024 InfoCert ha subito un attacco informatico: esposti i dati personali di 5,5 milioni di utenti, tra cui email e codici fiscali."
-cover_image: /assets/img/post-cover-image-17.png
+cover_image: /assets/images/infocert/breach.jpeg
 featured: true
 categories: [privacy, id, identity, security, phishing, data, data breach, security breach, Cybersecurity, Digital identity, SPID, Data theft]
 ---

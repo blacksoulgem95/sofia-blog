@@ -1,15 +1,21 @@
+# Workflow: deploys a static site to GitHub Pages by publishing to the "live" branch
 name: Deploy to GitHub Pages (live)
 
+# Triggers:
+# - on push to "main" (automatic deploy)
+# - manual run via "workflow_dispatch"
 on:
   push:
     branches:
       - main
   workflow_dispatch:
 
+# Prevent concurrent deploy runs; cancel any that are still in progress
 concurrency:
   group: pages-deploy
   cancel-in-progress: true
 
+# Default GITHUB_TOKEN permissions at workflow level (jobs can override)
 permissions:
   contents: write
 
@@ -19,10 +25,12 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    # Build job: prepare dependencies, compile assets, and generate the static site
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        # Check out the repository source at the current commit
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -30,6 +38,7 @@ jobs:
           php-version: '8.4'
           coverage: none
           extensions: mbstring, intl, dom, json, libxml, curl, openssl, zip
+        # Set up PHP with required extensions for build tools (e.g., Jigsaw/Laravel)
 
       - name: Cache Composer
         uses: actions/cache@v4
@@ -37,30 +46,37 @@ jobs:
           path: ~/.composer/cache/files
           key: composer-${{ hashFiles('**/composer.lock') }}
           restore-keys: composer-
+        # Speed up Composer installs by reusing downloaded packages
 
       - name: Install Composer dependencies
         run: composer install --no-interaction --no-progress --prefer-dist --optimize-autoloader
+        # Install PHP dependencies in a reproducible and quiet way
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'npm'
+        # Install Node.js and enable npm caching to speed up "npm ci"
 
       - name: Install Node dependencies
         run: npm ci
+        # Clean, lockfile-based install for deterministic builds
 
       - name: Build frontend assets
         run: npm run build --if-present
+        # Compile JS/CSS assets; --if-present avoids an error if the script is missing
 
       - name: Build Jigsaw site (production)
         run: vendor/bin/jigsaw build production
+        # Generate the static site in production mode (output in build_production)
 
       - name: Upload site artifact
         uses: actions/upload-artifact@v4
         with:
           name: site
           path: build_production
+        # Upload the generated site as an artifact for the deploy job
 
   deploy:
     name: Deploy to live branch
@@ -68,6 +84,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    # Deploy job: publish the generated files to the "live" branch
 
     steps:
       - name: Download site artifact
@@ -75,6 +92,7 @@ jobs:
         with:
           name: site
           path: build_production
+        # Download the artifact produced by the build job
 
       - name: Publish to live
         uses: peaceiris/actions-gh-pages@v4
@@ -83,3 +101,5 @@ jobs:
           publish_dir: build_production
           publish_branch: live
           force_orphan: true
+        # Publish the contents of build_production to the "live" branch
+        # force_orphan: create orphan commits to keep the deploy branch history clean

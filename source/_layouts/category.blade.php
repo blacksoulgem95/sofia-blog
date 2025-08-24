@@ -1,5 +1,18 @@
 @extends('_layouts.main')
 
+@push('meta')
+    @php
+        $jsonLd = [
+            '@context' => 'https://schema.org',
+            '@type' => 'CollectionPage',
+            'name' => $page->title,
+            'description' => $page->description ?? ('Posts in ' . $page->title),
+            'url' => $page->getUrl(),
+        ];
+    @endphp
+    <script type="application/ld+json">{!! json_encode($jsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
+@endpush
+
 @section('body')
     <div class="nes-container is-dark is-rounded text-center">
 

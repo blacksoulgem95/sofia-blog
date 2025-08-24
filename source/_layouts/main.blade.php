@@ -4,18 +4,64 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="{{ $page->description ?? $page->siteDescription }}">
 
+        @php
+            $seoTitle = ($page->title ? $page->title . ' | ' : '') . $page->siteName;
+            $seoDescription = $page->description ?? $page->siteDescription;
+            $imageCandidate = $page->cover_image ?? '/apple-touch-icon.png';
+            $seoImage = preg_match('/^https?:\/\//', $imageCandidate) ? $imageCandidate : rtrim($page->baseUrl, '/') . $imageCandidate;
+        @endphp
+
+        <meta name="description" content="{{ $seoDescription }}">
+        <meta name="robots" content="{{ $page->production ? 'index,follow' : 'noindex,nofollow' }}">
+        <link rel="canonical" href="{{ $page->getUrl() }}">
+
+        <meta property="og:site_name" content="{{ $page->siteName }}"/>
         <meta property="og:title" content="{{ $page->title ? $page->title . ' | ' : '' }}{{ $page->siteName }}"/>
         <meta property="og:type" content="{{ $page->type ?? 'website' }}" />
         <meta property="og:url" content="{{ $page->getUrl() }}"/>
-        <meta property="og:description" content="{{ $page->description ?? $page->siteDescription }}" />
+        <meta property="og:description" content="{{ $seoDescription }}" />
+        <meta property="og:image" content="{{ $seoImage }}" />
+        <meta property="og:image:alt" content="{{ $seoTitle }}" />
 
-        <title>{{ $page->title ?  $page->title . ' | ' : '' }}{{ $page->siteName }}</title>
+        @if (($page->type ?? 'website') === 'article')
+            <meta property="article:published_time" content="{{ isset($page->date) ? date('c', $page->date) : '' }}" />
+            <meta property="article:author" content="{{ $page->author ?? $page->siteAuthor }}" />
+        @endif
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="{{ $seoTitle }}" />
+        <meta name="twitter:description" content="{{ $seoDescription }}" />
+        <meta name="twitter:image" content="{{ $seoImage }}" />
+        <meta name="twitter:site" content="@blacksoulgem95" />
+        <meta name="twitter:creator" content="@blacksoulgem95" />
+
+        <meta name="author" content="{{ $page->author ?? $page->siteAuthor }}" />
+
+        <title>{{ $seoTitle }}</title>
 
         <link rel="home" href="{{ $page->baseUrl }}">
         <link rel="icon" href="/favicon.ico">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
+
+        <script type="application/ld+json">
+        {!! json_encode([
+            '@context' => 'https://schema.org',
+            '@type' => 'WebSite',
+            'name' => $page->siteName,
+            'url' => rtrim($page->baseUrl, '/'),
+            'inLanguage' => 'en',
+            'description' => $seoDescription,
+            'sameAs' => [
+                'https://sofiavicedomini.me',
+                'https://linkedin.com/in/sofiavicedomini',
+                'https://github.com/blacksoulgem95',
+                'https://x.com/blacksoulgem95',
+            ],
+        ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}
+        </script>
+
+        @stack('meta')
 
         @if ($page->production)
             <!-- Insert analytics code here -->

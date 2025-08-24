@@ -7,6 +7,26 @@ pagination:
 ---
 @extends('_layouts.main')
 
+@push('meta')
+    @if ($previous = $pagination->previous)
+        <link rel="prev" href="{{ $previous }}">
+    @endif
+    @if ($next = $pagination->next)
+        <link rel="next" href="{{ $next }}">
+    @endif
+
+    @php
+        $jsonLd = [
+            '@context' => 'https://schema.org',
+            '@type' => 'Blog',
+            'name' => $page->title ?? $page->siteName,
+            'description' => $page->description ?? $page->siteDescription,
+            'url' => $page->getUrl(),
+        ];
+    @endphp
+    <script type="application/ld+json">{!! json_encode($jsonLd, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
+@endpush
+
 @section('body')
     <h1>Blog</h1>
 

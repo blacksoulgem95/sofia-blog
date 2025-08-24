@@ -4,6 +4,32 @@
     $page->type = 'article';
 @endphp
 
+@push('meta')
+    @php
+        $imageCandidate = $page->cover_image ?? '/apple-touch-icon.png';
+        $seoImage = preg_match('/^https?:\/\//', $imageCandidate) ? $imageCandidate : rtrim($page->baseUrl, '/') . $imageCandidate;
+
+        $jsonLd = [
+            '@context' => 'https://schema.org',
+            '@type' => 'BlogPosting',
+            'headline' => $page->title,
+            'description' => $page->description ?? $page->getExcerpt(200),
+            'image' => $seoImage,
+            'author' => [
+                '@type' => 'Person',
+                'name' => $page->author ?? $page->siteAuthor,
+            ],
+            'datePublished' => isset($page->date) ? date('c', $page->date) : null,
+            'dateModified' => isset($page->updated) ? date('c', $page->updated) : (isset($page->date) ? date('c', $page->date) : null),
+            'mainEntityOfPage' => [
+                '@type' => 'WebPage',
+                '@id' => $page->getUrl(),
+            ],
+        ];
+    @endphp
+    <script type="application/ld+json">{!! json_encode(array_filter($jsonLd), JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
+@endpush
+
 @section('body')
     <div class="container is-dark is-rounded mx-auto max-w-3xl w-full px-4 text-left prose prose-invert prose-a:text-[var(--color-trans-pink)]">
 

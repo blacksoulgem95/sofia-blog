@@ -202,7 +202,7 @@ h6 {
     color: var(--color-trans-white);
 }
 
-hr {
+hr, .prose hr {
     @apply rounded-none;
     border: none;
     height: 8px;

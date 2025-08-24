@@ -37,9 +37,9 @@
             <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
         @endif
 
-        <h1 class="leading-none mb-2 retro-text-glow border-b-4 text-[var(--color-retro-green)]">{{ $page->title }}</h1>
+        <h1 class="leading-none mb-2 border-b-4 text-white font-black" style="text-shadow: 0 0 10px var(--color-retro-green), 0 0 15px var(--color-retro-green), 2px 2px 0 var(--color-trans-pink), 3px 3px 0 var(--color-trans-light-blue); border-image: linear-gradient(to right, var(--color-retro-green), var(--color-trans-pink)) 1;">{{ $page->title }}</h1>
 
-        <p class="text-[var(--color-trans-white)] text-xl md:mt-0 retro-text-glow">{{ $page->author }}
+        <p class="text-white text-xl md:mt-0 font-bold" style="text-shadow: 0 0 8px var(--color-trans-light-blue), 1px 1px 0 var(--color-trans-pink);">{{ $page->author }}
             • {{ date('F j, Y', $page->date) }}</p>
 
         @if ($page->categories)
@@ -47,7 +47,8 @@
                 <a
                         href="{{ '/blog/categories/' . $category }}"
                         title="View posts in {{ $category }}"
-                        class="inline-block bg-[var(--color-retro-dark)] hover:bg-[var(--color-trans-pink)] leading-loose tracking-wide text-[var(--color-trans-white)] uppercase text-xs font-semibold rounded-sm mr-4 px-3 pt-px pixel-border retro-text-glow"
+                        class="inline-block bg-[var(--color-retro-dark)] hover:bg-[var(--color-trans-pink)] leading-loose tracking-wide text-white uppercase text-xs font-bold rounded-sm mr-4 px-3 pt-px pixel-border"
+                        style="text-shadow: 0 0 5px var(--color-retro-yellow); box-shadow: 0 0 8px var(--color-trans-pink);"
                 >{{ $category }}</a>
             @endforeach
         @endif
@@ -60,22 +61,24 @@
             @include('_components.gravatar-hovercard')
         </div>
 
-        <nav class="flex flex-col items-center justify-between text-sm md:text-base pixel-border p-4">
-            <div>
-                @if ($next = $page->getNext())
-                    <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}" class="retro-button">
-                        &LeftArrow; {{ $next->title }}
+        <nav class="flex flex-col gap-4 text-sm md:text-base pixel-border p-4 bg-black/50">
+            @if ($next = $page->getNext())
+                <div class="w-full">
+                    <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}" class="retro-button text-white font-bold block w-full text-center" style="text-shadow: 0 0 8px var(--color-retro-yellow), 1px 1px 0 var(--color-trans-pink); box-shadow: 0 0 10px var(--color-trans-light-blue); overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto; white-space: normal; display: flex; align-items: center; justify-content: center; min-height: 60px;">
+                        <span class="inline-block mr-2">&LeftArrow;</span>
+                        <span class="inline-block">{{ $next->title }}</span>
                     </a>
-                @endif
-            </div>
+                </div>
+            @endif
 
-            <div>
-                @if ($previous = $page->getPrevious())
-                    <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}" class="retro-button">
-                        {{ $previous->title }} &RightArrow;
+            @if ($previous = $page->getPrevious())
+                <div class="w-full">
+                    <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}" class="retro-button text-white font-bold block w-full text-center" style="text-shadow: 0 0 8px var(--color-retro-yellow), 1px 1px 0 var(--color-trans-pink); box-shadow: 0 0 10px var(--color-trans-light-blue); overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto; white-space: normal; display: flex; align-items: center; justify-content: center; min-height: 60px;">
+                        <span class="inline-block">{{ $previous->title }}</span>
+                        <span class="inline-block ml-2">&RightArrow;</span>
                     </a>
-                @endif
-            </div>
+                </div>
+            @endif
         </nav>
 
     </div>

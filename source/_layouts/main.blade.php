@@ -45,8 +45,8 @@
     </head>
 
     <body class="flex flex-col justify-between items-center min-h-screen text-white leading-normal font-sans bg-sparkly">
-        <header class="nes-container is-dark flex items-center bg-black/70 border-b-4 border-[var(--color-trans-pink)] h-24 py-4 retro-header pixel-border" role="banner" style="background-image: url('https://example.com/retro-bg.gif'); background-repeat: repeat; font-family: 'Comic Sans MS', cursive; color: lime; text-align: center;">
-            <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
+        <header class="nes-container is-dark flex items-center bg-black/70 border-b-4 border-[var(--color-trans-pink)] md:h-24 py-4 retro-header pixel-border" role="banner" style="background-image: url('https://example.com/retro-bg.gif'); background-repeat: repeat; font-family: 'Comic Sans MS', cursive; color: lime; text-align: center;">
+            <div class="container flex flex-col md:flex-row items-start md:items-center justify-between max-w-8xl mx-auto px-4 lg:px-8 gap-2">
                 <div class="flex items-center">
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex items-center">
                         <img class="h-8 md:h-10 mr-3 border-blue-500 border-2 rounded-full pixelated" src="/assets/img/sofia-pfp.webp" alt="{{ $page->siteName }} logo" style="image-rendering: pixelated;" />
@@ -55,7 +55,7 @@
                     </a>
                 </div>
 
-                <div id="vue-search" class="flex flex-1 justify-end items-center bg-transparent">
+                <div id="vue-search" class="flex w-full md:flex-1 md:justify-end justify-center items-center bg-transparent mt-2 md:mt-0">
                     @include('_components.search')
 
                     @include('_nav.menu')

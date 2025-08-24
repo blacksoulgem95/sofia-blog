@@ -19,11 +19,29 @@
     const navMenu = {
         toggle() {
             const menu = document.getElementById('js-nav-menu');
-            menu.classList.toggle('hidden');
-            menu.classList.toggle('lg:block');
+            const isHidden = menu.classList.contains('hidden');
+
+            if (isHidden) {
+                menu.classList.remove('hidden');
+                document.body.classList.add('overflow-hidden');
+            } else {
+                menu.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            }
+
             document.getElementById('js-nav-menu-hide').classList.toggle('hidden');
             document.getElementById('js-nav-menu-show').classList.toggle('hidden');
         },
-    }
+    };
+
+    // Chiude la modale con ESC
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+            const menu = document.getElementById('js-nav-menu');
+            if (menu && !menu.classList.contains('hidden')) {
+                navMenu.toggle();
+            }
+        }
+    });
 </script>
 @endpush

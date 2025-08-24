@@ -35,7 +35,7 @@ description: I'm Sofia Vicedomini, a dedicated software engineering consultant w
         <ul class="retro-list space-y-3">
             <li class="flex items-center gap-3"><i class="nes-icon coin"></i><a href="https://ko-fi.com/blacksoulgem95" class="text-[var(--color-retro-yellow)] hover:text-[var(--color-trans-pink)]">Ko-Fi</a> - Buy me a pizza slice</li>
             <li class="flex items-center gap-3"><i class="nes-icon coin"></i><a href="https://revolut.me/sofiavicedomini" class="text-[var(--color-retro-green)] hover:text-[var(--color-trans-pink)]">Revolut</a> - Quick payments</li>
-            <li class="flex items-center gap-3"><i class="nes-icon coin"></i>Bitcoin: <code class="text-sm text-[var(--color-retro-green)] bg-black border-2 border-[var(--color-trans-light-blue)] px-2 py-1 cursor-pointer hover:bg-[var(--color-retro-dark)] transition-colors font-mono" onclick="copyBitcoinAddress()" id="bitcoin-address">bc1q4wndp7sqy5l68yp0w67lnl96s4vug2xujjk300</code></li>
+            <li class="flex flex-wrap items-center gap-3"><i class="nes-icon coin"></i>Bitcoin: <code class="block w-full md:w-auto md:inline text-sm break-all whitespace-normal text-[var(--color-retro-green)] bg-black border-2 border-[var(--color-trans-light-blue)] px-2 py-1 mt-2 md:mt-0 cursor-pointer hover:bg-[var(--color-retro-dark)] transition-colors font-mono" onclick="copyBitcoinAddress()" id="bitcoin-address">bc1q4wndp7sqy5l68yp0w67lnl96s4vug2xujjk300</code></li>
         </ul>
     </div>
 

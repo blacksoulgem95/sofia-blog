@@ -5,7 +5,7 @@
 @endphp
 
 @section('body')
-    <div class="container is-dark is-rounded mx-auto max-w-3xl w-full px-4 text-left prose">
+    <div class="container is-dark is-rounded mx-auto max-w-3xl w-full px-4 text-left prose prose-invert prose-a:text-[var(--color-trans-pink)]">
 
         @if ($page->cover_image)
             <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">

@@ -1,6 +1,4 @@
-The MIT License (MIT)
-
-Copyright (c) <Matt Stauffer, Anthony Terrell, Keith Damiani>
+Copyright (c) 2025 Sofia Vicedomini
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -19,3 +17,18 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
+
+-------------------------------------------------------------------------------
+
+Site Content License (All Rights Reserved)
+
+Unless otherwise indicated, all non-code content in this repository and on https://blog.sofiavicedomini.me — including blog posts, articles, page copy, images, graphics, and other media — is Copyright (c) 2025 Sofia Vicedomini. All rights reserved. This excludes any source code examples/snippets included within blog posts and articles, which are licensed under the MIT License above.
+
+You may:
+- Read and link to the content freely.
+
+You may not, without prior written permission from the copyright holder:
+- Reproduce, redistribute, translate, or create derivative works of the content in any medium.
+- Use the content, in whole or in part, for commercial purposes.
+
+This Site Content License does not apply to the source code, build scripts, themes, or templates, which are licensed under the MIT License above.

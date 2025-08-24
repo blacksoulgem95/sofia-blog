@@ -1,6 +1,6 @@
 <?php
 
 return [
-    "baseUrl" => "https://blacksoulgem95.neocities.org",
+    "baseUrl" => "https://blog.sofiavicedomini.me",
     "production" => true,
 ];

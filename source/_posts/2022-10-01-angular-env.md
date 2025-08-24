@@ -87,15 +87,9 @@ Inside `src/environments`, create a file called `environment.hbs`:
 
 ```javascript
 export const environment = {
-    production: {
-{
-    PRODUCTION
-}
-},
-apiURL: '{{BACKEND_URL}}',
-    authURL
-:
-'{{AUTH_URL}}'
+    production: {{PRODUCTION}},
+    apiURL: '{{BACKEND_URL}}',
+    authURL: '{{AUTH_URL}}'
 }
 ```
 

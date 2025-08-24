@@ -14,5 +14,22 @@
  * });
  */
 
+// Assicuriamoci che il nostro parser personalizzato venga eseguito prima 
+// di qualsiasi altro listener (priorità alta)
+$events->beforeBuild(App\Listeners\CustomizeMdParser::class, 100);
+
+// Eseguiamo una funzione in-line dopo la costruzione delle collezioni
+// per assicurarci che il Markdown sia processato correttamente
+$events->afterCollections(function ($jigsaw) {
+    // Otteniamo il convertitore Markdown personalizzato
+    $converter = $jigsaw->app->make('markdownConverter');
+
+    // Applichiamo alcune configurazioni aggiuntive se necessario
+    if ($converter) {
+        // Possiamo aggiungere configurazioni aggiuntive qui se necessario
+        // ...
+    }
+});
+
 $events->afterBuild(App\Listeners\GenerateSitemap::class);
 $events->afterBuild(App\Listeners\GenerateIndex::class);

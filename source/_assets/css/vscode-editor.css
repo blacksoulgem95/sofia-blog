@@ -1,0 +1,514 @@
+@import "./syntax-highlight.css";
+
+/* Stili per l'editor retro CRT */
+.vscode-editor {
+    @apply my-8;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #000000; /* Sfondo nero per CRT */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.6),
+    0 0 25px rgba(255, 0, 255, 0.5),
+    inset 0 0 20px rgba(0, 255, 0, 0.2);
+    border: 6px solid #333;
+    margin-top: 40px;
+    image-rendering: pixelated;
+    position: relative;
+    font-family: "Perfect DOS VGA 437", "MS Gothic", "Terminal", "Courier New", monospace;
+    animation: crt-flicker 5s infinite;
+}
+
+/* Simulazione dello schermo curvo CRT */
+.vscode-editor::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at center, transparent 60%, rgba(0, 0, 0, 0.4) 100%);
+    pointer-events: none;
+    z-index: 10;
+    border-radius: 8px;
+}
+
+/* Scanlines - linee orizzontali per simulare lo schermo CRT */
+.vscode-editor::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+            to bottom,
+            transparent 0%,
+            rgba(0, 0, 0, 0.3) 50%,
+            transparent 51%,
+            rgba(0, 0, 0, 0.3) 100%
+    );
+    background-size: 100% 4px;
+    pointer-events: none;
+    z-index: 9;
+    animation: scanlines 0.3s linear infinite;
+    opacity: 0.6;
+}
+
+.vscode-editor-titlebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000000;
+    padding: 8px 12px;
+    color: var(--color-retro-green);
+    font-size: 13px;
+    border-bottom: 2px solid var(--color-trans-light-blue);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.vscode-editor-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.vscode-editor-control {
+    width: 10px;
+    height: 10px;
+    border-radius: 0;
+    display: inline-block;
+    border: 1px solid var(--color-trans-light-blue);
+    box-shadow: 0 0 3px var(--color-trans-light-blue);
+}
+
+.vscode-editor-control.close {
+    background-color: var(--color-retro-red);
+}
+
+.vscode-editor-control.minimize {
+    background-color: var(--color-retro-yellow);
+}
+
+.vscode-editor-control.maximize {
+    background-color: var(--color-retro-green);
+}
+
+.vscode-editor-title {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-retro-green);
+    font-weight: bold;
+    text-shadow: 0 0 6px var(--color-retro-green);
+    letter-spacing: 2px;
+    animation: retro-pulse 2s infinite alternate;
+}
+
+.vscode-editor-filename {
+    color: var(--color-trans-light-blue);
+    font-weight: bold;
+    text-shadow: 0 0 8px currentColor;
+    text-transform: uppercase;
+}
+
+.vscode-editor-actions {
+    display: flex;
+    align-items: center;
+}
+
+.vscode-editor-copy-btn {
+    background: #000000;
+    border: 2px solid var(--color-trans-pink);
+    color: var(--color-trans-pink);
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-shadow: 0 0 5px currentColor;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 8px var(--color-trans-pink);
+}
+
+.vscode-editor-copy-btn:hover {
+    background: var(--color-trans-pink);
+    color: #000000;
+    box-shadow: 0 0 12px var(--color-trans-pink);
+}
+
+.vscode-editor-content {
+    display: flex;
+    max-height: 600px;
+    background: repeating-linear-gradient(
+            0deg,
+            #000000 0px,
+            #0a0a0a 1px,
+            #000000 2px
+    );
+    overflow: hidden; /* Impediamo scrollbar esterni */
+    font-family: "Perfect DOS VGA 437", "MS Gothic", "Terminal", "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.6; /* Unifichiamo l'altezza di linea */
+}
+
+.vscode-editor-line-numbers {
+    background: #000000;
+    color: var(--color-trans-pink);
+    text-align: right;
+    min-width: 3rem;
+    width: 3rem;
+    user-select: none;
+    border-right: 2px solid var(--color-trans-pink);
+    font-weight: bold;
+    text-shadow: 0 0 4px currentColor;
+    overflow-y: hidden;
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    padding: 12px 0;
+    font-family: "Perfect DOS VGA 437", "MS Gothic", "Terminal", "Courier New", monospace;
+    font-size: 14px; /* Stessa dimensione del font del codice */
+    line-height: 1.6; /* Stessa altezza di linea del codice */
+    display: flex;
+    flex-direction: column;
+}
+
+.vscode-editor-line-number {
+    padding: 0 8px 0 0;
+    color: var(--color-trans-pink);
+    opacity: 0.7;
+    height: 1.6em; /* Corrisponde esattamente a line-height */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 14px; /* Stessa dimensione del codice */
+}
+
+.vscode-editor-code-container {
+    flex-grow: 1;
+    overflow: auto; /* Manteniamo questa scrollbar */
+    padding: 12px 12px 12px 16px !important; /* Aumentiamo padding a sinistra */
+}
+
+.vscode-editor-code-container pre {
+    padding: 0 !important;
+    margin: 12px 12px 12px 16px !important; /* Aumentiamo padding a sinistra */
+    background: transparent;
+    border: none !important;
+    box-shadow: none !important;
+    font-family: "Perfect DOS VGA 437", "MS Gothic", "Terminal", "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.6 !important; /* Stessa altezza di linea dei numeri */
+    overflow-x: auto;
+    white-space: pre !important; /* Tornato a pre per evitare problemi di spazi */
+    word-break: normal !important;
+    word-spacing: normal !important;
+    height: 100% !important;
+    tab-size: 2 !important; /* Definiamo esplicitamente la dimensione delle tab */
+}
+
+.vscode-editor-code-container pre::before {
+    display: none;
+}
+
+.vscode-editor-code-container pre code {
+    @apply block;
+    @apply p-0;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    text-shadow: 0 0 3px currentColor;
+    font-family: "Perfect DOS VGA 437", "MS Gothic", "Terminal", "Courier New", monospace;
+    font-size: 14px;
+    line-height: 1.6 !important; /* Stessa altezza di linea dei numeri */
+    white-space: pre !important; /* Tornato a pre */
+    overflow-wrap: normal;
+    word-break: normal;
+    word-spacing: normal !important;
+    display: block; /* Cambiato da inline-block a block */
+}
+
+/* Forza l'applicazione degli stili ai token Prism.js */
+.vscode-editor code[class*="language-"],
+.vscode-editor code[class*="language-"] .token,
+.vscode-editor pre[class*="language-"],
+.vscode-editor pre[class*="language-"] .token {
+    display: inline !important;
+    background: transparent !important;
+    white-space: pre !important;
+    text-indent: 0 !important;
+}
+
+/* Assicura che le linee di codice siano formattate correttamente */
+.vscode-editor .token-line {
+    white-space: pre !important;
+    word-spacing: normal !important;
+}
+
+/* Impedisce alle interruzioni di riga all'interno del codice */
+.vscode-editor code[class*="language-"],
+.vscode-editor pre[class*="language-"] {
+    white-space: pre !important;
+    word-break: normal !important;
+    word-wrap: normal !important;
+    overflow-wrap: normal !important;
+}
+
+/* Creiamo una classe per gestire l'allineamento a runtime */
+.vscode-editor.line-sync .vscode-editor-line-number {
+    transform: translateY(0);
+    transition: transform 0.05s ease-out;
+}
+
+/* Aggiungiamo una scrollbar personalizzata per l'editor */
+.vscode-editor-code-container::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.vscode-editor-code-container::-webkit-scrollbar-track {
+    background: #000000;
+    border: 1px solid var(--color-trans-light-blue);
+}
+
+.vscode-editor-code-container::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+            45deg,
+            var(--color-trans-pink),
+            var(--color-trans-light-blue)
+    );
+    border: 1px solid #000000;
+    box-shadow: inset 0 0 3px rgba(255, 255, 255, 0.3);
+}
+
+.vscode-editor-code-container::-webkit-scrollbar-thumb:hover {
+    background: var(--color-trans-pink);
+}
+
+/* Stili per evidenziazione della sintassi - Tema Retro CRT */
+.vscode-editor .token.comment,
+.vscode-editor .token.prolog,
+.vscode-editor .token.doctype,
+.vscode-editor .token.cdata {
+    color: #5c8e43 !important; /* Verde scuro per commenti */
+    font-style: italic !important;
+    text-shadow: 0 0 3px currentColor !important;
+}
+
+.vscode-editor .token.namespace {
+    opacity: 0.7 !important;
+}
+
+.vscode-editor .token.string {
+    color: var(--color-retro-yellow) !important; /* Giallo per stringhe */
+    text-shadow: 0 0 5px currentColor !important;
+}
+
+.vscode-editor .token.punctuation,
+.vscode-editor .token.operator {
+    color: #cccccc; /* Grigio chiaro per punteggiatura */
+    text-shadow: 0 0 3px currentColor;
+}
+
+.vscode-editor .token.url,
+.vscode-editor .token.symbol,
+.vscode-editor .token.number,
+.vscode-editor .token.boolean,
+.vscode-editor .token.variable,
+.vscode-editor .token.constant,
+.vscode-editor .token.inserted {
+    color: #00ffaa; /* Verde acqua per numeri e booleani */
+    text-shadow: 0 0 5px currentColor;
+}
+
+.vscode-editor .token.atrule,
+.vscode-editor .token.keyword,
+.vscode-editor .token.attr-value,
+.vscode-editor .language-autohotkey .token.selector,
+.vscode-editor .language-json .token.boolean,
+.vscode-editor .language-json .token.number,
+.vscode-editor code[class*="language-css"] {
+    color: var(--color-trans-pink); /* Rosa per parole chiave */
+    text-shadow: 0 0 6px currentColor;
+    font-weight: bold;
+}
+
+.vscode-editor .token.function {
+    color: var(--color-trans-light-blue); /* Azzurro per funzioni */
+    text-shadow: 0 0 5px currentColor;
+}
+
+.vscode-editor .token.deleted,
+.vscode-editor .language-autohotkey .token.tag {
+    color: var(--color-retro-red); /* Rosso per elementi eliminati */
+    text-shadow: 0 0 5px currentColor;
+}
+
+.vscode-editor .token.selector,
+.vscode-editor .language-autohotkey .token.keyword {
+    color: #56d6c9; /* Turchese per selettori */
+    text-shadow: 0 0 5px currentColor;
+}
+
+.vscode-editor .token.important,
+.vscode-editor .token.bold {
+    font-weight: bold;
+}
+
+.vscode-editor .token.italic {
+    font-style: italic;
+}
+
+.vscode-editor .token.class-name,
+.vscode-editor .token.maybe-class-name {
+    color: #00ff99; /* Verde acqua chiaro per classi */
+    text-shadow: 0 0 6px currentColor;
+    font-weight: bold;
+}
+
+.vscode-editor .token.tag,
+.vscode-editor .token.selector {
+    color: var(--color-retro-green); /* Verde per tag */
+    text-shadow: 0 0 5px currentColor;
+}
+
+.vscode-editor .token.attr-name,
+.vscode-editor .token.property,
+.vscode-editor .token.regex,
+.vscode-editor .token.entity {
+    color: #00ccff; /* Azzurro per attributi */
+    text-shadow: 0 0 5px currentColor;
+}
+
+.vscode-editor .token.directive.tag .tag {
+    background: transparent;
+    color: var(--color-retro-green);
+    text-shadow: 0 0 5px currentColor;
+}
+
+.vscode-editor-title::before {
+    content: "[TERMINAL]";
+    display: inline-block;
+    margin-right: 10px;
+    color: var(--color-retro-yellow);
+    font-weight: bold;
+    font-size: 10px;
+    text-shadow: 0 0 5px currentColor;
+    letter-spacing: 1px;
+}
+
+/* Animazioni per effetti CRT */
+@keyframes scanlines {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 0 4px;
+    }
+}
+
+@keyframes crt-flicker {
+    0% {
+        opacity: 1;
+    }
+    2% {
+        opacity: 0.8;
+    }
+    4% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    52% {
+        opacity: 0.9;
+    }
+    54% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes text-flicker {
+    0% {
+        opacity: 1;
+    }
+    1% {
+        opacity: 0.85;
+    }
+    2% {
+        opacity: 1;
+    }
+    67% {
+        opacity: 1;
+    }
+    68% {
+        opacity: 0.7;
+    }
+    69% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Stili aggiuntivi per garantire l'allineamento perfetto */
+.token-line, .line {
+    display: block;
+    min-height: 1.6em; /* Stessa altezza di linea dei numeri */
+    line-height: 1.6 !important;
+}
+
+/* Assicuriamo che Prism.js non rovini l'allineamento */
+.vscode-editor pre[class*="language-"],
+.vscode-editor code[class*="language-"] {
+    tab-size: 4;
+    font-family: "Perfect DOS VGA 437", "MS Gothic", "Terminal", "Courier New", monospace !important;
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+}
+
+/* Creiamo una griglia virtuale per allineare meglio */
+.vscode-editor-content.grid-aligned {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+}
+
+.vscode-editor-content.grid-aligned .vscode-editor-line-numbers {
+    grid-column: 1;
+}
+
+.vscode-editor-content.grid-aligned .vscode-editor-code-container {
+    grid-column: 2;
+}
+
+/* Forzare l'allineamento delle linee di testo */
+.vscode-editor-code-container pre > code {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1.6em);
+}
+
+/* Media Query per responsive */
+@media (max-width: 640px) {
+    .vscode-editor-content {
+        flex-direction: column;
+    }
+
+    .vscode-editor-line-numbers {
+        display: none;
+    }
+
+    .vscode-editor-title {
+        text-align: left;
+        font-size: 12px;
+    }
+
+    .vscode-editor-copy-btn {
+        font-size: 10px;
+        padding: 2px 6px;
+    }
+}

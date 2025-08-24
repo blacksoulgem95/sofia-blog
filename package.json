@@ -4,6 +4,11 @@
   "scripts": {
     "start": "concurrently --prefix \"[{name}]\" --names \"vite,jigsaw\" --kill-others-on-fail \"npm run dev\" \"npm run delayed-client\"",
     "dev": "vite",
+    "dev:wsl": "vite --force",
+    "dev:poll": "vite --force --clearScreen false",
+    "dev:watch": "vite --watch",
+    "dev:css": "vite --watch 'source/**/*.css'",
+    "dev:clear": "node -e \"require('./vite.config.js').clearViteCache()\" && vite --force",
     "build": "vite build",
     "prod": "vite build --mode production",
     "sleep": "node -e \"setTimeout(() => process.exit(0), 15000)\"",
@@ -21,6 +26,7 @@
     "vite": "^6.2.1"
   },
   "dependencies": {
-    "nes.css": "^2.2.1"
+    "nes.css": "^2.2.1",
+    "prismjs": "^1.29.0"
   }
 }

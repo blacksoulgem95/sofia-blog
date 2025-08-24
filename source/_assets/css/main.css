@@ -2,6 +2,7 @@
 
 @import "./base.css" layer(components);
 @import "./blog.css" layer(components);
+@import "./vscode-editor.css" layer(components);
 @import "nes.css/css/nes.css" layer(components);
 
 @plugin "@tailwindcss/typography";
@@ -302,126 +303,6 @@
                 100px 100px,
                 0 0;
         }
-    }
-}
-
-/* Retro PS1/NES Syntax Highlighting */
-/* Pixelated code blocks with retro gaming aesthetics */
-
-:not(pre) > code[class*="language-"],
-pre[class*="language-"] {
-    background: repeating-linear-gradient(
-        0deg,
-        #000000 0px,
-        #0a0a0a 1px,
-        #000000 2px
-    );
-    color: var(--color-retro-green);
-    box-shadow:
-        inset 0 0 10px rgba(0, 255, 0, 0.3),
-        0 0 15px rgba(0, 255, 255, 0.2);
-    border: 4px solid var(--color-trans-light-blue);
-    font-family: var(--font-pixel);
-    text-shadow: 0 0 5px currentColor;
-    image-rendering: pixelated;
-}
-
-.token.operator,
-.token.entity,
-.token.url {
-    background: transparent;
-    color: var(--color-trans-light-blue);
-    text-shadow: 0 0 5px currentColor;
-}
-
-.token.comment {
-    color: var(--color-retro-gray);
-    font-style: italic;
-}
-
-.token.keyword {
-    color: var(--color-trans-pink);
-    font-weight: bold;
-    text-shadow: 0 0 5px currentColor;
-}
-
-.token.string,
-.language-css .token.string,
-.style .token.string {
-    color: var(--color-retro-green);
-    text-shadow: 0 0 3px currentColor;
-}
-
-.token.function {
-    color: var(--color-retro-yellow);
-    font-weight: bold;
-    text-shadow: 0 0 5px currentColor;
-}
-
-.token.number {
-    color: var(--color-retro-red);
-    text-shadow: 0 0 3px currentColor;
-}
-
-.token.punctuation {
-    color: var(--color-trans-white);
-}
-
-.token.boolean,
-.token.constant {
-    color: var(--color-retro-blue);
-    text-shadow: 0 0 5px currentColor;
-}
-
-.token.selector,
-.token.attr-name {
-    color: var(--color-trans-pink);
-    text-shadow: 0 0 3px currentColor;
-}
-
-.token.property {
-    color: var(--color-trans-light-blue);
-}
-
-/* Add retro computer terminal effect */
-pre[class*="language-"] {
-    position: relative;
-}
-
-pre[class*="language-"]::before {
-    content: "TERMINAL v1.0 - READY";
-    position: absolute;
-    top: -25px;
-    left: 0;
-    right: 0;
-    background: var(--color-retro-dark);
-    color: var(--color-retro-green);
-    padding: 5px 10px;
-    font-size: 10px;
-    border: 1px solid var(--color-trans-light-blue);
-    border-bottom: none;
-    text-shadow: 0 0 3px currentColor;
-}
-
-/* Blinking cursor effect */
-pre[class*="language-"]::after {
-    content: "█";
-    color: var(--color-retro-green);
-    animation: blink 1s infinite;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    text-shadow: 0 0 5px currentColor;
-}
-
-@keyframes blink {
-    0%,
-    50% {
-        opacity: 1;
-    }
-    51%,
-    100% {
-        opacity: 0;
     }
 }
 

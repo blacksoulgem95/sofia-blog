@@ -19,6 +19,10 @@
 
         @if ($page->production)
             <!-- Insert analytics code here -->
+            <script type="text/javascript" src="//embeds.iubenda.com/widgets/31e362dc-edd8-4952-8f9c-7c6a61a66393.js"></script>
+
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6063500575269047"
+                    crossorigin="anonymous"></script>
         @endif
 
         @viteRefresh()
@@ -94,7 +98,7 @@
                     <a href="https://x.com/blacksoulgem95"
                        class="retro-badge text-[var(--color-retro-yellow)] hover:text-[var(--color-trans-pink)] inline-flex items-center gap-2"
                        title="X (Twitter) Profile" target="_blank" rel="noopener">
-                        <i class="nes-icon twitter"></i> TWITTER
+                        <i class="nes-icon twitter"></i> X
                     </a>
                 </div>
 
@@ -110,6 +114,32 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="mt-4 flex flex-col md:flex-row justify-center items-center gap-2 text-xs">
+                    <a href="https://www.iubenda.com/privacy-policy/17758942" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe" title="Privacy Policy">Privacy Policy</a>
+                    <span class="hidden md:block">•</span>
+                    <a href="https://www.iubenda.com/privacy-policy/17758942/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe" title="Cookie Policy">Cookie Policy</a>
+                </div>
+
+                @if ($page->production)
+                    <script type="text/javascript">
+                        (function (w,d) {
+                            var loader = function () {
+                                var s = d.createElement("script"),
+                                    tag = d.getElementsByTagName("script")[0];
+                                s.src = "https://cdn.iubenda.com/iubenda.js";
+                                tag.parentNode.insertBefore(s, tag);
+                            };
+                            if (w.addEventListener) {
+                                w.addEventListener("load", loader, false);
+                            } else if (w.attachEvent) {
+                                w.attachEvent("onload", loader);
+                            } else {
+                                w.onload = loader;
+                            }
+                        })(window, document);
+                    </script>
+                @endif
             </div>
         </footer>
 

@@ -6,16 +6,27 @@ date: 2022-12-01
 description: Angular has a fantastic way of setting configurations for our application if our application has only one company as its users. But, what if we need to deploy our application, with different variables each time?
 cover_image: /assets/images/angular-env/cover.jpg
 featured: false
-categories: [angular, configuration, environment, environments, saas]
+categories: [ angular, configuration, environment, environments, saas ]
 ---
 
-<p>Angular has a fantastic way of setting configurations for our application if our application has only one company as its users. But, what if we need to deploy our application, with different variables each time? (Like in a white-labeled SaaS deployment or on-prem deployment).</p>
+Angular is fantastic when it comes to managing configurations—**as long as your app has only one customer, one setup,
+and one deployment target.** In that scenario, life is simple: you define your `environment.ts` file, Angular swaps it
+during build time, and you’re good to go.
 
-## How Angular Env works
+But what if you’re building a **multi-tenant SaaS**, or deploying the same app to **different companies with slightly
+different configurations** (like different API endpoints, login URLs, or feature flags)? Suddenly, your neat setup turns
+into a mess of duplicated files. And let’s be honest—**no one wants to maintain 2000 environment files** just because
+each client has a different backend URL.
 
-<p>Angular works through the magic of the <code>src/environments/environment.ts</code> file, which is substituted every time with the correct version, which lives alongside it.</p>
+Let’s see how we can fix this problem with a little help from **dotenv** and **Handlebars**.
 
-<p>If you deep dive into the configuration of our angular.json file you will notice this:</p>
+---
+
+## How Angular Environments Work
+
+Out of the box, Angular uses the **`src/environments/environment.ts`** file to manage environment variables.
+
+When you look at your `angular.json`, you’ll see something like this:
 
 ```json
 {
@@ -36,91 +47,113 @@ categories: [angular, configuration, environment, environments, saas]
 }
 ```
 
-<p>As you see, when we deploy for a specific environment, Angular copies its environment file and uses it to substitute with the original one, and will be taken by the rest of the application for processing.</p>
+What’s happening here is simple: when you build the app for `development`, Angular **replaces** the default
+`environment.ts` with `environment.dev.ts`. When you build for production, it does the same with `environment.prod.ts`,
+and so on.
 
-## But I can’t have 2000 configuration files around!
+That’s fine when you have a handful of environments. But if you’re building a **white-labeled SaaS** or an **on-premise
+application**, suddenly you could end up with dozens—or even hundreds—of environment files. And no one wants that.
 
-<p>Exactly! That’s the problem we’re going to solve right now.</p>
+---
 
-<p>We will need two (dev) dependencies tho:</p>
+## The Problem: Too Many Files
 
-```json
-dotenv handlebars
-```
+Here’s the real pain:
 
-<p>You can simply install them through the following code:</p>
+* Every new client might mean another environment file.
+* Changing a common variable means editing multiple files.
+* Your repo quickly becomes cluttered.
 
-```json
+We need a **dynamic way** to generate environment files at build time, instead of manually creating them all.
+
+---
+
+## Step 1: Install the Tools
+
+We’ll use two (dev) dependencies:
+
+```bash
 npm i --save-dev dotenv handlebars
 ```
 
-## Creating our configuration template
+* **dotenv** lets us load variables from a `.env` file into `process.env`.
+* **Handlebars** is a templating engine that makes it easy to generate files with placeholders.
 
-<p>In the <code>src/environments</code> folder we will create a <code>environment.hbs</code> file, with the following content:</p>
+---
+
+## Step 2: Create a Configuration Template
+
+Inside `src/environments`, create a file called `environment.hbs`:
 
 ```javascript
 export const environment = {
-  production: {{PRODUCTION}},
-  apiURL: '{{BACKEND_URL}}',
-  authURL: '{{AUTH_URL}}'
+    production: {
+{
+    PRODUCTION
+}
+},
+apiURL: '{{BACKEND_URL}}',
+    authURL
+:
+'{{AUTH_URL}}'
 }
 ```
 
-<p>Obviously, feel free to adapt it to your needs, remember to refer to the handlebars documentation, which will come quite handy if you’re new to handlebars templating engine.</p>
+This is just like a normal Angular environment file, but with **placeholders** (`{{PRODUCTION}}`, `{{BACKEND_URL}}`,
+etc.) instead of hardcoded values.
 
-## Parsing the template
+You can add as many keys as you need—feature flags, service URLs, tenant IDs—whatever your project requires.
 
-<p>Now comes the fun part, in the root of your project, let’s create a <code>env-config.js</code> file that looks like the following:</p>
+---
+
+## Step 3: Parse the Template
+
+Now the fun part: let’s generate our actual `environment.ts` from this template.
+
+In your project root, create a file called `env-config.js`:
 
 ```javascript
 require('dotenv')
 const path = require('path')
 const fs = require('fs')
 const hbs = require('handlebars')
+
 const envPath = path.join(__dirname, 'src', 'environments')
 const templateFilePath = path.join(envPath, 'environment.hbs')
 const environmentFilePath = path.join(envPath, 'environment.ts')
-const template = hbs.compile(fs.readFileSync(templateFilePath, { encoding: 'utf-8' }))
+
+const template = hbs.compile(
+    fs.readFileSync(templateFilePath, {encoding: 'utf-8'})
+)
+
 const data = {
-  PRODUCTION: process.env.PRODUCTION || false,
-  BACKEND_URL: process.env.BACKEND_URL || 'http://localhost:3000',
-  AUTH_URL: process.env.AUTH_URL || 'http://localhost:3000/auth'
+    PRODUCTION: process.env.PRODUCTION || false,
+    BACKEND_URL: process.env.BACKEND_URL || 'http://localhost:3000',
+    AUTH_URL: process.env.AUTH_URL || 'http://localhost:3000/auth'
 }
-fs.writeFileSync(environmentFilePath, template(data), { encoding: 'utf-8' })
+
+fs.writeFileSync(environmentFilePath, template(data), {encoding: 'utf-8'})
 ```
 
-<p>What does it do? Let’s go through it together.</p>
+**What’s happening here?**
 
-<ol>
-  <li>Loads the <code>dotenv</code> library, which will read our <code>.env</code> file in our local machines and feed it into the <code>process.env</code> variable.</li>
-  <li>Loads our <code>environment.hbs</code> template file and feeds it into the handlebars <code>compile</code> API, which will return us a function that we can later use to fill in the gaps.</li>
-  <li>Configures the data we need to fill in our template. As you might notice, the keys in the object match the placeholders in the handlebars template (<code>{{PRODUCTION}}</code>, etc.). You can also configure default values.</li>
-  <li>Sends the data to the template (<code>template(data)</code>), then saves the content to <code>src/environments/environment.ts</code>.</li>
-</ol>
+1. `dotenv` loads values from your `.env` file into `process.env`.
+2. We load our `environment.hbs` template and compile it with Handlebars.
+3. We define the data we want to inject (reading from `process.env`, with fallbacks).
+4. We run the template with the data, then save the result as `src/environments/environment.ts`.
 
-<p>And voilà! Our environment file is ready for our custom n-th environment!</p>
+The end result: **one generated environment file, customized for your build.**
 
-## Processing the template at each build
+---
 
-<p>We need to create a new script in our <code>package.json</code> file, let’s call it <code>config</code>.</p>
+## Step 4: Run It During Builds
+
+We now need to make sure the script runs before each build or serve.
+
+Update your `package.json` like this:
 
 ```json
 {
-  ...
-  "scripts": {
-    "ng": "ng",
-    "config": "node env-config.js",
-    ...
-  }
-  ...
-}
-```
-
-<p>And now, we need to refer to it every time we build or need to serve our application:</p>
-
-```json
-{
-  ...
   "scripts": {
     "ng": "ng",
     "config": "node env-config.js",
@@ -128,12 +161,25 @@ fs.writeFileSync(environmentFilePath, template(data), { encoding: 'utf-8' })
     "build": "npm run config && ng build --configuration=production --output-hashing=all",
     "build-dev": "npm run config && ng build --configuration=development --output-hashing=all",
     "build-local": "npm run config && ng build --configuration=local",
-    "watch": "npm run config && ng build --watch --configuration local",
-    "test": "npm run config && ng test",
-    ...
+    "watch": "npm run config && ng build --watch --configuration=local",
+    "test": "npm run config && ng test"
   }
-  ...
 }
 ```
 
-<p>And here, folks, is how we parametrize the environment of an Angular application through the environment variables of the machines that build it.</p>
+Now, every time you run `npm run build` or `npm start`, the config script will run first, generating the right
+`environment.ts` from your `.env` file.
+
+---
+
+## The Payoff
+
+With this setup:
+
+* You only maintain **one template file** (`environment.hbs`).
+* Each machine, CI/CD pipeline, or deployment server can inject its own environment variables.
+* You avoid an explosion of environment files while keeping builds clean and consistent.
+
+In short, you’ve turned Angular’s environment system into a **flexible, dynamic configuration pipeline**.
+
+No more clutter, no more duplicated files. Just one template, one script, and as many environments as you need.

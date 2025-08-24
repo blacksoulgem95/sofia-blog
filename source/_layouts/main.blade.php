@@ -40,7 +40,7 @@
         </style>
     </head>
 
-    <body class="flex flex-col justify-between min-h-screen text-white leading-normal font-sans bg-sparkly">
+    <body class="flex flex-col justify-between items-center min-h-screen text-white leading-normal font-sans bg-sparkly">
         <header class="nes-container is-dark flex items-center bg-black/70 border-b-4 border-[var(--color-trans-pink)] h-24 py-4 retro-header pixel-border" role="banner" style="background-image: url('https://example.com/retro-bg.gif'); background-repeat: repeat; font-family: 'Comic Sans MS', cursive; color: lime; text-align: center;">
             <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
                 <div class="flex items-center">
@@ -63,7 +63,7 @@
 
         @include('_nav.menu-responsive')
 
-        <main role="main" class="nes-container is-dark is-rounded flex-auto w-full container max-w-4xl mx-auto border-x-4 border-b-4 border-[var(--color-trans-pink)] px-8 py-12 mb-8 bg-black/70 pixel-border" style="text-align: center;">
+        <main role="main" class="nes-container is-dark is-rounded flex-auto w-full max-w-4xl mx-auto border-x-4 border-b-4 border-[var(--color-trans-pink)] px-8 py-12 mb-8 bg-black/70 pixel-border">
             @yield('body')
         </main>
 

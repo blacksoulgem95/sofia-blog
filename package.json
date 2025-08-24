@@ -2,12 +2,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "concurrently --prefix \"[{name}]\" --names \"vite,jigsaw\" --kill-others-on-fail \"npm run dev\" \"vendor/bin/jigsaw serve\"",
+    "start": "concurrently --prefix \"[{name}]\" --names \"vite,jigsaw\" --kill-others-on-fail \"npm run dev\" \"npm run delayed-client\"",
     "dev": "vite",
     "build": "vite build",
-    "prod": "vite build --mode production"
+    "prod": "vite build --mode production",
+    "sleep": "node -e \"setTimeout(() => process.exit(0), 15000)\"",
+    "delayed-client": "npm run sleep && npm run client",
+    "client": "cd build_local && php -S localhost:8000"
   },
   "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.1.8",
     "@tighten/jigsaw-vite-plugin": "^1.0.0",
     "alpinejs": "^3.14.1",

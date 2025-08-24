@@ -4,6 +4,8 @@
 @import "./blog.css" layer(components);
 @import "nes.css/css/nes.css" layer(components);
 
+@plugin "@tailwindcss/typography";
+
 @layer base {
     :root {
         --font-sans: "Courier New", Courier, monospace;
@@ -414,5 +416,29 @@ pre[class*="language-"]::after {
     51%,
     100% {
         opacity: 0;
+    }
+}
+
+/* Tailwind Typography: colori per il blog */
+@layer components {
+    .prose {
+        --tw-prose-body: var(--color-trans-white);
+        --tw-prose-headings: var(--color-trans-white);
+        --tw-prose-links: var(--color-trans-pink);
+        color: var(--color-trans-white);
+    }
+
+    .prose :where(a):not(:where([class~="not-prose"] *)) {
+        color: var(--color-trans-pink);
+        text-decoration-color: var(--color-trans-pink);
+    }
+
+    .prose :where(a:hover):not(:where([class~="not-prose"] *)) {
+        color: var(--color-trans-pink);
+        text-decoration-color: var(--color-trans-pink);
+    }
+
+    .prose :where(a:visited):not(:where([class~="not-prose"] *)) {
+        color: var(--color-trans-pink);
     }
 }

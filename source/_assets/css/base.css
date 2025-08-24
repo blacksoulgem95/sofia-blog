@@ -203,7 +203,6 @@ h6 {
 }
 
 hr {
-    @apply my-12;
     @apply rounded-none;
     border: none;
     height: 8px;
@@ -222,6 +221,8 @@ hr {
         0 0 15px var(--color-trans-pink),
         0 0 25px var(--color-trans-light-blue);
     position: relative;
+    @apply mt-12 !important;
+    @apply mb-12 !important;
 }
 
 hr::before {

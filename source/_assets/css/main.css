@@ -22,12 +22,10 @@
                 #000000 3px
         );
 
-        /* Retro Gaming Colors */
-        --color-trans-light-blue: #00ffff; /* Bright cyan */
-        --color-trans-pink: #ff00ff; /* Magenta */
+        /* Colori principali */
+        --color-trans-light-blue: #00ffff;
+        --color-trans-pink: #ff00ff;
         --color-trans-white: #ffffff;
-
-        /* Additional PS1/NES colors */
         --color-retro-green: #00ff00;
         --color-retro-yellow: #ffff00;
         --color-retro-red: #ff0000;
@@ -35,7 +33,7 @@
         --color-retro-dark: #1a1a1a;
         --color-retro-gray: #808080;
 
-        /* Low-poly pattern variables */
+        /* Pattern variables */
         --low-poly-size: 20px;
         --low-poly-color1: rgba(0, 255, 255, 0.1);
         --low-poly-color2: rgba(255, 0, 255, 0.1);
@@ -82,7 +80,6 @@
         animation: low-poly-shift 20s linear infinite;
     }
 
-    /* Retro CRT screen effect with animation */
     body::before {
         content: "";
         position: fixed;
@@ -190,6 +187,33 @@
         border-width: 4px;
     }
 
+    .retro-text-glow {
+        text-shadow: 0 0 5px currentColor,
+        0 0 10px currentColor,
+        0 0 15px currentColor,
+        0 0 20px currentColor;
+        animation: retro-glitch 0.3s infinite;
+        animation-play-state: paused;
+    }
+
+    .retro-text-glow:hover {
+        animation-play-state: running;
+    }
+
+    .nes-container {
+        background: var(--color-retro-dark);
+        border: 4px solid var(--color-trans-pink);
+        box-shadow: 0 0 15px var(--color-trans-light-blue);
+        padding: 20px;
+        margin: 20px 0;
+    }
+
+    .nes-btn {
+        font-family: var(--font-pixel);
+        image-rendering: pixelated;
+        animation: retro-pulse 1.5s infinite;
+    }
+
     @keyframes retro-pulse {
         0% {
             text-shadow: 0 0 3px currentColor,
@@ -238,33 +262,6 @@
         }
     }
 
-    .retro-text-glow {
-        text-shadow: 0 0 5px currentColor,
-        0 0 10px currentColor,
-        0 0 15px currentColor,
-        0 0 20px currentColor;
-        animation: retro-glitch 0.3s infinite;
-        animation-play-state: paused;
-    }
-
-    .retro-text-glow:hover {
-        animation-play-state: running;
-    }
-
-    .nes-container {
-        background: var(--color-retro-dark);
-        border: 4px solid var(--color-trans-pink);
-        box-shadow: 0 0 15px var(--color-trans-light-blue);
-        padding: 20px;
-        margin: 20px 0;
-    }
-
-    .nes-btn {
-        font-family: var(--font-pixel);
-        image-rendering: pixelated;
-        animation: retro-pulse 1.5s infinite;
-    }
-
     @keyframes scanlines {
         0% {
             background-position: 0 0;
@@ -288,9 +285,7 @@
     }
 }
 
-/* Tailwind Typography: colori per il blog */
 @layer components {
-    /* Regola globale per i blocchi di codice Prism.js */
     [class*="language-"],
     pre[class*="language-"],
     code[class*="language-"] {
@@ -299,7 +294,6 @@
         letter-spacing: normal !important;
     }
 
-    /* Fix specifico per il posizionamento dei token di Prism */
     code[class*="language-"] .token:first-child {
         margin-left: 0 !important;
         padding-left: 0 !important;
@@ -308,13 +302,11 @@
         left: 0 !important;
     }
 
-    /* Fix specifico per il problema di indentazione di Prism */
     code[class*="language-"],
     code[class*="language-"] * {
         text-indent: 0 !important;
     }
 
-    /* Assicurarsi che tutti i token di Prism non abbiano indentazione */
     .token {
         text-indent: 0 !important;
         margin-left: 0 !important;
@@ -342,7 +334,6 @@
         color: var(--color-trans-pink);
     }
 
-      /* Stile aggiuntivo per il codice inline all'interno di elementi con classe prose */
     .prose code,
     .prose-invert code,
     *[class*="prose"] code {

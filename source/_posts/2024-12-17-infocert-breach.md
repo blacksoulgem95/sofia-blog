@@ -9,8 +9,8 @@ featured: false
 categories: [ privacy, id, identity, security, phishing, data, data breach, security breach, Cybersecurity, Digital identity, SPID, Data theft ]
 ---
 
-Il 27 dicembre 2024, **InfoCert** — uno dei principali provider europei di **certificazione digitale**, **SPID** e *
-*gestione documentale** — è stata vittima di un grave **attacco informatico**. Il breach ha portato all’esposizione dei
+Il 27 dicembre 2024, **InfoCert** — uno dei principali provider europei di **certificazione digitale**, **SPID** e
+**gestione documentale** — è stata vittima di un grave **attacco informatico**. Il breach ha portato all’esposizione dei
 dati personali di circa **5,5 milioni di utenti**, suscitando preoccupazioni sulla sicurezza delle identità digitali in
 Italia e sulla solidità delle infrastrutture che le supportano.
 

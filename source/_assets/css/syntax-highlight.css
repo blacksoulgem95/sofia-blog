@@ -1,6 +1,3 @@
-/* Retro PS1/NES Syntax Highlighting */
-/* Pixelated code blocks with retro gaming aesthetics */
-
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
     background: repeating-linear-gradient(

@@ -41,9 +41,11 @@
             <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
         @endif
 
-        <h1 class="leading-none mb-2 border-b-4 text-white font-black" style="text-shadow: 0 0 10px var(--color-retro-green), 0 0 15px var(--color-retro-green), 2px 2px 0 var(--color-trans-pink), 3px 3px 0 var(--color-trans-light-blue); border-image: linear-gradient(to right, var(--color-retro-green), var(--color-trans-pink)) 1;">{{ $page->title }}</h1>
+        <h1 class="leading-none mb-2 border-b-4 text-white font-black"
+            style="text-shadow: 0 0 10px var(--color-retro-green), 0 0 15px var(--color-retro-green), 2px 2px 0 var(--color-trans-pink), 3px 3px 0 var(--color-trans-light-blue); border-image: linear-gradient(to right, var(--color-retro-green), var(--color-trans-pink)) 1;">{{ $page->title }}</h1>
 
-        <p class="text-white text-xl md:mt-0 font-bold" style="text-shadow: 0 0 8px var(--color-trans-light-blue), 1px 1px 0 var(--color-trans-pink);">{{ $page->author }}
+        <p class="text-white text-xl md:mt-0 font-bold"
+           style="text-shadow: 0 0 8px var(--color-trans-light-blue), 1px 1px 0 var(--color-trans-pink);">{{ $page->author }}
             • {{ date('F j, Y', $page->date) }}</p>
 
         @if ($page->categories)
@@ -62,13 +64,30 @@
         </div>
 
         <div class="border-b mb-10 pb-4" v-pre>
+            <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6063500575269047"
+                    crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-6063500575269047"
+                 data-ad-slot="6754362956"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <div class="border-b mb-10 pb-4" v-pre>
             @include('_components.gravatar-hovercard')
         </div>
 
         <nav class="flex flex-col gap-4 text-sm md:text-base pixel-border p-4 bg-black/50">
             @if ($next = $page->getNext())
                 <div class="w-full">
-                    <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}" class="retro-button text-white font-bold block w-full text-center" style="text-shadow: 0 0 8px var(--color-retro-yellow), 1px 1px 0 var(--color-trans-pink); box-shadow: 0 0 10px var(--color-trans-light-blue); overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto; white-space: normal; display: flex; align-items: center; justify-content: center; min-height: 60px;">
+                    <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}"
+                       class="retro-button text-white font-bold block w-full text-center"
+                       style="text-shadow: 0 0 8px var(--color-retro-yellow), 1px 1px 0 var(--color-trans-pink); box-shadow: 0 0 10px var(--color-trans-light-blue); overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto; white-space: normal; display: flex; align-items: center; justify-content: center; min-height: 60px;">
                         <span class="inline-block mr-2">&LeftArrow;</span>
                         <span class="inline-block">{{ $next->title }}</span>
                     </a>
@@ -77,13 +96,29 @@
 
             @if ($previous = $page->getPrevious())
                 <div class="w-full">
-                    <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}" class="retro-button text-white font-bold block w-full text-center" style="text-shadow: 0 0 8px var(--color-retro-yellow), 1px 1px 0 var(--color-trans-pink); box-shadow: 0 0 10px var(--color-trans-light-blue); overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto; white-space: normal; display: flex; align-items: center; justify-content: center; min-height: 60px;">
+                    <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}"
+                       class="retro-button text-white font-bold block w-full text-center"
+                       style="text-shadow: 0 0 8px var(--color-retro-yellow), 1px 1px 0 var(--color-trans-pink); box-shadow: 0 0 10px var(--color-trans-light-blue); overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto; white-space: normal; display: flex; align-items: center; justify-content: center; min-height: 60px;">
                         <span class="inline-block">{{ $previous->title }}</span>
                         <span class="inline-block ml-2">&RightArrow;</span>
                     </a>
                 </div>
             @endif
         </nav>
+
+        <div class="mt-10" v-pre>
+            <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6063500575269047"
+                    crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-format="autorelaxed"
+                 data-ad-client="ca-pub-6063500575269047"
+                 data-ad-slot="3793975933"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
 
     </div>
 @endsection

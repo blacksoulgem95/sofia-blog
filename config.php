@@ -10,7 +10,7 @@ return [
     "siteAuthor" => "Sofia Vicedomini",
     "brevo_form_action" => "https://2df94f02.sibforms.com/serve/MUIFABEuu287s0js3XUQbPXGWdLHeVSQJAilWNX0hjZRj3gZrCCA5BXf7jixDBGtEr-yRNV8joHA3uvHJ9EEeTPf4AEWjI6we0umdIswpLxf5nge6stb0qleX2zASRJb-IV7rAPxjKhNxUAxh8gCvKZkYdfoYELOAGcwwmU5PDwEWXtK7m6B27JZkv1p2XlmL-7-kow-Q69PyWBy", // Hosted Brevo form action
     "turnstile_site_key" => "0x4AAAAAABiH0qGq8eNIC4nj", // Cloudflare Turnstile site key
-    "turnstile_language" => "it", // Turnstile language
+    "turnstile_language" => "en", // Turnstile language
 
     // collections
     "collections" => [

@@ -28,6 +28,10 @@
         ];
     @endphp
     <script type="application/ld+json">{!! json_encode(array_filter($jsonLd), JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
+    <meta property="og:image" content="{{ $seoImage }}">
+    @if (!empty($page->title))
+        <meta property="og:image:alt" content="{{ $page->title }} cover image">
+    @endif
 @endpush
 
 @section('body')

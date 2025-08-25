@@ -31,12 +31,54 @@ document.addEventListener('DOMContentLoaded', () => {
         // Aggiungi un attributo data-language per styling condizionale
         editorWrapper.setAttribute('data-language', language);
 
+        // Fix avanzato per l'indentazione sulla prima riga
+        setTimeout(() => {
+            const codeElements = editorWrapper.querySelectorAll('pre code');
+            codeElements.forEach(codeEl => {
+                // Assicurati che non ci sia indentazione
+                codeEl.style.textIndent = '0';
+                codeEl.style.paddingLeft = '0';
+                codeEl.style.marginLeft = '0';
+
+                // Se Prism ha già evidenziato, normalizza il primo token
+                const firstToken = codeEl.querySelector('.token:first-child');
+                if (firstToken) {
+                    firstToken.style.marginLeft = '0';
+                    firstToken.style.paddingLeft = '0';
+                    firstToken.style.textIndent = '0';
+                    firstToken.style.display = 'inline';
+                }
+
+                // Normalizza il contenuto testo
+                const codeContent = codeEl.innerHTML;
+                if (codeContent && codeContent.trim()) {
+                    // Se ci sono spazi iniziali, li rimuoviamo
+                    codeEl.innerHTML = codeContent.replace(/^(\s+)/, '');
+                }
+            });
+        }, 10);
+
+        // Secondo fix dopo che Prism ha completato l'evidenziazione
+        setTimeout(() => {
+            const codeElements = editorWrapper.querySelectorAll('pre code');
+            codeElements.forEach(codeEl => {
+                // Normalizza nuovamente dopo l'evidenziazione di Prism
+                const tokens = codeEl.querySelectorAll('.token');
+                if (tokens.length > 0) {
+                    tokens[0].style.marginLeft = '0';
+                    tokens[0].style.paddingLeft = '0';
+                    tokens[0].style.textIndent = '0';
+                    tokens[0].style.display = 'inline';
+                }
+            });
+        }, 300);
+
         // Crea la barra del titolo
         const titleBar = document.createElement('div');
         titleBar.className = 'vscode-editor-titlebar';
 
         // Crea un titolo più retro per il terminale
-        const fileTitle = language.toUpperCase();
+        const fileTitle = 'file';
 
         // Aggiungi i pulsanti di controllo
         titleBar.innerHTML = `

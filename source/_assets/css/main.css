@@ -10,18 +10,16 @@
 @layer base {
     :root {
         --font-sans: "Courier New", Courier, monospace;
-        --font-pixel:
-            "Press Start 2P", "Perfect DOS VGA 437", "MS Gothic", "Terminal",
-            "Courier New", monospace;
+        --font-pixel: "Press Start 2P", "Perfect DOS VGA 437", "MS Gothic", "Terminal",
+        "Courier New", monospace;
 
-        --shadow-search:
-            0 -1px 27px 0 rgba(0, 0, 0, 0.04), 0 4px 15px 0 rgba(0, 0, 0, 0.08);
+        --shadow-search: 0 -1px 27px 0 rgba(0, 0, 0, 0.04), 0 4px 15px 0 rgba(0, 0, 0, 0.08);
         --site-gradient-background: repeating-linear-gradient(
-            0deg,
-            #000000 0px,
-            #111111 1px,
-            #222222 2px,
-            #000000 3px
+                0deg,
+                #000000 0px,
+                #111111 1px,
+                #222222 2px,
+                #000000 3px
         );
 
         /* Retro Gaming Colors */
@@ -57,14 +55,13 @@
 
     body {
         font-family: var(--font-pixel);
-        background:
-            repeating-linear-gradient(
+        background: repeating-linear-gradient(
                 0deg,
                 rgba(0, 0, 0, 0.8) 0px,
                 rgba(26, 26, 26, 0.8) 2px,
                 rgba(0, 0, 0, 0.8) 4px
-            ),
-            repeating-linear-gradient(
+        ),
+        repeating-linear-gradient(
                 45deg,
                 var(--low-poly-color1) 0,
                 var(--low-poly-color1) var(--low-poly-size),
@@ -72,13 +69,12 @@
                 var(--low-poly-color2) calc(var(--low-poly-size) * 2),
                 var(--low-poly-color3) calc(var(--low-poly-size) * 2),
                 var(--low-poly-color3) calc(var(--low-poly-size) * 3)
-            ),
-            radial-gradient(circle at 50% 50%, #1a1a1a 0%, #000000 100%);
+        ),
+        radial-gradient(circle at 50% 50%, #1a1a1a 0%, #000000 100%);
         background-attachment: fixed;
-        background-size:
-            auto,
-            calc(var(--low-poly-size) * 3) calc(var(--low-poly-size) * 3),
-            cover;
+        background-size: auto,
+        calc(var(--low-poly-size) * 3) calc(var(--low-poly-size) * 3),
+        cover;
         color: var(--color-trans-white);
         text-rendering: geometricPrecision;
         -webkit-font-smoothing: none;
@@ -95,12 +91,12 @@
         width: 100%;
         height: 100%;
         background: repeating-linear-gradient(
-            0deg,
-            transparent 0px,
-            rgba(0, 255, 255, 0.02) 1px,
-            transparent 2px,
-            rgba(255, 0, 255, 0.02) 3px,
-            transparent 4px
+                0deg,
+                transparent 0px,
+                rgba(0, 255, 255, 0.02) 1px,
+                transparent 2px,
+                rgba(255, 0, 255, 0.02) 3px,
+                transparent 4px
         );
         pointer-events: none;
         z-index: 1;
@@ -111,19 +107,17 @@
 
 @layer utilities {
     .shadow-search {
-        box-shadow:
-            0 0 15px 5px var(--color-trans-light-blue),
-            0 0 25px 10px var(--color-trans-pink),
-            inset 0 0 10px rgba(0, 255, 255, 0.2);
+        box-shadow: 0 0 15px 5px var(--color-trans-light-blue),
+        0 0 25px 10px var(--color-trans-pink),
+        inset 0 0 10px rgba(0, 255, 255, 0.2);
         border: 2px solid var(--color-trans-light-blue);
         animation: retro-pulse 2s infinite alternate;
         image-rendering: pixelated;
     }
 
     .bg-sparkly {
-        background:
-            var(--site-gradient-background),
-            repeating-linear-gradient(
+        background: var(--site-gradient-background),
+        repeating-linear-gradient(
                 45deg,
                 var(--low-poly-color1) 0,
                 var(--low-poly-color1) var(--low-poly-size),
@@ -131,8 +125,8 @@
                 var(--low-poly-color2) calc(var(--low-poly-size) * 2),
                 var(--low-poly-color3) calc(var(--low-poly-size) * 2),
                 var(--low-poly-color3) calc(var(--low-poly-size) * 3)
-            ),
-            repeating-conic-gradient(
+        ),
+        repeating-conic-gradient(
                 from 0deg at 50% 50%,
                 #000000 0deg 45deg,
                 #1a1a1a 45deg 90deg,
@@ -142,11 +136,10 @@
                 #1a1a1a 225deg 270deg,
                 #000000 270deg 315deg,
                 #1a1a1a 315deg 360deg
-            );
-        background-size:
-            4px 4px,
-            calc(var(--low-poly-size) * 3) calc(var(--low-poly-size) * 3),
-            8px 8px;
+        );
+        background-size: 4px 4px,
+        calc(var(--low-poly-size) * 3) calc(var(--low-poly-size) * 3),
+        8px 8px;
         background-repeat: repeat;
         animation: retro-scroll 10s linear infinite;
     }
@@ -154,9 +147,8 @@
     .retro-button {
         background: linear-gradient(145deg, #333333, #1a1a1a);
         border: 3px solid var(--color-trans-light-blue);
-        box-shadow:
-            0 0 10px var(--color-trans-light-blue),
-            inset 0 0 5px rgba(0, 255, 255, 0.3);
+        box-shadow: 0 0 10px var(--color-trans-light-blue),
+        inset 0 0 5px rgba(0, 255, 255, 0.3);
         text-shadow: 0 0 5px currentColor;
         transition: all 0.1s ease;
         image-rendering: pixelated;
@@ -173,17 +165,15 @@
 
     .retro-button:hover {
         background: linear-gradient(145deg, #444444, #222222);
-        box-shadow:
-            0 0 15px var(--color-trans-pink),
-            inset 0 0 5px rgba(255, 0, 255, 0.3);
+        box-shadow: 0 0 15px var(--color-trans-pink),
+        inset 0 0 5px rgba(255, 0, 255, 0.3);
         transform: translateY(-1px);
     }
 
     .retro-button:active {
         transform: translateY(1px);
-        box-shadow:
-            0 0 5px var(--color-trans-light-blue),
-            inset 0 0 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 0 5px var(--color-trans-light-blue),
+        inset 0 0 10px rgba(0, 0, 0, 0.5);
         background: linear-gradient(145deg, #222222, #111111);
     }
 
@@ -196,36 +186,31 @@
                 var(--color-trans-pink) 4px,
                 var(--color-retro-green) 4px,
                 var(--color-retro-green) 6px
-            )
-            2;
+        ) 2;
         border-width: 4px;
     }
 
     @keyframes retro-pulse {
         0% {
-            text-shadow:
-                0 0 3px currentColor,
-                0 0 6px currentColor,
-                0 0 9px currentColor;
+            text-shadow: 0 0 3px currentColor,
+            0 0 6px currentColor,
+            0 0 9px currentColor;
         }
         100% {
-            text-shadow:
-                0 0 5px currentColor,
-                0 0 10px currentColor,
-                0 0 15px currentColor;
+            text-shadow: 0 0 5px currentColor,
+            0 0 10px currentColor,
+            0 0 15px currentColor;
         }
     }
 
     @keyframes retro-scroll {
         0% {
-            background-position:
-                0px 0px,
-                0px 0px;
+            background-position: 0px 0px,
+            0px 0px;
         }
         100% {
-            background-position:
-                32px 32px,
-                64px 64px;
+            background-position: 32px 32px,
+            64px 64px;
         }
     }
 
@@ -254,11 +239,10 @@
     }
 
     .retro-text-glow {
-        text-shadow:
-            0 0 5px currentColor,
-            0 0 10px currentColor,
-            0 0 15px currentColor,
-            0 0 20px currentColor;
+        text-shadow: 0 0 5px currentColor,
+        0 0 10px currentColor,
+        0 0 15px currentColor,
+        0 0 20px currentColor;
         animation: retro-glitch 0.3s infinite;
         animation-play-state: paused;
     }
@@ -292,22 +276,51 @@
 
     @keyframes low-poly-shift {
         0% {
-            background-position:
-                0 0,
-                0 0,
-                0 0;
+            background-position: 0 0,
+            0 0,
+            0 0;
         }
         100% {
-            background-position:
-                0 0,
-                100px 100px,
-                0 0;
+            background-position: 0 0,
+            100px 100px,
+            0 0;
         }
     }
 }
 
 /* Tailwind Typography: colori per il blog */
 @layer components {
+    /* Regola globale per i blocchi di codice Prism.js */
+    [class*="language-"],
+    pre[class*="language-"],
+    code[class*="language-"] {
+        text-indent: 0 !important;
+        white-space: pre !important;
+        letter-spacing: normal !important;
+    }
+
+    /* Fix specifico per il posizionamento dei token di Prism */
+    code[class*="language-"] .token:first-child {
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+        text-indent: 0 !important;
+        position: relative !important;
+        left: 0 !important;
+    }
+
+    /* Fix specifico per il problema di indentazione di Prism */
+    code[class*="language-"],
+    code[class*="language-"] * {
+        text-indent: 0 !important;
+    }
+
+    /* Assicurarsi che tutti i token di Prism non abbiano indentazione */
+    .token {
+        text-indent: 0 !important;
+        margin-left: 0 !important;
+        padding-left: 0 !important;
+    }
+
     .prose {
         --tw-prose-body: var(--color-trans-white);
         --tw-prose-headings: var(--color-trans-white);
@@ -327,5 +340,51 @@
 
     .prose :where(a:visited):not(:where([class~="not-prose"] *)) {
         color: var(--color-trans-pink);
+    }
+
+      /* Stile aggiuntivo per il codice inline all'interno di elementi con classe prose */
+    .prose code,
+    .prose-invert code,
+    *[class*="prose"] code {
+        @apply text-[var(--color-retro-green)];
+        background: repeating-linear-gradient(
+                0deg,
+                #000000 0px,
+                #0a0a0a 1px,
+                #000000 2px
+        );
+        border: 2px solid var(--color-trans-light-blue);
+        box-shadow: 0 0 8px rgba(0, 255, 255, 0.4),
+        inset 0 0 5px rgba(0, 255, 0, 0.2);
+        text-shadow: 0 0 3px currentColor;
+        position: relative;
+        display: inline-block;
+    }
+
+    .prose pre {
+        text-indent: 0 !important;
+    }
+
+    code.hljs {
+        @apply p-0;
+        @apply bg-transparent;
+        text-shadow: 0 0 3px currentColor;
+        text-indent: 0 !important;
+
+        & .hljs-comment {
+            color: var(--color-retro-gray);
+            font-style: italic;
+        }
+
+        & .hljs-keyword {
+            color: var(--color-trans-pink);
+            font-weight: bold;
+            text-shadow: 0 0 5px currentColor;
+        }
+
+        & .hljs-meta {
+            color: var(--color-trans-light-blue);
+            text-shadow: 0 0 3px currentColor;
+        }
     }
 }

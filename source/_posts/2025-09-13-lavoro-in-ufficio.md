@@ -48,7 +48,7 @@ Perché è un problema?
 
 Questo caos alimenta stress e frustrazione, aprendo la porta al burnout.
 
-## Call Infinite su Teams: Quando Collaborare Diventa Esauriente
+## Call Infinite su Teams: Collaborazione o Tortura di Gruppo?
 
 Tool come Teams o Zoom sono utili, ma quando ogni discussione si trasforma in una call – “Facciamo due minuti per allinearci” che diventano 45 – il gioco non vale la candela.
 

@@ -5,7 +5,7 @@ title: "Heading to TechEx Amsterdam – 24 & 25 September 🚀"
 date: 2025-08-24
 description: A quick update — I’ll be at TechEx Amsterdam this September. Two days of tech, APIs, and catching up with brilliant people in one of Europe’s best cities.
 cover_image: /assets/images/techex/2025-amsterdam.jpg
-featured: true
+featured: false
 categories: [ conference, events, Amsterdam, TechEx, APIs, backend ]
 ---
 

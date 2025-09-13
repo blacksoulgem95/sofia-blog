@@ -5,7 +5,7 @@ title: Building Static Sites with Jigsaw – Honest Review & GitHub Deploy Setup
 date: 2022-04-05
 description: A hands-on review of Jigsaw, the Laravel-based static site generator. Use cases, real-world setup, GitHub Actions deploy, and why I returned to Jigsaw after trying other solutions.
 cover_image: /assets/images/jigsaw.png
-featured: true
+featured: false
 categories: [ static websites, jigsaw, laravel, blade, github, github pages, TailwindCSS, markdown, blog, databaseless, devtools, Frontend, deployment automation, vite, jamstack ]
 ---
 

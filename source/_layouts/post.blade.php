@@ -37,8 +37,19 @@
 @section('body')
     <div class="container is-dark is-rounded mx-auto max-w-3xl w-full px-4 text-left prose prose-invert prose-a:text-[var(--color-trans-pink)]">
 
-        @if ($page->cover_image)
-            <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
+        @if ($page->cover_video)
+            <video src="{{ $page->cover_video }}"
+                   poster="{{ $page->cover_image }}"
+                   title="{{ $page->title }} cover video"
+                   class="mb-2 w-full h-auto object-cover"
+                   style="aspect-ratio:16/9;">
+                Your browser does not support the video tag.
+            </video>
+        @elseif ($page->cover_image)
+            <img src="{{ $page->cover_image }}"
+                 alt="{{ $page->title }} cover image"
+                 class="mb-2 w-full h-auto object-cover"
+                 style="aspect-ratio:16/9;">
         @endif
 
         <h1 class="leading-none mb-2 border-b-4 text-white font-black"

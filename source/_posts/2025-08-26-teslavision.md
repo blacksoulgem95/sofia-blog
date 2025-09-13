@@ -5,7 +5,7 @@ title: "The Hidden Dangers of Tesla Vision"
 date: 2025-08-25
 description: Tesla’s camera-only approach to self-driving is a bold leap, but it comes with serious risks that can’t be ignored. Let’s dive into why Tesla Vision might not be the flawless solution it’s hyped up to be.
 cover_image: /assets/images/tesla-vision/cover.jpg
-featured: true
+featured: false
 categories: [Tesla, AI, Vision, Self-driving, Cars, Safety]
 ---
 

@@ -4,7 +4,7 @@ section: content
 title: Il paradosso dei salari per i dev italiani
 date: 2025-09-12
 description: Un viaggio ironico e schietto nei salari dei dev italiani: perché guadagnano meno rispetto all’Europa? Con dati, differenze per ruolo, soluzioni e un pizzico di umorismo.
-cover_image: /assets/images/italian_dev_salary.jpg
+cover_image: /assets/images/italian_dev_salary/cover.jpg
 featured: true
 categories: [ IT, economia, sviluppo software, Italia, Europa, salari ]
 ---

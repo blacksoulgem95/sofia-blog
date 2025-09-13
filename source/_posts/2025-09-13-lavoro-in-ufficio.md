@@ -1,9 +1,9 @@
 ---
 extends: _layouts.post
 section: content
-title: Perché Obbligare i Team di Sviluppo a Lavorare in Ufficio È un Errore (e Come Evitarlo)
+title: "Perché Obbligare i Team di Sviluppo a Lavorare in Ufficio È un Errore (e Come Evitarlo)"
 date: 2025-09-13
-description: Un’analisi schietta su come la presenza obbligatoria in ufficio, la disorganizzazione e le call infinite su Teams danneggiano i team di sviluppo, portando al burnout. Con soluzioni pratiche per migliorare produttività e benessere.
+description: "Un’analisi schietta su come la presenza obbligatoria in ufficio, la disorganizzazione e le call infinite su Teams danneggiano i team di sviluppo, portando al burnout. Con soluzioni pratiche per migliorare produttività e benessere."
 cover_image: /assets/images/dev_burnout/cover.png
 cover_video: /assets/images/dev_burnout/cover.mp4
 featured: true

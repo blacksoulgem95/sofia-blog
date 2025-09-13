@@ -42,6 +42,7 @@
                    poster="{{ $page->cover_image }}"
                    title="{{ $page->title }} cover video"
                    class="mb-2 w-full h-auto object-cover"
+                   autoplay muted
                    style="aspect-ratio:16/9;">
                 Your browser does not support the video tag.
             </video>

@@ -3,8 +3,20 @@
 @section('body')
     @foreach ($posts->where('featured', true) as $featuredPost)
         <div class="w-full mb-6">
-            @if ($featuredPost->cover_image)
-                <img src="{{ $featuredPost->cover_image }}" alt="{{ $featuredPost->title }} cover image" class="mb-6">
+            @if ($page->cover_video)
+                <video src="{{ $page->cover_video }}"
+                       poster="{{ $page->cover_image }}"
+                       title="{{ $page->title }} cover video"
+                       class="mb-6 w-full h-auto object-cover"
+                       autoplay muted
+                       style="aspect-ratio:16/9;">
+                    Your browser does not support the video tag.
+                </video>
+            @elseif ($page->cover_image)
+                <img src="{{ $page->cover_image }}"
+                     alt="{{ $page->title }} cover image"
+                     class="mb-6 w-full h-auto object-cover"
+                     style="aspect-ratio:16/9;">
             @endif
 
             <p class="text-pink-400 font-medium my-2">

@@ -9,9 +9,6 @@ featured: true
 categories: [  ]
 ---
 
-```markdown
-# The Human Side of AI: Navigating Automation and Burnout
-
 ## Introduction: AI as a Double-Edged Sword in Remote Work
 
 Artificial Intelligence (AI) is reshaping the way we work—especially in remote-first environments. From automating repetitive tasks to optimizing workflows, AI promises efficiency, scalability, and cost savings. Yet, beneath the surface of these benefits lies a critical question: *How do we harness AI without accelerating burnout, isolation, or job dissatisfaction?*
@@ -162,5 +159,5 @@ AI in remote work isn’t a question of *if* but *how*. The goal isn’t to maxi
 The future of work isn’t about humans vs. machines. It’s about **creating environments where both can thrive**. As Luca from Agenzia Creativa put it: *"We don’t work for AI. AI works for us—and that includes our well-being."*
 
 ---
-**Your Turn**: How is your team using AI? What’s working—and what’s causing friction? Share your experiences in the comments or [tweet @SofiaVicedomini](https://twitter.com/SofiaVicedomini). Let’s build a playbook for human-centered automation, together.
-```
+
+**Your Turn**: How is your team using AI? What’s working—and what’s causing friction? Share your experiences retweeting this post!

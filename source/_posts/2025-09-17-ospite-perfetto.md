@@ -1,4 +1,14 @@
-# Il mestiere perduto dell’ospite perfetto  
+---
+extends: _layouts.post
+section: content
+title: Il mestiere perduto dell’ospite perfetto
+date: 2025-09-17
+description: "Una volta il padrone di casa aveva un ruolo fondamentale: presentare gli invitati tra loro, creando connessioni autentiche. Oggi questa tradizione si è persa, sostituita da algoritmi e app di dating che spesso riducono le persone a profili da scorrere."
+cover_image: /assets/images/ospite-perfetto/cover.png
+cover_video: /assets/images/ospite-perfetto/cover.mp4
+featured: true
+categories: [ società, relazioni, cultura digitale, comunità, costume ]
+---
 
 C’è stato un tempo in cui andare a una festa non significava solo bere un bicchiere, scambiare due chiacchiere e aspettare che il tempo passasse. Il padrone di casa aveva un ruolo preciso, quasi un’arte: non era solo colui che apriva la porta, ma un regista silenzioso delle connessioni tra le persone.  
 

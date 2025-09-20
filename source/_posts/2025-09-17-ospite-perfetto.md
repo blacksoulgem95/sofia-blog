@@ -38,4 +38,6 @@ Ritrovare l’arte dell’introduzione significa rimettere al centro la cura del
 
 È un gesto semplice, ma rivoluzionario, soprattutto oggi: sposta l’attenzione dalla performance estetica alla presenza autentica. Non siamo prodotti da scorrere con un dito, ma persone da conoscere.  
 
-Forse è tempo di riprendere questa pratica, alle feste, agli eventi, nei nostri cerchi sociali. Perché la comunità si costruisce così: non con uno swipe, ma con una presentazione sincera e un sorriso condiviso.  
+Forse è tempo di riprendere questa pratica, alle feste, agli eventi, nei nostri cerchi sociali. Perché la comunità si costruisce così: non con uno swipe, ma con una presentazione sincera e un sorriso condiviso.
+
+<video src="/assets/images/ospite-perfetto/cover.mp4" autoplay controls playsinline></video>

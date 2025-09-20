@@ -1,0 +1,16 @@
+{
+  "source/_assets/css/main.css": {
+    "file": "assets/main-DensI53U.css",
+    "src": "source/_assets/css/main.css",
+    "isEntry": true
+  },
+  "source/_assets/js/main.js": {
+    "file": "assets/main-DxzBwRth.js",
+    "name": "main",
+    "src": "source/_assets/js/main.js",
+    "isEntry": true,
+    "css": [
+      "assets/main-DensI53U.css"
+    ]
+  }
+}

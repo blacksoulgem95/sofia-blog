@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        
+        <meta name="description" content="Don’t Panic! If navigating Europe’s digital identity systems feels like hitchhiking across the galaxy, fear not—eIDAS (Electronic Identification, Authentication and Trust Services) is the friendly guide ensuring you won’t lose your way. In this casual tour, we’ll demystify how eIDAS works, explain its key components (from electronic IDs to digital signatures and trust providers), and show how it makes life easier across the EU. Grab your towel (metaphorically) and let’s dive in!">
+        <meta name="robots" content="index,follow">
+        <link rel="canonical" href="https://blog.sofiavicedomini.me/blog/2024-11-01-eidas">
+
+        <meta property="og:site_name" content="Sofia&#039;s Blog"/>
+        <meta property="og:title" content="The Hitchhiker’s Guide to eIDAS: Navigating Europe’s Digital Identity Landscape | Sofia&#039;s Blog"/>
+        <meta property="og:type" content="article" />
+        <meta property="og:url" content="https://blog.sofiavicedomini.me/blog/2024-11-01-eidas"/>
+        <meta property="og:description" content="Don’t Panic! If navigating Europe’s digital identity systems feels like hitchhiking across the galaxy, fear not—eIDAS (Electronic Identification, Authentication and Trust Services) is the friendly guide ensuring you won’t lose your way. In this casual tour, we’ll demystify how eIDAS works, explain its key components (from electronic IDs to digital signatures and trust providers), and show how it makes life easier across the EU. Grab your towel (metaphorically) and let’s dive in!" />
+        <meta property="og:image" content="https://blog.sofiavicedomini.me/assets/images/EIDAS/cover.jpg" />
+        <meta property="og:image:alt" content="The Hitchhiker’s Guide to eIDAS: Navigating Europe’s Digital Identity Landscape | Sofia&#039;s Blog" />
+
+                    <meta property="article:published_time" content="" />
+            <meta property="article:author" content="Sofia Vicedomini" />
+        
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="The Hitchhiker’s Guide to eIDAS: Navigating Europe’s Digital Identity Landscape | Sofia&#039;s Blog" />
+        <meta name="twitter:description" content="Don’t Panic! If navigating Europe’s digital identity systems feels like hitchhiking across the galaxy, fear not—eIDAS (Electronic Identification, Authentication and Trust Services) is the friendly guide ensuring you won’t lose your way. In this casual tour, we’ll demystify how eIDAS works, explain its key components (from electronic IDs to digital signatures and trust providers), and show how it makes life easier across the EU. Grab your towel (metaphorically) and let’s dive in!" />
+        <meta name="twitter:image" content="https://blog.sofiavicedomini.me/assets/images/EIDAS/cover.jpg" />
+        <meta name="twitter:site" content="@blacksoulgem95" />
+        <meta name="twitter:creator" content="@blacksoulgem95" />
+
+        <meta name="author" content="Sofia Vicedomini" />
+
+        <title>The Hitchhiker’s Guide to eIDAS: Navigating Europe’s Digital Identity Landscape | Sofia&#039;s Blog</title>
+
+        <link rel="home" href="https://blog.sofiavicedomini.me">
+        <link rel="icon" href="/favicon.ico">
+        <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="Sofia&#039;s Blog Atom Feed">
+
+        <script type="application/ld+json">
+        {"<?php $__contextArgs = [];\nif (context()->has($__contextArgs[0])) :\nif (isset($value)) { $__contextPrevious[] = $value; }\n$value = context()->get($__contextArgs[0]); ?>":"https://schema.org","@type":"WebSite","name":"Sofia's Blog","url":"https://blog.sofiavicedomini.me","inLanguage":"en","description":"Don’t Panic! If navigating Europe’s digital identity systems feels like hitchhiking across the galaxy, fear not—eIDAS (Electronic Identification, Authentication and Trust Services) is the friendly guide ensuring you won’t lose your way. In this casual tour, we’ll demystify how eIDAS works, explain its key components (from electronic IDs to digital signatures and trust providers), and show how it makes life easier across the EU. Grab your towel (metaphorically) and let’s dive in!","sameAs":["https://sofiavicedomini.me","https://linkedin.com/in/sofiavicedomini","https://github.com/blacksoulgem95","https://x.com/blacksoulgem95"]}
+        </script>
+
+                <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"The Hitchhiker’s Guide to eIDAS: Navigating Europe’s Digital Identity Landscape","description":"Don’t Panic! If navigating Europe’s digital identity systems feels like hitchhiking across the galaxy, fear not—eIDAS (Electronic Identification, Authentication and Trust Services) is the friendly guide ensuring you won’t lose your way. In this casual tour, we’ll demystify how eIDAS works, explain its key components (from electronic IDs to digital signatures and trust providers), and show how it makes life easier across the EU. Grab your towel (metaphorically) and let’s dive in!","image":"https://blog.sofiavicedomini.me/assets/images/EIDAS/cover.jpg","author":{"@type":"Person","name":"Sofia Vicedomini"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://blog.sofiavicedomini.me/blog/2024-11-01-eidas"}}</script>
+    <meta property="og:image" content="https://blog.sofiavicedomini.me/assets/images/EIDAS/cover.jpg">
+    
+                    <!-- Insert analytics code here -->
+            <script type="text/javascript" src="//embeds.iubenda.com/widgets/31e362dc-edd8-4952-8f9c-7c6a61a66393.js"></script>
+
+            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6063500575269047"
+                    crossorigin="anonymous"></script>
+        
+                <link rel="stylesheet" href="/assets/build/assets/main-DensI53U.css">
+        <script defer type="module" src="/assets/build/assets/main-DxzBwRth.js"></script>
+        <style>
+        .blink {
+            animation: blink 1s steps(2, start) infinite;
+        }
+        @keyframes blink {
+            to { visibility: hidden; }
+        }
+        .retro-header {
+            text-shadow: 0 0 5px lime, 0 0 10px cyan;
+        }
+        .pixelated {
+            image-rendering: pixelated;
+        }
+        </style>
+    </head>
+
+    <body class="flex flex-col justify-between items-center min-h-screen text-white leading-normal font-sans bg-sparkly">
+        <header class="nes-container is-dark flex items-center bg-black/70 border-b-4 border-[var(--color-trans-pink)] md:h-24 py-4 retro-header pixel-border" role="banner" style="background-image: url('https://example.com/retro-bg.gif'); background-repeat: repeat; font-family: 'Comic Sans MS', cursive; color: lime; text-align: center;">
+            <div class="container flex flex-col md:flex-row items-start md:items-center justify-between max-w-8xl mx-auto px-4 lg:px-8 gap-2">
+                <div class="flex items-center">
+                    <a href="/" title="Sofia&#039;s Blog home" class="inline-flex items-center">
+                        <img class="h-8 md:h-10 mr-3 border-blue-500 border-2 rounded-full pixelated" src="/assets/img/sofia-pfp.webp" alt="Sofia&#039;s Blog logo" style="image-rendering: pixelated;" />
+
+                        <marquee behavior="alternate" scrollamount="3"><h1 class="text-lg md:text-2xl text-[var(--color-trans-white)] font-extrabold my-0 blink" style="animation: blink 1s steps(2, start) infinite;">Sofia&#039;s Blog</h1></marquee>
+                    </a>
+                </div>
+
+                <div id="vue-search" class="flex w-full md:flex-1 md:justify-end justify-center items-center bg-transparent mt-2 md:mt-0">
+                    <div x-data="{
+        init(){
+            fetch('/index.json')
+                .then(response => response.json())
+                .then(data => {
+                    this.fuse = new window.Fuse(data, {
+                        minMatchCharLength: 6,
+                        keys: ['title', 'snippet', 'categories'],
+                    });
+                });
+        },
+        get results() {
+            return this.query ? this.fuse.search(this.query) : [];
+        },
+        get isQuerying() {
+            return Boolean( this.query );
+        },
+        fuse: null,
+        searching: false,
+        query: '',
+        showInput() {
+            this.searching = true;
+            this.$nextTick(() => {
+                this.$refs.search.focus();
+            })
+        },
+        reset() {
+            this.query = '';
+            this.searching = false;
+        },
+    }"
+     x-cloak
+     class="flex flex-1 justify-center items-center text-right px-4 bg-transparent w-full lg:mx-3"
+>
+    <div
+            class="absolute md:relative w-full justify-end bg-transparent left-0 top-0 z-10 mt-7 md:mt-0 px-4 md:px-0"
+            :class="{'hidden md:flex': ! searching}"
+    >
+        <label for="search" class="hidden">Search</label>
+
+        <div class="relative">
+            <i class="nes-icon coin is-small h-4 w-4 absolute left-2 ml-2 top-1/2 -translate-y-1/2 pl-3 text-gray-400"></i>
+            <input
+                    id="search"
+                    x-model="query"
+                    x-ref="search"
+                    class="block h-10 w-full lg:w-1/2 lg:focus:w-full bg-gray-800 border-2 border-[var(--color-trans-pink)] focus:border-[var(--color-trans-light-blue)] outline-none cursor-pointer text-[var(--color-trans-white)] pl-10 pr-4 pb-0 pt-px transition-all duration-200 ease-out placeholder-[var(--color-trans-light-blue)]"
+                    :class="{ 'rounded-none': query, 'rounded-none': !query }"
+                    style="box-shadow: 0 0 10px var(--color-trans-light-blue);"
+                    autocomplete="off"
+                    name="search"
+                    placeholder="Search"
+                    type="text"
+                    @keyup.esc="reset"
+                    @blur="reset"
+            >
+        </div>
+
+        <button
+                x-show="query || searching"
+                class="absolute top-0 right-0 leading-snug font-400 text-3xl text-[var(--color-trans-light-blue)] hover:text-[var(--color-trans-pink)] focus:outline-none pr-7 md:pr-3"
+                @click="reset"
+        >&times;
+        </button>
+
+        <div
+                x-show="isQuerying"
+                x-cloak
+                x-transition:enter="transition ease-out duration-300"
+                x-transition:enter-start="opacity-0"
+                x-transition:enter-end="opacity-100"
+                x-transition:leave="transition-none"
+                x-transition:leave-start="opacity-100"
+                x-transition:leave-end="opacity-0"
+                class="absolute left-0 right-0 md:inset-auto w-full lg:w-3/4 text-left mb-4 md:mt-10"
+        >
+            <div class="flex flex-col bg-black/70 border-2 border-[var(--color-trans-pink)] rounded-none shadow-search mx-4 md:mx-0">
+                <template x-for="(result, index) in results">
+                    <a
+                            class="bg-black/70 hover:bg-gray-900 border-b border-[var(--color-trans-light-blue)] text-[var(--color-trans-white)] cursor-pointer p-4"
+                            :class="{ 'rounded-none': (index === results.length - 1) }"
+                            :href="result.item.link"
+                            :title="result.item.title"
+                            :key="result.link"
+                            @mousedown.prevent
+                    >
+                        <span x-html="result.item.title"></span>
+
+                        <span class="block font-normal text-gray-300 text-sm my-1" x-html="result.item.snippet"></span>
+                    </a>
+                </template>
+                <div
+                        x-show="! results.length"
+                        class="bg-black/70 w-full hover:bg-gray-900 border-b border-[var(--color-trans-light-blue)] rounded-none shadow-none cursor-pointer p-4"
+                >
+                    <p class="my-0 text-[var(--color-trans-white)]">No results for <strong x-html="query"></strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button
+            title="Start searching"
+            type="button"
+            class="flex md:hidden bg-gray-800 hover:bg-gray-900 justify-center items-center border-2 border-[var(--color-trans-light-blue)] rounded-none focus:outline-none h-10 px-3"
+            style="box-shadow: 0 0 10px var(--color-trans-light-blue);"
+            @click.prevent="showInput"
+    >
+        <i class="h-4 w-4 nes-icon coin is-small"></i>
+    </button>
+</div>
+
+                    <nav class="hidden lg:flex items-center justify-end text-lg">
+    <a title="Sofia&#039;s Blog Blog" href="/blog"
+        class="ml-6 text-[var(--color-trans-white)] hover:text-[var(--color-trans-pink)] ">
+        Blog
+    </a>
+
+    <a title="Sofia&#039;s Blog About" href="/about"
+        class="ml-6 text-[var(--color-trans-white)] hover:text-[var(--color-trans-pink)] ">
+        About
+    </a>
+
+    <a title="Sofia&#039;s Blog Contact" href="https://www.sofiavicedomini.me/contact" target="_blank"
+        class="ml-6 text-[var(--color-trans-white)] hover:text-[var(--color-trans-pink)]">
+        Contact
+    </a>
+</nav>
+
+                    <button class="flex justify-center items-center bg-[var(--color-trans-pink)] border-2 border-[var(--color-trans-pink)] h-10 px-5 rounded-none lg:hidden focus:outline-none"
+    onclick="navMenu.toggle()"
+>
+    <svg id="js-nav-menu-show" xmlns="http://www.w3.org/2000/svg"
+        class="fill-current text-white h-9 w-4" viewBox="0 0 32 32"
+    >
+        <path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
+    </svg>
+
+    <svg id="js-nav-menu-hide" xmlns="http://www.w3.org/2000/svg"
+        class="hidden fill-current text-white h-9 w-4" viewBox="0 0 36 30"
+    >
+        <polygon points="32.8,4.4 28.6,0.2 18,10.8 7.4,0.2 3.2,4.4 13.8,15 3.2,25.6 7.4,29.8 18,19.2 28.6,29.8 32.8,25.6 22.2,15 "/>
+    </svg>
+</button>
+
+                </div>
+            </div>
+        </header>
+
+        <nav id="js-nav-menu" class="fixed inset-0 z-50 hidden lg:hidden flex items-center justify-center" aria-modal="true" role="dialog">
+    <div class="absolute inset-0 bg-black/70 backdrop-blur-sm" onclick="navMenu.toggle()"></div>
+
+    <div class="relative z-10 w-[92%] max-w-sm nes-container is-dark bg-black/90 border-4 border-[var(--color-trans-pink)] p-6 pixel-border">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-lg font-bold text-[var(--color-retro-green)]">Menu</h2>
+            <button class="nes-btn is-error px-3 py-1" onclick="navMenu.toggle()" aria-label="Close menu">✕</button>
+        </div>
+
+        <ul class="my-0">
+            <li class="mb-2">
+                <a
+                    title="Sofia&#039;s Blog Blog"
+                    href="/blog"
+                    class="block py-2 text-base no-underline text-[var(--color-trans-white)] hover:text-[var(--color-trans-pink)]"
+                >Blog</a>
+            </li>
+            <li class="mb-2">
+                <a
+                    title="Sofia&#039;s Blog About"
+                    href="/about"
+                    class="block py-2 text-base no-underline text-[var(--color-trans-white)] hover:text-[var(--color-trans-pink)]"
+                >About</a>
+            </li>
+            <li>
+                <a
+                    title="Sofia&#039;s Blog Contact"
+                    href="https://www.sofiavicedomini.me/contact"
+                    target="_blank"
+                    class="block py-2 text-base no-underline text-[var(--color-trans-white)] hover:text-[var(--color-trans-pink)]"
+                >Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+        <main role="main" class="nes-container is-dark is-rounded flex-auto w-full max-w-4xl mx-auto border-x-4 border-b-4 border-[var(--color-trans-pink)] px-8 py-12 mb-8 bg-black/70 pixel-border">
+                <div class="container is-dark is-rounded mx-auto max-w-3xl w-full px-4 text-left prose prose-invert prose-a:text-[var(--color-trans-pink)]">
+
+                    <img src="/assets/images/EIDAS/cover.jpg"
+                 alt="The Hitchhiker’s Guide to eIDAS: Navigating Europe’s Digital Identity Landscape cover image"
+                 class="mb-2 w-full h-auto object-cover"
+                 style="aspect-ratio:16/9;">
+        
+        <h1 class="leading-none mb-2 border-b-4 text-white font-black"
+            style="text-shadow: 0 0 10px var(--color-retro-green), 0 0 15px var(--color-retro-green), 2px 2px 0 var(--color-trans-pink), 3px 3px 0 var(--color-trans-light-blue); border-image: linear-gradient(to right, var(--color-retro-green), var(--color-trans-pink)) 1;">The Hitchhiker’s Guide to eIDAS: Navigating Europe’s Digital Identity Landscape</h1>
+
+        <p class="text-white text-xl md:mt-0 font-bold"
+           style="text-shadow: 0 0 8px var(--color-trans-light-blue), 1px 1px 0 var(--color-trans-pink);">Sofia Vicedomini
+            • November 1, 2024</p>
+
+                                    <a
+                        href="/blog/categories/eidas"
+                        title="View posts in eidas"
+                        class="inline-block bg-[var(--color-retro-dark)] hover:bg-[var(--color-trans-pink)] leading-loose tracking-wide text-white uppercase text-xs font-bold rounded-sm mr-4 px-3 pt-px pixel-border"
+                        style="text-shadow: 0 0 5px var(--color-retro-yellow); box-shadow: 0 0 8px var(--color-trans-pink);"
+                >eidas</a>
+                            <a
+                        href="/blog/categories/identity"
+                        title="View posts in identity"
+                        class="inline-block bg-[var(--color-retro-dark)] hover:bg-[var(--color-trans-pink)] leading-loose tracking-wide text-white uppercase text-xs font-bold rounded-sm mr-4 px-3 pt-px pixel-border"
+                        style="text-shadow: 0 0 5px var(--color-retro-yellow); box-shadow: 0 0 8px var(--color-trans-pink);"
+                >identity</a>
+                            <a
+                        href="/blog/categories/privacy"
+                        title="View posts in privacy"
+                        class="inline-block bg-[var(--color-retro-dark)] hover:bg-[var(--color-trans-pink)] leading-loose tracking-wide text-white uppercase text-xs font-bold rounded-sm mr-4 px-3 pt-px pixel-border"
+                        style="text-shadow: 0 0 5px var(--color-retro-yellow); box-shadow: 0 0 8px var(--color-trans-pink);"
+                >privacy</a>
+                            <a
+                        href="/blog/categories/security"
+                        title="View posts in security"
+                        class="inline-block bg-[var(--color-retro-dark)] hover:bg-[var(--color-trans-pink)] leading-loose tracking-wide text-white uppercase text-xs font-bold rounded-sm mr-4 px-3 pt-px pixel-border"
+                        style="text-shadow: 0 0 5px var(--color-retro-yellow); box-shadow: 0 0 8px var(--color-trans-pink);"
+                >security</a>
+                            <a
+                        href="/blog/categories/id"
+                        title="View posts in id"
+                        class="inline-block bg-[var(--color-retro-dark)] hover:bg-[var(--color-trans-pink)] leading-loose tracking-wide text-white uppercase text-xs font-bold rounded-sm mr-4 px-3 pt-px pixel-border"
+                        style="text-shadow: 0 0 5px var(--color-retro-yellow); box-shadow: 0 0 8px var(--color-trans-pink);"
+                >id</a>
+                    
+        <div class="border-b mb-10 pb-4" v-pre>
+            <p><strong>Don’t Panic!</strong> If navigating Europe’s digital identity systems feels like hitchhiking across the galaxy, fear not—*
+*eIDAS** (Electronic Identification, Authentication and Trust Services) is the friendly guide ensuring you won’t lose
+your way. Like the Hitchhiker’s Guide itself, eIDAS won’t tell you the meaning of life, the universe, and everything (
+that’s obviously <strong>42</strong>), but it will help you sign contracts, log in to foreign websites, and open a bank account in
+another country without leaving your couch.</p>
+
+<p>So grab your (metaphorical) towel and let’s embark on this journey through Europe’s digital identity cosmos.</p>
+
+<hr />
+
+<h2>What is eIDAS and Why Should You Care?</h2>
+
+<p>At its core, <strong>eIDAS</strong> is a regulation established by the EU back in 2014. Think of it as a <strong>rulebook for digital
+identity and trust</strong> that every member state has agreed to follow. Its mission? To make sure electronic IDs and
+signatures work across borders just as smoothly as your passport does at airports—minus the queues and suspicious stares
+from customs officers.</p>
+
+<p>Without eIDAS, you’d need a different login, digital signature, or verification method for each country you interact
+with. With eIDAS, a digital signature issued in Germany must be accepted as legally binding in Italy, Spain, or anywhere
+else in the EU.</p>
+
+<p>For the technically inclined, you can imagine eIDAS as the EU’s <strong>API contract for trust and identity</strong>. Each country
+can have its own backend implementation (smartcards, mobile apps, bank logins), but they all agree to speak the same
+protocol when it comes to identification, authentication, and trust services.</p>
+
+<p>Or, in Hitchhiker’s terms: Europe finally realized that carrying 27 incompatible digital identity systems was like
+carrying 27 guidebooks for the galaxy—so they just wrote one that everyone can read.</p>
+
+<hr />
+
+<h2>Electronic Identification (eID): Your Digital Passport</h2>
+
+<p>One of the main pillars of eIDAS is the <strong>electronic ID (eID)</strong>—a secure digital identity issued by your government. It
+could be:</p>
+
+<ul>
+<li>a smartcard you slide into a reader,</li>
+<li>a mobile app you approve with your fingerprint, or</li>
+<li>a secure login via your bank credentials.</li>
+</ul>
+
+<p>The purpose is simple: to prove that <em>you are you</em> when logging into services or signing documents online.</p>
+
+<p>Now here’s the clever bit: under eIDAS, once a country <strong>“notifies”</strong> its eID scheme to the EU (meaning it meets the
+required standards), all other EU countries must recognize it. Your national eID becomes your <strong>digital passport</strong> for
+the whole EU.</p>
+
+<p><strong>A real-world example:</strong>
+Let’s say you’re from Country A and want to register for a service in Country B that requires proof of identity. Instead
+of creating a new account or sending scanned IDs, Country B’s site redirects you to log in with Country A’s eID.</p>
+
+<p>Behind the curtain, the process looks a bit like two spaceships docking in orbit:</p>
+
+<ul>
+<li>Country B’s <strong>eIDAS connector</strong> reaches out to Country A’s <strong>eIDAS proxy service</strong>,</li>
+<li>which then talks to your country’s identity provider,</li>
+<li>which confirms that yes, this is indeed you (and not, say, Zaphod Beeblebrox trying to impersonate you).</li>
+</ul>
+
+<p>The underlying tech uses secure protocols like <strong>SAML assertions</strong> and <strong>mutual TLS</strong> to shuttle identity data across
+borders safely. But for you as a user, it’s just: click, approve, done.</p>
+
+<hr />
+
+<h2>Trust Services and Digital Signatures in Plain English</h2>
+
+<p>If eIDs are your passport, then <strong>trust services</strong> are the seals, stamps, and notary signatures that make transactions
+official.</p>
+
+<p>Under eIDAS, these services cover things like:</p>
+
+<ul>
+<li><strong>Electronic Signatures</strong>: Your digital handwriting. If it’s a <strong>Qualified Electronic Signature</strong>, it has the same
+legal weight as pen on paper.</li>
+<li><strong>Electronic Seals</strong>: Like signatures, but for organizations—guaranteeing the source and integrity of a document.</li>
+<li><strong>Timestamps</strong>: Proof that something existed or was signed at a particular moment (because in bureaucracy, timing is
+everything).</li>
+<li><strong>Electronic Registered Delivery Service (ERDS)</strong>: A secure way to send and receive electronic documents with proof of
+delivery.</li>
+<li><strong>Website Authentication Certificates</strong>: TLS/SSL certificates verified under EU trust rules to ensure the site you’re
+visiting isn’t some intergalactic scam.</li>
+</ul>
+
+<p>Think of these as the <strong>digital Babel fish of trust</strong>—they ensure that no matter what language or system is used,
+everyone can understand and verify that a transaction is legitimate.</p>
+
+<hr />
+
+<h2>Qualified Trust Service Providers (QTSPs): The Gatekeepers of Trust</h2>
+
+<p>You might now be asking, <em>who actually issues these magical certificates and signatures?</em> That’s the job of <strong>Trust
+Service Providers (TSPs)</strong>.</p>
+
+<p>Some are private companies, others are public agencies, but only a select few are recognized as <strong>Qualified Trust
+Service Providers (QTSPs)</strong>. To earn that title, they have to undergo rigorous audits and meet some of the strictest
+standards in cybersecurity and operations in the world.</p>
+
+<p>QTSPs can issue <strong>Qualified Certificates</strong>, which in turn let you create legally binding electronic signatures or seals
+that are recognized across all EU states.</p>
+
+<p>Think of QTSPs as the <strong>certified towel manufacturers</strong> of the eIDAS galaxy—you could technically trust any towel, but
+when things get serious, you’ll want one with the official seal of approval.</p>
+
+<hr />
+
+<h2>Cross-Border Convenience: How eIDAS Simplifies Digital Life</h2>
+
+<p>So, what does all this tech and legal jargon mean for your everyday life? Quite a lot, actually. With eIDAS in action,
+you can:</p>
+
+<ul>
+<li><strong>Log in to government services abroad</strong> without setting up a new account.</li>
+<li><strong>Open a bank account in another EU country</strong> without mailing notarized papers.</li>
+<li><strong>Enroll in universities or apply for jobs abroad</strong> and sign the paperwork digitally.</li>
+<li><strong>Bid on public tenders across the EU</strong>, no matter where your company is based.</li>
+<li><strong>Sign contracts instantly across borders</strong>, all with full legal recognition.</li>
+</ul>
+
+<p>Or, put another way: eIDAS is the <strong>Interstellar Hitchhiker’s Pass</strong> for European digital life. It cuts through
+bureaucracy like a well-aimed Infinite Improbability Drive.</p>
+
+<hr />
+
+<h2>The Next Frontier: eIDAS 2.0 and the European Digital Identity Wallet</h2>
+
+<p>Of course, no regulation stays static. The EU is now working on <strong>eIDAS 2.0</strong>, which introduces the highly anticipated *
+*European Digital Identity Wallet (EDIW)**.</p>
+
+<p>Imagine a secure app on your phone that holds:</p>
+
+<ul>
+<li>your national eID,</li>
+<li>your driver’s license,</li>
+<li>your diploma,</li>
+<li>your medical prescriptions,</li>
+<li>and possibly even your concert tickets.</li>
+</ul>
+
+<p>You’ll be able to control exactly which attributes you share (for example, proving you’re over 18 without disclosing
+your exact birthdate).</p>
+
+<p>In essence, it’s a <strong>universal login and credential wallet</strong> for Europe, under your control. Hitchhiker’s fans may think
+of it as the <strong>Sub-Etha Sens-O-Matic</strong> for your digital identity—always at hand, always reliable, and always
+interoperable.</p>
+
+<hr />
+
+<h2>Conclusion: Don’t Panic – eIDAS Has You Covered</h2>
+
+<p>As our interstellar tour of eIDAS comes to an end, one thing is clear: <strong>this regulation is the backbone of Europe’s
+digital trust infrastructure.</strong> It makes sure that your electronic IDs, signatures, and certificates are recognized and
+secure across the entire continent.</p>
+
+<p>For the tech-savvy, it’s an elegant federation of identity systems working together through shared standards. For
+everyday users, it’s simply about making life easier—whether you’re signing a lease in Paris, applying for a job in
+Berlin, or paying taxes in Madrid.</p>
+
+<p>In true Hitchhiker’s Guide style, the most important advice is simple: <strong>Don’t Panic.</strong> eIDAS is here to ensure your
+digital identity journeys across Europe are safe, secure, and—most importantly—interoperable.</p>
+
+<p>So go forth, log in, sign, and transact with confidence. And remember: in the vast, bureaucratic galaxy of digital
+identity, <strong>always know where your towel is.</strong></p>
+        </div>
+
+        <div class="border-b mb-10 pb-4" v-pre>
+            <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6063500575269047"
+                    crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+                 style="display:block; text-align:center;"
+                 data-ad-layout="in-article"
+                 data-ad-format="fluid"
+                 data-ad-client="ca-pub-6063500575269047"
+                 data-ad-slot="6754362956"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+        <div class="border-b mb-10 pb-4" v-pre>
+            <div x-data="gravatarHovercard()" class="gravatar-hovercard">
+    <style>
+        .gravatar-hovercard {
+            width: 100%;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            background: #1a1a1a;
+            border: 2px solid var(--color-trans-light-blue);
+            position: relative;
+        }
+
+        .gravatar-hovercard__inner {
+            position: relative;
+        }
+
+        .gravatar-hovercard__header-image {
+            height: 80px;
+            width: 100%;
+            background-size: cover !important;
+            background-position: center !important;
+        }
+
+        .gravatar-hovercard__header {
+            padding: 1rem;
+            text-align: center;
+            margin-top: -52px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .gravatar-hovercard__avatar-link {
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+
+        .gravatar-hovercard__avatar {
+            width: 104px;
+            height: 104px;
+            border-radius: 50%;
+            border: 4px solid var(--color-trans-white);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .gravatar-hovercard__personal-info-link {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .gravatar-hovercard__name {
+            font-size: 1.25rem;
+            font-weight: bold;
+            margin: 0 0 0.5rem 0;
+            color: var(--color-trans-white);
+        }
+
+        .gravatar-hovercard__job {
+            font-size: 0.875rem;
+            color: var(--color-trans-light-blue);
+            margin: 0 0 0.25rem 0;
+        }
+
+        .gravatar-hovercard__location {
+            font-size: 0.875rem;
+            color: var(--color-trans-pink);
+            margin: 0;
+        }
+
+        .gravatar-hovercard__body {
+            padding: 0 1rem 1rem;
+        }
+
+        .gravatar-hovercard__description {
+            font-size: 0.875rem;
+            line-height: 1.5;
+            color: var(--color-trans-white);
+            margin: 0;
+            text-align: center;
+        }
+
+        .gravatar-hovercard__social-links {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0 1rem 1rem;
+        }
+
+        .gravatar-hovercard__social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(91, 206, 250, 0.1);
+            border: 1px solid var(--color-trans-light-blue);
+            transition: all 0.2s ease;
+        }
+
+        .gravatar-hovercard__social-link:hover {
+            background: var(--color-trans-light-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(91, 206, 250, 0.3);
+        }
+
+        .gravatar-hovercard__social-icon {
+            width: 20px;
+            height: 20px;
+            filter: brightness(0) invert(1);
+        }
+
+        .gravatar-hovercard__buttons {
+            display: flex;
+            gap: 0.5rem;
+            padding: 0 1rem 1rem;
+        }
+
+        .gravatar-hovercard__button {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            border: 2px solid var(--color-trans-pink);
+            background: transparent;
+            color: var(--color-trans-pink);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .gravatar-hovercard__button:hover {
+            background: var(--color-trans-pink);
+            color: var(--color-trans-white);
+            box-shadow: 0 0 10px var(--color-trans-pink);
+        }
+
+        .gravatar-hovercard__footer {
+            padding: 1rem;
+            border-top: 1px solid rgba(91, 206, 250, 0.2);
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .gravatar-hovercard__profile-url {
+            font-size: 0.75rem;
+            color: var(--color-trans-light-blue);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .gravatar-hovercard__profile-link {
+            font-size: 0.875rem;
+            color: var(--color-trans-pink);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .gravatar-hovercard__profile-link:hover {
+            color: var(--color-trans-white);
+        }
+
+        .gravatar-hovercard__drawer {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 100;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .gravatar-hovercard__drawer--open {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .gravatar-hovercard__drawer--closing {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .gravatar-hovercard__drawer-backdrop {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+        }
+
+        .gravatar-hovercard__drawer-card {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #1a1a1a;
+            border: 2px solid var(--color-trans-light-blue);
+            border-radius: 12px;
+            min-width: 280px;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
+
+        .gravatar-hovercard__drawer-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            border-bottom: 1px solid rgba(91, 206, 250, 0.2);
+        }
+
+        .gravatar-hovercard__drawer-title {
+            font-size: 1.125rem;
+            font-weight: bold;
+            color: var(--color-trans-white);
+            margin: 0;
+        }
+
+        .gravatar-hovercard__drawer-close {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.25rem;
+            border-radius: 4px;
+            transition: background 0.2s ease;
+        }
+
+        .gravatar-hovercard__drawer-close:hover {
+            background: rgba(91, 206, 250, 0.1);
+        }
+
+        .gravatar-hovercard__drawer-close svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .gravatar-hovercard__drawer-close svg path {
+            fill: var(--color-trans-white);
+        }
+
+        .gravatar-hovercard__drawer-items {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .gravatar-hovercard__drawer-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            border-bottom: 1px solid rgba(91, 206, 250, 0.1);
+        }
+
+        .gravatar-hovercard__drawer-item:last-child {
+            border-bottom: none;
+        }
+
+        .gravatar-hovercard__drawer-item-icon {
+            width: 24px;
+            height: 24px;
+            filter: brightness(0) invert(1);
+        }
+
+        .gravatar-hovercard__drawer-item-info {
+            flex: 1;
+        }
+
+        .gravatar-hovercard__drawer-item-label {
+            display: block;
+            font-weight: 500;
+            color: var(--color-trans-white);
+            margin-bottom: 0.25rem;
+        }
+
+        .gravatar-hovercard__drawer-item-text {
+            font-size: 0.875rem;
+            color: var(--color-trans-light-blue);
+        }
+
+        .gravatar-hovercard__drawer-item-link {
+            color: var(--color-trans-pink);
+            text-decoration: none;
+        }
+
+        .gravatar-hovercard__drawer-item-link:hover {
+            color: var(--color-trans-white);
+            text-decoration: underline;
+        }
+
+        .gravatar-hovercard__profile-color {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--color-trans-light-blue), var(--color-trans-pink));
+        }
+    </style>
+
+    <div class="gravatar-hovercard__inner">
+        <div class="gravatar-hovercard__header-image" style="background: url('https://1.gravatar.com/userimage/178303899/10a630be070bfb2400f913b21aadc30f?size=1024') 50% 27% / 100% no-repeat;"></div>
+
+        <div class="gravatar-hovercard__header">
+            <a class="gravatar-hovercard__avatar-link" href="https://gravatar.com/blacksoulgem95?utm_source=hovercard" target="_blank">
+                <img class="gravatar-hovercard__avatar" src="https://1.gravatar.com/avatar/f7f79dbcca6c94b0c88240cc3659eea7b197914383b478ea40cb983574d1aa86?s=256" width="104" height="104" alt="Sofia Vicedomini">
+            </a>
+            <a class="gravatar-hovercard__personal-info-link" href="https://gravatar.com/blacksoulgem95?utm_source=hovercard" target="_blank">
+                <h4 class="gravatar-hovercard__name">Sofia Vicedomini</h4>
+                <p class="gravatar-hovercard__job">EU/US/CA/UK Full-Stack Senior Software Engineer, Freelance</p>
+                <p class="gravatar-hovercard__location">EMEA (Remote)</p>
+            </a>
+        </div>
+
+        <div class="gravatar-hovercard__body">
+            <p class="gravatar-hovercard__description">I'm Sofia Vicedomini, a dedicated software engineering consultant with a passion for building innovative, accessible solutions in a fully remote environment.</p>
+        </div>
+
+        <div class="gravatar-hovercard__social-links">
+            <a class="gravatar-hovercard__social-link" href="https://gravatar.com/blacksoulgem95?utm_source=hovercard" target="_blank" data-service-name="gravatar">
+                <img class="gravatar-hovercard__social-icon" src="https://s.gravatar.com/icons/gravatar.svg" width="32" height="32" alt="Gravatar">
+            </a>
+            <a class="gravatar-hovercard__social-link" href="https://x.com/blacksoulgem95" target="_blank" data-service-name="twitter">
+                <img class="gravatar-hovercard__social-icon" src="https://s.gravatar.com/icons/x.svg" width="32" height="32" alt="X">
+            </a>
+            <a class="gravatar-hovercard__social-link" href="https://www.linkedin.com/in/sofiavicedomini" target="_blank" data-service-name="linkedin">
+                <img class="gravatar-hovercard__social-icon" src="https://s.gravatar.com/icons/linkedin.svg" width="32" height="32" alt="LinkedIn">
+            </a>
+            <a class="gravatar-hovercard__social-link" href="https://tiktok.com/@blacksoulgem95" target="_blank" data-service-name="tiktok">
+                <img class="gravatar-hovercard__social-icon" src="https://s.gravatar.com/icons/tiktok.svg" width="32" height="32" alt="TikTok">
+            </a>
+        </div>
+
+        <div class="gravatar-hovercard__buttons">
+            <button class="gravatar-hovercard__button" @click="openDrawer('contact')">Contact</button>
+            <button class="gravatar-hovercard__button" @click="openDrawer('send-money')">Send money</button>
+        </div>
+
+        <div class="gravatar-hovercard__footer">
+            <a class="gravatar-hovercard__profile-url" title="https://gravatar.com/blacksoulgem95" href="https://gravatar.com/blacksoulgem95?utm_source=profile-card" target="_blank">
+                gravatar.com/blacksoulgem95
+            </a>
+            <a class="gravatar-hovercard__profile-link" href="https://gravatar.com/blacksoulgem95?utm_source=profile-card" target="_blank">
+                View profile →
+            </a>
+        </div>
+
+        <!-- Contact Drawer -->
+        <div class="gravatar-hovercard__drawer" :class="{ 'gravatar-hovercard__drawer--open': activeDrawer === 'contact', 'gravatar-hovercard__drawer--closing': closingDrawer === 'contact' }">
+            <div class="gravatar-hovercard__drawer-backdrop" @click="closeDrawer('contact')"></div>
+            <div class="gravatar-hovercard__drawer-card">
+                <div class="gravatar-hovercard__drawer-header">
+                    <h2 class="gravatar-hovercard__drawer-title">Contact</h2>
+                    <button class="gravatar-hovercard__drawer-close" @click="closeDrawer('contact')">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 13.0607L15.7123 16.773L16.773 15.7123L13.0607 12L16.773 8.28772L15.7123 7.22706L12 10.9394L8.28771 7.22705L7.22705 8.28771L10.9394 12L7.22706 15.7123L8.28772 16.773L12 13.0607Z" fill="#101517"></path>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="gravatar-hovercard__drawer-items">
+                    <li class="gravatar-hovercard__drawer-item">
+                        <img class="gravatar-hovercard__drawer-item-icon" width="24" height="24" src="https://s.gravatar.com/icons/envelope.svg" alt="">
+                        <div class="gravatar-hovercard__drawer-item-info">
+                            <span class="gravatar-hovercard__drawer-item-label">Contact Form</span>
+                            <span class="gravatar-hovercard__drawer-item-text">
+                                <a class="gravatar-hovercard__drawer-item-link" href="https://www.sofiavicedomini.me/contact" target="_blank">www.sofiavicedomini.me/contact</a>
+                            </span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Send Money Drawer -->
+        <div class="gravatar-hovercard__drawer" :class="{ 'gravatar-hovercard__drawer--open': activeDrawer === 'send-money', 'gravatar-hovercard__drawer--closing': closingDrawer === 'send-money' }">
+            <div class="gravatar-hovercard__drawer-backdrop" @click="closeDrawer('send-money')"></div>
+            <div class="gravatar-hovercard__drawer-card">
+                <div class="gravatar-hovercard__drawer-header">
+                    <h2 class="gravatar-hovercard__drawer-title">Send money</h2>
+                    <button class="gravatar-hovercard__drawer-close" @click="closeDrawer('send-money')">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 13.0607L15.7123 16.773L16.773 15.7123L13.0607 12L16.773 8.28772L15.7123 7.22706L12 10.9394L8.28771 7.22705L7.22705 8.28771L10.9394 12L7.22706 15.7123L8.28772 16.773L12 13.0607Z" fill="#101517"></path>
+                        </svg>
+                    </button>
+                </div>
+                <ul class="gravatar-hovercard__drawer-items">
+                    <li class="gravatar-hovercard__drawer-item">
+                        <img class="gravatar-hovercard__drawer-item-icon" width="24" height="24" src="https://s.gravatar.com/icons/link.svg" alt="">
+                        <div class="gravatar-hovercard__drawer-item-info">
+                            <span class="gravatar-hovercard__drawer-item-label">Ko-Fi</span>
+                            <span class="gravatar-hovercard__drawer-item-text">
+                                <a class="gravatar-hovercard__drawer-item-link" href="https://ko-fi.com/blacksoulgem95" target="_blank">ko-fi.com/blacksoulgem95</a>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="gravatar-hovercard__drawer-item">
+                        <img class="gravatar-hovercard__drawer-item-icon" width="24" height="24" src="https://s.gravatar.com/icons/link.svg" alt="">
+                        <div class="gravatar-hovercard__drawer-item-info">
+                            <span class="gravatar-hovercard__drawer-item-label">Revolut</span>
+                            <span class="gravatar-hovercard__drawer-item-text">
+                                <a class="gravatar-hovercard__drawer-item-link" href="https://revolut.me/sofiavicedomini" target="_blank">revolut.me/sofiavicedomini</a>
+                            </span>
+                        </div>
+                    </li>
+                    <li class="gravatar-hovercard__drawer-item">
+                        <img class="gravatar-hovercard__drawer-item-icon" width="24" height="24" src="https://s.gravatar.com/icons/link.svg" alt="">
+                        <div class="gravatar-hovercard__drawer-item-info">
+                            <span class="gravatar-hovercard__drawer-item-label">bitcoin</span>
+                            <span class="gravatar-hovercard__drawer-item-text">bc1q4wndp7sqy5l68yp0w67lnl96s4vug2xujjk300</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="gravatar-hovercard__profile-color" style="background: rgb(245, 169, 184);"></div>
+    </div>
+
+    <script>
+        function gravatarHovercard() {
+            return {
+                activeDrawer: null,
+                closingDrawer: null,
+
+                openDrawer(drawerName) {
+                    this.activeDrawer = drawerName;
+                    this.closingDrawer = null;
+                },
+
+                closeDrawer(drawerName) {
+                    this.closingDrawer = drawerName;
+                    this.activeDrawer = null;
+
+                    setTimeout(() => {
+                        this.closingDrawer = null;
+                    }, 300);
+                }
+            }
+        }
+    </script>
+</div>
+        </div>
+
+        <nav class="flex flex-col gap-4 text-sm md:text-base pixel-border p-4 bg-black/50">
+                            <div class="w-full">
+                    <a href="https://blog.sofiavicedomini.me/blog/2022-10-01-angular-env" title="Older Post: Fighting with Angular Environments"
+                       class="retro-button text-white font-bold block w-full text-center"
+                       style="text-shadow: 0 0 8px var(--color-retro-yellow), 1px 1px 0 var(--color-trans-pink); box-shadow: 0 0 10px var(--color-trans-light-blue); overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto; white-space: normal; display: flex; align-items: center; justify-content: center; min-height: 60px;">
+                        <span class="inline-block mr-2">&LeftArrow;</span>
+                        <span class="inline-block">Fighting with Angular Environments</span>
+                    </a>
+                </div>
+            
+                            <div class="w-full">
+                    <a href="https://blog.sofiavicedomini.me/blog/2024-11-11-graphql-vs-rest" title="Newer Post: REST vs GraphQL: Is It Really a War?"
+                       class="retro-button text-white font-bold block w-full text-center"
+                       style="text-shadow: 0 0 8px var(--color-retro-yellow), 1px 1px 0 var(--color-trans-pink); box-shadow: 0 0 10px var(--color-trans-light-blue); overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto; white-space: normal; display: flex; align-items: center; justify-content: center; min-height: 60px;">
+                        <span class="inline-block">REST vs GraphQL: Is It Really a War?</span>
+                        <span class="inline-block ml-2">&RightArrow;</span>
+                    </a>
+                </div>
+                    </nav>
+
+        <div class="mt-10" v-pre>
+            <script async
+                    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6063500575269047"
+                    crossorigin="anonymous"></script>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-format="autorelaxed"
+                 data-ad-client="ca-pub-6063500575269047"
+                 data-ad-slot="3793975933"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </div>
+
+    </div>
+        </main>
+
+        <footer class="nes-container is-dark is-rounded retro-footer bg-black/70 text-center text-sm mt-12 py-8 border-t-4 border-[var(--color-trans-pink)] pixel-border" role="contentinfo">
+            <div class="container max-w-4xl mx-auto px-4">
+                <div class="mb-6">
+                    <h3 class="text-lg font-bold text-[var(--color-retro-green)] mb-4 retro-text-glow pixel-border">Sofia Vicedomini</h3>
+                    <p class="text-[var(--color-trans-white)] mb-2">Full Stack Developer & Tech Professional</p>
+                    <p class="text-[var(--color-retro-gray)] text-xs">Available for remote opportunities across Europe</p>
+                </div>
+
+                <div class="flex flex-wrap justify-center gap-4 mb-6">
+                    <a href="https://sofiavicedomini.me"
+                       class="retro-badge text-[var(--color-retro-green)] hover:text-[var(--color-trans-pink)] inline-flex items-center gap-2"
+                       title="Sofia's Portfolio" target="_blank" rel="noopener">
+                        <i class="nes-icon star"></i> PORTFOLIO
+                    </a>
+                    <a href="https://linkedin.com/in/sofiavicedomini"
+                       class="retro-badge text-[var(--color-trans-light-blue)] hover:text-[var(--color-trans-pink)] inline-flex items-center gap-2"
+                       title="LinkedIn Profile" target="_blank" rel="noopener">
+                        <i class="nes-icon linkedin"></i> LINKEDIN
+                    </a>
+                    <a href="https://github.com/blacksoulgem95"
+                       class="retro-badge text-[var(--color-trans-white)] hover:text-[var(--color-trans-pink)] inline-flex items-center gap-2"
+                       title="GitHub Profile" target="_blank" rel="noopener">
+                        <i class="nes-icon github"></i> GITHUB
+                    </a>
+                    <a href="https://x.com/blacksoulgem95"
+                       class="retro-badge text-[var(--color-retro-yellow)] hover:text-[var(--color-trans-pink)] inline-flex items-center gap-2"
+                       title="X (Twitter) Profile" target="_blank" rel="noopener">
+                        <i class="nes-icon twitter"></i> X
+                    </a>
+                </div>
+
+                <div class="border-t-2 border-[var(--color-retro-gray)] pt-4 mt-6">
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-2 text-xs text-[var(--color-retro-gray)]">
+                        <div>&copy; 2025 Sofia Vicedomini. All rights reserved.</div>
+                        <div class="hidden md:block">•</div>
+                        <div>
+                            Built with
+                            <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten" class="text-[var(--color-trans-light-blue)] hover:text-[var(--color-trans-pink)]">Jigsaw</a>
+                            &
+                            <a href="https://tailwindcss.com" title="Tailwind CSS" class="text-[var(--color-trans-light-blue)] hover:text-[var(--color-trans-pink)]">Tailwind CSS</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-4 flex flex-col md:flex-row justify-center items-center gap-2 text-xs">
+                    <a href="https://www.iubenda.com/privacy-policy/17758942" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe" title="Privacy Policy">Privacy Policy</a>
+                    <span class="hidden md:block">•</span>
+                    <a href="https://www.iubenda.com/privacy-policy/17758942/cookie-policy" class="iubenda-white iubenda-noiframe iubenda-embed iubenda-noiframe" title="Cookie Policy">Cookie Policy</a>
+                </div>
+
+                                    <script type="text/javascript">
+                        (function (w,d) {
+                            var loader = function () {
+                                var s = d.createElement("script"),
+                                    tag = d.getElementsByTagName("script")[0];
+                                s.src = "https://cdn.iubenda.com/iubenda.js";
+                                tag.parentNode.insertBefore(s, tag);
+                            };
+                            if (w.addEventListener) {
+                                w.addEventListener("load", loader, false);
+                            } else if (w.attachEvent) {
+                                w.attachEvent("onload", loader);
+                            } else {
+                                w.onload = loader;
+                            }
+                        })(window, document);
+                    </script>
+                            </div>
+        </footer>
+
+        <!-- Toast Container -->
+<div id="toast-container" class="fixed top-4 right-4 z-50 space-y-2"></div>
+
+<style>
+    .toast {
+        background: #10b981;
+        color: white;
+        padding: 12px 16px;
+        border-radius: 8px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        max-width: 300px;
+        word-wrap: break-word;
+    }
+
+    .toast.show {
+        transform: translateX(0);
+    }
+
+    .toast.error {
+        background: #ef4444;
+    }
+
+    .toast.warning {
+        background: #f59e0b;
+    }
+
+    .toast.info {
+        background: #3b82f6;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 640px) {
+        #toast-container {
+            top: 1rem;
+            right: 1rem;
+            left: 1rem;
+        }
+
+        .toast {
+            max-width: none;
+        }
+    }
+</style>
+
+<script>
+    // Generic Toast System
+    function showToast(message, type = 'success', duration = 3000) {
+        const toastContainer = document.getElementById('toast-container');
+        if (!toastContainer) {
+            console.error('Toast container not found');
+            return;
+        }
+
+        const toast = document.createElement('div');
+        toast.className = `toast ${type}`;
+        toast.textContent = message;
+
+        toastContainer.appendChild(toast);
+
+        // Trigger animation
+        setTimeout(() => {
+            toast.classList.add('show');
+        }, 10);
+
+        // Remove toast
+        setTimeout(() => {
+            toast.classList.remove('show');
+            setTimeout(() => {
+                if (toastContainer.contains(toast)) {
+                    toastContainer.removeChild(toast);
+                }
+            }, 300);
+        }, duration);
+    }
+
+    // Toast utility functions for common use cases
+    window.toast = {
+        success: (message, duration = 3000) => showToast(message, 'success', duration),
+        error: (message, duration = 4000) => showToast(message, 'error', duration),
+        warning: (message, duration = 3500) => showToast(message, 'warning', duration),
+        info: (message, duration = 3000) => showToast(message, 'info', duration)
+    };
+
+    // Make showToast globally available
+    window.showToast = showToast;
+</script>
+
+        <script>
+    const navMenu = {
+        toggle() {
+            const menu = document.getElementById('js-nav-menu');
+            const isHidden = menu.classList.contains('hidden');
+
+            if (isHidden) {
+                menu.classList.remove('hidden');
+                document.body.classList.add('overflow-hidden');
+            } else {
+                menu.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            }
+
+            document.getElementById('js-nav-menu-hide').classList.toggle('hidden');
+            document.getElementById('js-nav-menu-show').classList.toggle('hidden');
+        },
+    };
+
+    // Chiude la modale con ESC
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+            const menu = document.getElementById('js-nav-menu');
+            if (menu && !menu.classList.contains('hidden')) {
+                navMenu.toggle();
+            }
+        }
+    });
+</script>
+    </body>
+</html>

@@ -1,0 +1,1510 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Sofia&#039;s Blog</title>
+    <link href="https://blog.sofiavicedomini.me/blog" />
+    <link type="application/atom+xml" rel="self" href="https://blog.sofiavicedomini.me/blog/feed.atom" />
+    <updated>2025-09-20T14:05:43+00:00</updated>
+    <id>https://blog.sofiavicedomini.me/blog/feed.atom</id>
+    <author>
+        <name>Sofia Vicedomini</name>
+    </author>
+                <entry>
+    <id>https://blog.sofiavicedomini.me/blog/2025-09-17-ospite-perfetto</id>
+    <link type="text/html" rel="alternate" href="https://blog.sofiavicedomini.me/blog/2025-09-17-ospite-perfetto" />
+    <title>Il mestiere perduto dell’ospite perfetto</title>
+    <published>2025-09-17T00:00:00+00:00</published>
+    <updated>2025-09-17T00:00:00+00:00</updated>
+    <author>
+        <name>Sofia Vicedomini</name>
+    </author>
+    <summary type="html">C’è stato un tempo in cui andare a una festa non significava solo bere un bicchiere, scambiare due chiacchiere e aspettare che il tempo passasse. Il padrone di casa aveva un ruolo preciso, quasi un’arte: non era solo colui che apriva la porta, ma un......</summary>
+    <content type="html"><![CDATA[
+        <p>C’è stato un tempo in cui andare a una festa non significava solo bere un bicchiere, scambiare due chiacchiere e aspettare che il tempo passasse. Il padrone di casa aveva un ruolo preciso, quasi un’arte: non era solo colui che apriva la porta, ma un regista silenzioso delle connessioni tra le persone.</p>
+
+<h2>L’arte dell’introduzione</h2>
+
+<p>Il rito era semplice ma potente: l’ospite accoglieva ciascun invitato, lo ascoltava un attimo, e poi lo accompagnava da qualcun altro con cui condivideva una passione, un’esperienza o anche solo un dettaglio curioso.<br />
+“Tu ami la fotografia? Devi conoscere Marco, ha appena sviluppato un rullino in bianco e nero.”<br />
+“Ah, ti sei trasferito da poco in città? Vieni, ti presento Laura: anche lei ha fatto lo stesso percorso l’anno scorso.”</p>
+
+<p>Questi piccoli ponti umani creavano subito un terreno comune, abbassavano le barriere della timidezza e accendevano conversazioni autentiche. Poi, come un direttore d’orchestra, il padrone di casa si allontanava, lasciando che la musica sociale prendesse vita da sola.</p>
+
+<h2>La tradizione che si è persa</h2>
+
+<p>Oggi, invece, l’arte dell’introduzione sembra smarrita. Ci affidiamo agli algoritmi, ai like, alle bio sui social network per scoprire se abbiamo qualcosa in comune con chi ci sta davanti. Alle feste capita di ritrovarsi in gruppetti chiusi, senza quel collante umano che una volta veniva fornito con naturalezza dal padrone di casa.</p>
+
+<h2>Connessioni reali vs mercificazione digitale</h2>
+
+<p>Quando due persone vengono introdotte da un ospite attento, non si valutano solo l’apparenza o i dettagli superficiali, ma qualcosa di più profondo: un interesse, un sentire simile, un valore condiviso. C’è presenza: sguardi, gesti, modi di parlare, risate spontanee. E da lì nasce una conversazione che ha spessore, che permette all’altra persona di emergere come essere umano completo.</p>
+
+<p>Le app di dating, al contrario, spostano la dinamica verso la mercificazione.<br />
+- <strong>Scorrimento compulsivo</strong>: si consumano profili come se fossero prodotti da valutare e scartare.<br />
+- <strong>Valutazione superficiale</strong>: foto e bio diventano le uniche valute, riducendo la complessità di una persona a immagine e slogan.<br />
+- <strong>Auto-presentazione idealizzata</strong>: si tende a “vendere” una versione edulcorata di sé, alimentando aspettative irreali.<br />
+- <strong>Dipendenza dal feedback</strong>: match, like e messaggi letti diventano metriche che incidono sull’autostima, spesso generando ansia e alienazione.</p>
+
+<p>Così, mentre sembra che le app facilitino le connessioni, in realtà spesso le riducono a un mercato di corpi e facce, dove la persona diventa un “profilo” tra tanti, e non un incontro autentico.</p>
+
+<h2>Perché ricostruire</h2>
+
+<p>Ritrovare l’arte dell’introduzione significa rimettere al centro la cura dell’altro, l’ascolto e il contesto. Un padrone di casa che connette due persone non solo abbassa le barriere sociali, ma offre un atto di riconoscimento: “vi ho visti, ho notato ciò che avete in comune, e credo che possiate arricchirvi a vicenda”.</p>
+
+<p>È un gesto semplice, ma rivoluzionario, soprattutto oggi: sposta l’attenzione dalla performance estetica alla presenza autentica. Non siamo prodotti da scorrere con un dito, ma persone da conoscere.</p>
+
+<p>Forse è tempo di riprendere questa pratica, alle feste, agli eventi, nei nostri cerchi sociali. Perché la comunità si costruisce così: non con uno swipe, ma con una presentazione sincera e un sorriso condiviso.</p>
+
+<p><video src="/assets/images/ospite-perfetto/cover.mp4" autoplay controls playsinline></video></p>
+    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.sofiavicedomini.me/blog/2025-09-13-lavoro-in-ufficio</id>
+    <link type="text/html" rel="alternate" href="https://blog.sofiavicedomini.me/blog/2025-09-13-lavoro-in-ufficio" />
+    <title>Perché Obbligare i Team di Sviluppo a Lavorare in Ufficio È un Errore (e Come Evitarlo)</title>
+    <published>2025-09-13T00:00:00+00:00</published>
+    <updated>2025-09-13T00:00:00+00:00</updated>
+    <author>
+        <name>Sofia Vicedomini</name>
+    </author>
+    <summary type="html">Imporre la presenza in ufficio a un team di sviluppo può sembrare una scelta innocua, ma spesso è un disastro per produttività e benessere. Non solo: la disorganizzazione, le interruzioni continue e le interminabili call su Teams possono spingere i......</summary>
+    <content type="html"><![CDATA[
+        <p>Imporre la presenza in ufficio a un team di sviluppo può sembrare una scelta innocua, ma spesso è un disastro per produttività e benessere. Non solo: la disorganizzazione, le interruzioni continue e le interminabili call su Teams possono spingere i developer dritti verso il <strong>burnout</strong>. In questo articolo esploreremo perché queste pratiche sono dannose e come evitarle, mantenendo un tono informale ma professionale. Partiamo!</p>
+
+<h2>Cos’è il Burnout e Perché È un Problema</h2>
+
+<p>Il <strong>burnout</strong> non è solo "essere stanchi". È uno stato di esaurimento emotivo, fisico e mentale causato da stress lavorativo prolungato. L’Organizzazione Mondiale della Sanità lo riconosce come una sindrome legata al lavoro, e nel mondo tech, con i suoi ritmi serrati, è una minaccia reale.</p>
+
+<p>I sintomi principali includono:</p>
+
+<ul>
+<li><strong>Esaurimento cronico</strong>: Ti senti svuotato, anche dopo un weekend di riposo.</li>
+<li><strong>Distacco dal lavoro</strong>: Perdita di motivazione, con un atteggiamento cinico verso colleghi o progetti.</li>
+<li><strong>Calo di produttività</strong>: Difficoltà a concentrarti, errori frequenti e la sensazione di non essere all’altezza.</li>
+</ul>
+
+<p>Il burnout si sviluppa gradualmente, alimentato da pressioni continue, poca autonomia e ambienti di lavoro caotici. Vediamo come alcune pratiche comuni lo peggiorano.</p>
+
+<h2>Presenza in Ufficio: Perché È un Problema per i Developer</h2>
+
+<p>Immagina di essere immerso in un blocco di codice complesso, con la mente focalizzata al 100%. Poi, un collega ti interrompe o il capo ti trascina in una "riunione veloce" che dura un’ora. Questo è il dramma del lavoro in ufficio obbligatorio, e per i developer è una ricetta per il disastro.</p>
+
+<h2>Ecco perché non funziona:</h2>
+
+<ul>
+<li><strong>Flessibilità azzerata</strong>: I developer rendono al meglio quando possono controllare il proprio ambiente. In ufficio, orari rigidi e pendolarismo rubano tempo ed energia, mentre distrazioni come rumori o chiacchiere casuali spezzano la concentrazione. Uno studio di Microsoft mostra che il lavoro remoto aumenta la produttività del 4-5% grazie alla libertà di gestire il proprio tempo.</li>
+<li><strong>Stress da presenzialismo</strong>: In ufficio, c’è la pressione di <em>sembrare</em> occupati, anche quando non serve. Questo porta a meeting inutili o interruzioni costanti, con meno tempo per scrivere codice di qualità e più frustrazione.</li>
+<li><strong>Esclusione di talenti</strong>: Non tutti possono vivere vicino all’ufficio. Forzare la presenza taglia fuori developer remoti, genitori o persone con esigenze specifiche, riducendo la diversità e la creatività del team.</li>
+</ul>
+
+<p>Obbligare i developer a lavorare in sede è come chiedere a un artista di creare con una mano legata: si può fare, ma il risultato ne risente.</p>
+
+<h2>Disorganizzazione e Interruzioni: Il Caos Che Uccide la Produttività</h2>
+
+<p>Un altro grande problema è la <strong>disorganizzazione</strong>. Sei nel pieno di un task, magari stai debuggando un codice ostico, quando arriva un messaggio su Slack: “Puoi controllare questa cosa al volo?”. O, in ufficio, un collega ti ferma per una “domandina”. Sembra poca cosa, ma il danno è enorme.</p>
+
+<p>Perché è un problema?</p>
+
+<ul>
+<li><strong>Addio concentrazione</strong>: La concentrazione profonda (o <em>deep work</em>) è essenziale per i developer. Ogni interruzione ti strappa dal flusso, e ci vogliono in media <strong>23 minuti</strong> per riprenderti, secondo Cal Newport, autore di <em>Deep Work</em>. Con 10 interruzioni al giorno, perdi ore preziose.</li>
+<li><strong>Sovraccarico mentale</strong>: Saltare da un task all’altro (il cosiddetto multitasking forzato) consuma energia mentale, aumenta gli errori e ti fa sentire inadeguato.</li>
+<li><strong>Mancanza di processi chiari</strong>: Senza un sistema strutturato, come ticket su Jira o slot dedicati per le domande, i developer sono sempre “reperibili”, erodendo i confini tra lavoro e vita privata.</li>
+</ul>
+
+<p>Questo caos alimenta stress e frustrazione, aprendo la porta al burnout.</p>
+
+<h2>Call Infinite su Teams: Collaborazione o Tortura di Gruppo?</h2>
+
+<p>Tool come Teams o Zoom sono utili, ma quando ogni discussione si trasforma in una call – “Facciamo due minuti per allinearci” che diventano 45 – il gioco non vale la candela.</p>
+
+<p>Ecco come le call continue contribuiscono al burnout:</p>
+
+<ul>
+<li><strong>Fatica da schermo</strong>: La “Zoom fatigue” è reale. Uno studio di Stanford spiega che le videochiamate richiedono più energia mentale rispetto alle interazioni dal vivo, perché devi fissare lo schermo e decifrare espressioni facciali in un contesto innaturale. Per i developer, già incollati al codice, è un sovraccarico.</li>
+<li><strong>Tempo rubato</strong>: Le call sincrone rubano spazio al lavoro individuale. Invece di usare email, documenti condivisi o ticket, tutto diventa una riunione, spesso senza decisioni concrete.</li>
+<li><strong>Isolamento paradossale</strong>: Passi ore in call, ma ti senti solo. Le interazioni significative si riducono, sostituite da schermate piene di volti pixelati, aumentando il senso di distacco.</li>
+</ul>
+
+<p>Per un team di sviluppo, dove gran parte del lavoro è individuale, abusare delle call è come usare un cacciavite per piantare un chiodo: inefficace e frustrante.</p>
+
+<h2>Come Prevenire il Burnout e Migliorare la Produttività</h2>
+
+<p>Forzare la presenza in ufficio, tollerare disorganizzazione e trasformare le giornate in maratone di call non solo danneggia la produttività, ma accelera il burnout, portando a turnover e progetti falliti. Ecco come evitarlo:</p>
+
+<ul>
+<li><strong>Abbraccia il remoto o l’ibrido</strong>: Dai ai developer la libertà di scegliere dove e quando lavorare meglio.</li>
+<li><strong>Comunica in modo asincrono</strong>: Usa tool come Jira, Notion o Slack per ridurre le call e lasciare tracce scritte.</li>
+<li><strong>Proteggi il tempo di lavoro</strong>: Introduci giornate senza meeting o slot dedicati al <em>deep work</em>.</li>
+<li><strong>Crea una cultura sana</strong>: Incoraggia pause, rispetta i confini personali e fai check-in regolari sul benessere del team.</li>
+</ul>
+
+<p>Se sei un team leader, ascolta i tuoi developer. Se sei un programmatore, difendi il tuo spazio mentale. Il lavoro dovrebbe essere stimolante, non una corsa verso l’esaurimento.</p>
+
+<p>Hai mai vissuto situazioni del genere? Raccontami la tua esperienza nei commenti o condividi questo articolo. Alla prossima!</p>
+
+<p><em>(Nota: Questo post si basa su esperienze comuni nel settore tech e studi generali. Per consigli personalizzati, consulta un esperto.)</em></p>
+    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.sofiavicedomini.me/blog/2025-09-12-salari-italiani</id>
+    <link type="text/html" rel="alternate" href="https://blog.sofiavicedomini.me/blog/2025-09-12-salari-italiani" />
+    <title>Il paradosso dei salari per i dev italiani</title>
+    <published>2025-09-12T00:00:00+00:00</published>
+    <updated>2025-09-12T00:00:00+00:00</updated>
+    <author>
+        <name>Sofia Vicedomini</name>
+    </author>
+    <summary type="html">Ti sei mai guardato il conto in banca e pensato: “Ma perché il mio stipendio da dev sembra il budget per un weekend low-cost?” Se sei un programmatore in Italia, probabilmente sì. Lavori sodo, scrivi codice che farebbe invidia a un ingegnere della......</summary>
+    <content type="html"><![CDATA[
+        <h2>1. Quando il tuo stipendio sa di espresso bruciato</h2>
+
+<p>Ti sei mai guardato il conto in banca e pensato: <em>“Ma perché il mio stipendio da dev sembra il budget per un weekend low-cost?”</em> Se sei un programmatore in Italia, probabilmente sì. Lavori sodo, scrivi codice che farebbe invidia a un ingegnere della NASA, ma poi il tuo stipendio netto ti ricorda che vivi a Roma, non a Palo Alto. E no, non è solo perché spendi troppo in cappuccini. I salari tech in Italia sono un po’ come un espresso troppo forte: pieno di aroma (talenti), ma con una “bitter” che ti lascia voglia di più. Scopriamo perché, ruolo per ruolo, con un sorriso ironico e qualche numero.</p>
+
+<hr />
+
+<h2>2. La domanda c’è, ma i soldi dove sono?</h2>
+
+<p>Il mondo vuole sviluppatori, e l’Italia non è da meno: la domanda di talenti tech cresce del <strong>+2%</strong> all’anno (dati 2024-25). Ma mentre altrove i salari schizzano come razzi, da noi sembrano bloccati in un eterno <em>“loading”</em>. Ecco un confronto con l’Europa:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Paese</th>
+  <th>Salario medio per dev (anno)</th>
+  <th>Crescita annua</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Italia</strong></td>
+  <td>€30k – €45k</td>
+  <td>+2%</td>
+</tr>
+<tr>
+  <td><strong>Germania</strong></td>
+  <td>€55k – €65k</td>
+  <td>+3.5%</td>
+</tr>
+<tr>
+  <td><strong>Regno Unito</strong></td>
+  <td>€60k – €70k</td>
+  <td>+4%</td>
+</tr>
+<tr>
+  <td><strong>Francia</strong></td>
+  <td>€50k – €58k</td>
+  <td>+2.8%</td>
+</tr>
+<tr>
+  <td><strong>Paesi Bassi</strong></td>
+  <td>€65k – €75k</td>
+  <td>+3.7%</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h2>3. Tasse e costo della vita: il grande furto</h2>
+
+<p>Perché il tuo stipendio svanisce più veloce di un gelato a Ferragosto? Ecco i colpevoli:</p>
+
+<ul>
+<li><strong>Costo della vita</strong>: Milano è il 15% più cara della media europea. Un affitto? Facile 1.000 euro al mese. Un cappuccino? 2 euro, e ringrazia.</li>
+<li><strong>Tasse</strong>: L’IRPEF ti colpisce fino al 43% sopra i €75k, più contributi INPS (9-10%). Risultato? Da €50k lordi ti restano €30k netti, se va bene.</li>
+<li><strong>Citazione da bar</strong>: <em>“Guadagno €40k, ma tra tasse e bollette mi resta giusto per un abbonamento Netflix base”</em> – un dev a Napoli, giuro.</li>
+</ul>
+
+<hr />
+
+<h2>4. Benefit? Più rari di un parcheggio libero a Roma</h2>
+
+<p>In Europa, i benefit sono come il pane: li trovi ovunque. In Italia? Sono come il tartufo: li vedi solo se lavori per una big tech. Ecco il confronto:</p>
+
+<table>
+<thead>
+<tr>
+  <th>Benefit</th>
+  <th>Valore medio annuo (€)</th>
+  <th>Italia</th>
+  <th>Paesi Bassi/Germania</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Stock-options</td>
+  <td>€10k – €20k</td>
+  <td>Solo multinazionali</td>
+  <td>Comune, anche nelle startup</td>
+</tr>
+<tr>
+  <td>Assicurazione sanitaria privata</td>
+  <td>€1k – €3k</td>
+  <td>Rara, magari un buono palestra</td>
+  <td>Standard ovunque</td>
+</tr>
+<tr>
+  <td>Orario flessibile + remote</td>
+  <td>N/A</td>
+  <td>“Flessibile” finché il capo non chiama</td>
+  <td>Diritto acquisito</td>
+</tr>
+<tr>
+  <td>Formazione (corsi, certificazioni)</td>
+  <td>€2k – €5k</td>
+  <td>“Guarda un tutorial su YouTube”</td>
+  <td>Budget dedicato</td>
+</tr>
+</tbody>
+</table>
+
+<hr />
+
+<h2>5. Salari per ruolo: quanto perdi davvero?</h2>
+
+<p>Entriamo nel cuore del problema: quanto guadagni (o perdi) rispetto alla media europea, ruolo per ruolo? Spoiler: fa un po’ male, ma l’ironia aiuta.</p>
+
+<ul>
+<li><p><strong>Intern</strong></p>
+
+<ul>
+<li><strong>Italia</strong>: €6k–€9.6k (500–800 €/mese, varia per regione)</li>
+<li><strong>Europa</strong>: €25k–€35k</li>
+<li><strong>Differenza</strong>: -70%</li>
+<li><strong>Perché?</strong> In Italia gli stage sono spesso pagati come un “rimborso spese”. In regioni come Lombardia pagano 800 €/mese, in Calabria si scende a 500 €/mese. Altrove, gli intern sono un investimento, non una risorsa low-cost.</li>
+</ul></li>
+<li><p><strong>Junior Software Engineer (JSE)</strong></p>
+
+<ul>
+<li><strong>Italia</strong>: €25k–€35k</li>
+<li><strong>Europa</strong>: €40k–€55k</li>
+<li><strong>Differenza</strong>: -35%</li>
+<li><strong>Perché?</strong> Contratti a termine e poca competizione per i junior tengono i salari bassi. <em>Morale</em>: inizi la carriera con entusiasmo, ma il tuo stipendio dice “calma, sei ancora nella fase tutorial”.</li>
+</ul></li>
+<li><p><strong>Mid-Level Software Engineer (SE)</strong></p>
+
+<ul>
+<li><strong>Italia</strong>: €30k–€45k</li>
+<li><strong>Europa</strong>: €50k–€70k</li>
+<li><strong>Differenza</strong>: -35%</li>
+<li><strong>Perché?</strong> La domanda per dev esperti cresce, ma le aziende italiane offrono pochi benefit. <em>Risultato</em>: scrivi codice complesso, ma il tuo conto corrente è ancora in modalità “junior”.</li>
+</ul></li>
+<li><p><strong>Senior Software Engineer (SSE)</strong></p>
+
+<ul>
+<li><strong>Italia</strong>: €40k–€55k</li>
+<li><strong>Europa</strong>: €65k–€90k</li>
+<li><strong>Differenza</strong>: -35%</li>
+<li><strong>Perché?</strong> Manca il bonus performance e le stock-options sono un miraggio. <em>Domanda</em>: perché progettare microservizi se il tuo stipendio sembra quello di un mid-level olandese?</li>
+</ul></li>
+<li><p><strong>Staff/Lead Software Engineer</strong></p>
+
+<ul>
+<li><strong>Italia</strong>: €50k–€70k</li>
+<li><strong>Europa</strong>: €80k–€110k</li>
+<li><strong>Differenza</strong>: -35%</li>
+<li><strong>Perché?</strong> Le posizione di leadership pagano meglio, ma mancano equity e benefit strategici. <em>Ironia</em>: guidi un team, ma il tuo stipendio non guida una Porsche.</li>
+</ul></li>
+<li><p><strong>Principal / Senior Staff Engineer</strong></p>
+
+<ul>
+<li><strong>Italia</strong>: €60k–€85k</li>
+<li><strong>Europa</strong>: €100k–€130k</li>
+<li><strong>Differenza</strong>: -35%</li>
+<li><strong>Perché?</strong> I principal sono rari in Italia, e anche loro soffrono la mancanza di equity. <em>Nota</em>: sei un guru, ma il tuo stipendio sembra quello di un senior a Berlino.</li>
+</ul></li>
+<li><p><strong>Engineering Manager (EM)</strong></p>
+
+<ul>
+<li><strong>Italia</strong>: €45k–€65k</li>
+<li><strong>Europa</strong>: €70k–€95k</li>
+<li><strong>Differenza</strong>: -35%</li>
+<li><strong>Perché?</strong> Gestisci team, ma senza bonus legati agli OKR o alle assunzioni. <em>Pensiero</em>: più responsabilità, stesso stipendio. Che affare.</li>
+</ul></li>
+<li><p><strong>Senior EM / Director</strong></p>
+
+<ul>
+<li><strong>Italia</strong>: €70k–€100k</li>
+<li><strong>Europa</strong>: €100k–€160k</li>
+<li><strong>Differenza</strong>: -35%</li>
+<li><strong>Perché?</strong> La strategia aziendale paga, ma in Italia i benefit a lungo termine sono un sogno. <em>Consiglio</em>: a questo punto, prova a candidarti in Germania.</li>
+</ul></li>
+<li><p><strong>VP / Executive</strong></p>
+
+<ul>
+<li><strong>Italia</strong>: €100k–€150k+</li>
+<li><strong>Europa</strong>: €150k–€300k+</li>
+<li><strong>Differenza</strong>: -35%</li>
+<li><strong>Perché?</strong> Anche i capi soffrono: meno equity e bonus rispetto all’Europa. <em>Sogno</em>: vuoi il jet privato? Punta su Londra.</li>
+</ul></li>
+</ul>
+
+<hr />
+
+<h2>6. Casi studio: la realtà parla</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Azienda</th>
+  <th>Località</th>
+  <th>Salario medio (SSE)</th>
+  <th>Bonus + Stock-options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Google</strong></td>
+  <td>Milano</td>
+  <td>€55k</td>
+  <td>€20k bonus + €30k opzioni</td>
+</tr>
+<tr>
+  <td><strong>Accenture</strong></td>
+  <td>Roma</td>
+  <td>€50k</td>
+  <td>€10k bonus + €15k opzioni</td>
+</tr>
+<tr>
+  <td><strong>Startup fintech</strong></td>
+  <td>Torino</td>
+  <td>€45k</td>
+  <td>Equity 0.5% (se la startup non fallisce)</td>
+</tr>
+</tbody>
+</table>
+
+<p><em>Nota</em>: una startup italiana può sembrare il futuro, ma se l’equity è un’illusione e il bonus un miraggio, meglio ordinare un altro caffè.</p>
+
+<hr />
+
+<h2>7. Soluzioni: come smettere di piangere sul conto corrente</h2>
+
+<p>L’Italia può fare di più, no? Ecco qualche idea per non far scappare i dev all’estero:</p>
+
+<ul>
+<li><strong>Tasse più umane</strong>: Ridurre l’IRPEF per i redditi tech o introdurre detrazioni per R&amp;D. Immagina: uno stipendio che non svanisce al primo bollettino.</li>
+<li><strong>Benefit standardizzati</strong>: Stock-options, assicurazioni sanitarie, corsi di formazione. Non dovrebbero essere un lusso, ma la norma.</li>
+<li><strong>Lavoro remoto protetto</strong>: Leggi che garantiscano ai remote worker gli stessi benefit di chi lavora in sede, senza clausole nascoste tipo “vieni in ufficio quando voglio io”.</li>
+<li><strong>Fondi per startup e PMI</strong>: Un programma “Digital Talent” per finanziare salari competitivi e attrarre talenti. Se le startup pagano meglio, i dev restano.</li>
+<li><strong>Incentivi per le regioni del Sud</strong>: Investimenti mirati per ridurre il gap salariale tra Nord e Sud. Perché un dev a Palermo dovrebbe guadagnare meno di uno a Milano?</li>
+<li><strong>Cultura aziendale tech-oriented</strong>: Le aziende italiane devono smettere di vedere i dev come “operai del codice”. Più autonomia, più bonus legati ai risultati.</li>
+<li><strong>Collaborazione pubblico-privato</strong>: Partnership tra governo e aziende per creare hub tech (es. a Torino o Bologna) con salari e benefit allineati all’Europa.</li>
+</ul>
+
+<hr />
+
+<h2>8. Conclusione: non è solo il caffè</h2>
+
+<p>Il mercato tech italiano è come un espresso: intenso, profumato, ma con un retrogusto amaro. Se vuoi che il tuo stipendio smetta di essere una barzelletta, cerca aziende con pacchetti competitivi (bonus, equity, remote vero) o unisciti a chi spinge per migliorare il settore. E se tutto fallisce, c’è sempre un volo low-cost per Amsterdam.</p>
+
+<hr />
+
+<h2>9. Tabella finale: il confronto che fa male</h2>
+
+<table>
+<thead>
+<tr>
+  <th>Livello</th>
+  <th>Titolo (esempio)</th>
+  <th>Descrizione breve</th>
+  <th>Media EU (€)</th>
+  <th>Media Italia (€)</th>
+  <th>Differenza (%)</th>
+  <th>Spiegazione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><strong>Intern</strong></td>
+  <td>Software Engineering Intern</td>
+  <td>Stage di 3-6 mesi</td>
+  <td>€25k–€35k</td>
+  <td>€6k–€9.6k</td>
+  <td>-70%</td>
+  <td>Stage pagati come rimborsi spese, variano da 500 €/mese (Sud) a 800 €/mese (Nord)</td>
+</tr>
+<tr>
+  <td><strong>Entry-Level</strong></td>
+  <td>Junior Software Engineer</td>
+  <td>Debugging, task semplici</td>
+  <td>€40k–€55k</td>
+  <td>€25k–€35k</td>
+  <td>-35%</td>
+  <td>Contratti a termine, poca competizione</td>
+</tr>
+<tr>
+  <td><strong>Mid-Level</strong></td>
+  <td>Software Engineer</td>
+  <td>Progettazione moduli</td>
+  <td>€50k–€70k</td>
+  <td>€30k–€45k</td>
+  <td>-35%</td>
+  <td>Meno benefit, domanda in crescita</td>
+</tr>
+<tr>
+  <td><strong>Senior</strong></td>
+  <td>Senior Software Engineer</td>
+  <td>Componenti critici</td>
+  <td>€65k–€90k</td>
+  <td>€40k–€55k</td>
+  <td>-35%</td>
+  <td>Pochi bonus, niente stock-options</td>
+</tr>
+<tr>
+  <td><strong>Staff/Lead</strong></td>
+  <td>Staff/Lead Software Engineer</td>
+  <td>Guida team complessi</td>
+  <td>€80k–€110k</td>
+  <td>€50k–€70k</td>
+  <td>-35%</td>
+  <td>Mancano equity e benefit strategici</td>
+</tr>
+<tr>
+  <td><strong>Principal / Senior Staff</strong></td>
+  <td>Principal / Senior Staff Engineer</td>
+  <td>Standard tecnici globali</td>
+  <td>€100k–€130k</td>
+  <td>€60k–€85k</td>
+  <td>-35%</td>
+  <td>Rari in Italia, pochi incentivi</td>
+</tr>
+<tr>
+  <td><strong>Engineering Manager</strong></td>
+  <td>Engineering Manager</td>
+  <td>Gestione team</td>
+  <td>€70k–€95k</td>
+  <td>€45k–€65k</td>
+  <td>-35%</td>
+  <td>No bonus OKR, poca equity</td>
+</tr>
+<tr>
+  <td><strong>Senior EM / Director</strong></td>
+  <td>Senior EM / Director</td>
+  <td>Strategia e budget</td>
+  <td>€100k–€160k</td>
+  <td>€70k–€100k</td>
+  <td>-35%</td>
+  <td>Benefit a lungo termine scarsi</td>
+</tr>
+<tr>
+  <td><strong>VP / Executive</strong></td>
+  <td>Vice President, Head of Engineering</td>
+  <td>Visione aziendale</td>
+  <td>€150k–€300k+</td>
+  <td>€100k–€150k+</td>
+  <td>-35%</td>
+  <td>Meno equity, bonus limitati</td>
+</tr>
+</tbody>
+</table>
+
+<blockquote>
+  <p><em>Se il tuo stipendio italiano ti sembra troppo basso in un mondo di opportunità europee, fai due chiacchiere con un recruiter. O prenota quel volo per l’Europa.</em></p>
+</blockquote>
+
+<h2>Riferimenti</h2>
+
+<ul>
+<li><a href="https://www.payscale.com">PayScale</a></li>
+<li><a href="https://www.levels.fyi">Levels.fyi</a></li>
+<li><a href="https://ec.europa.eu/eurostat">Eurostat</a></li>
+<li><a href="https://www.oecd.org">OECD</a></li>
+<li><a href="https://www.glassdoor.com">Glassdoor</a></li>
+<li><a href="https://www.reddit.com/r/cscareerquestionsEU">Reddit / cscareerquestionsEU</a></li>
+<li><a href="https://codesubmit.io/blog/software-engineer-salary-by-country/">CodeSubmit</a></li>
+<li><a href="https://leverageedu.com/learn/software-engineer-salary-in-italy/">Leverage Edu</a></li>
+<li><a href="https://qubit-labs.com/average-software-developer-salaries-salary-comparison-country/">Qubit Labs</a></li>
+<li><a href="https://www.salaryexpert.com">Salary Expert</a></li>
+<li><a href="https://arc.dev/salaries">Arc</a></li>
+<li><a href="https://www.wearedevelopers.com">WeAreDevelopers</a></li>
+<li><a href="https://www.orientsoftware.com/blog/software-engineer-salary-by-country/">Orient Software</a></li>
+</ul>
+    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.sofiavicedomini.me/blog/2025-08-26-teslavision</id>
+    <link type="text/html" rel="alternate" href="https://blog.sofiavicedomini.me/blog/2025-08-26-teslavision" />
+    <title>The Hidden Dangers of Tesla Vision</title>
+    <published>2025-08-25T00:00:00+00:00</published>
+    <updated>2025-08-25T00:00:00+00:00</updated>
+    <author>
+        <name>Sofia Vicedomini</name>
+    </author>
+    <summary type="html">Tesla’s been shaking things up in the automotive world with its Tesla Vision system—a camera-only approach to self-driving that ditches radar and LiDAR entirely. Elon Musk is all-in on this, claiming cameras, paired with some seriously smart AI, are......</summary>
+    <content type="html"><![CDATA[
+        <p>Tesla’s been shaking things up in the automotive world with its <em>Tesla Vision</em> system—a camera-only approach to self-driving that ditches radar and LiDAR entirely. Elon Musk is all-in on this, claiming cameras, paired with some seriously smart AI, are all you need to achieve full autonomy, just like human eyes and brains get us through the day. It’s a bold, futuristic vision, and when you see a Tesla weaving through traffic using nothing but cameras, it’s hard not to be impressed.</p>
+
+<p>But let’s pump the brakes for a second. Driving isn’t just about “seeing.” Humans rely on intuition, experience, and quick thinking to handle the chaos of the road. Machines? They’re not quite there yet, and Tesla Vision’s camera-only gamble comes with some pretty big risks that we need to talk about. From weather woes to ethical dilemmas, here’s why this system might not be the self-driving silver bullet it’s made out to be.</p>
+
+<h2>1. Weather and Lighting: Cameras Aren’t Invincible</h2>
+
+<p>Picture yourself cruising in a Tesla on a sunny day—blue skies, clear roads, Tesla Vision humming along like a champ. Now imagine that same drive in a torrential downpour, a snowy blizzard, or thick fog. Rain can smear camera lenses, snow can cake them, and glare from a low sun can blind them entirely. Even darkness or reflections off wet roads can throw a wrench in the system. Humans struggle in these conditions too, but we’ve got other senses and instincts to lean on. Tesla Vision? It’s got cameras and… that’s it.</p>
+
+<p>Radar and LiDAR, which Tesla used to use, can “see” through bad weather. Radar uses radio waves to detect objects, and LiDAR’s laser pulses don’t care about rain or fog—they just map the world with precision. Without them, Tesla Vision can essentially go blind in tough conditions. Real-world reports, like those shared in posts on X, point to Tesla’s struggles in rain or snow, with drivers noting the system sometimes misreads obstacles or just gives up. When you’re flying down the highway at 70 mph, that’s not just inconvenient—it’s downright dangerous.</p>
+
+<h2>2. Depth Perception: AI Guesses Aren’t Enough</h2>
+
+<p>Here’s a fun fact: humans have two eyes that work together to give us stereo vision, helping us judge distances like pros. Add in years of real-world experience, and we can tell if a car is 20 meters away or 50 without much thought. Tesla Vision, with its array of cameras, doesn’t have that same depth perception. Instead, it relies on AI to <em>estimate</em> distances by analyzing visual cues—like how big an object looks or where it’s positioned in the frame.</p>
+
+<p>Sounds cool, right? And honestly, Tesla’s AI is pretty darn good at this most of the time. But “most of the time” isn’t good enough when you’re barreling down the road at 120 km/h. A tiny miscalculation—like thinking a truck is farther away than it is—can turn a smooth drive into a nightmare. Other self-driving systems, like Waymo’s or Cruise’s, use LiDAR to directly measure distances with laser accuracy, giving them a fail-safe when vision falters. Tesla Vision’s camera-only setup has no such backup, and that lack of redundancy is a serious gamble.</p>
+
+<h2>3. Edge Cases: The Real World Is Messy</h2>
+
+<p>The real world doesn’t play nice like Tesla’s polished demo videos. Roads are full of weird, unpredictable stuff: a truck hauling a load of oddly shaped pipes, a lane marking buried under snow, or a cyclist who decides to swerve without warning. These are called <em>edge cases</em>—rare, tricky scenarios that can trip up even the best AI. Tesla Vision’s neural networks are trained on massive amounts of driving data, but no dataset can cover every possible curveball the world throws at you.</p>
+
+<p>When an edge case pops up, Tesla Vision has to rely solely on its cameras and AI to figure things out. If the system hasn’t seen something like it before, it might misinterpret it, freeze, or fail entirely. Multi-sensor systems (cameras + radar + LiDAR) have a big advantage here: different sensors can cross-check each other, catching mistakes before they become disasters. Tesla’s all-in-on-cameras approach means there’s no Plan B. Drivers on X have shared stories of Tesla Vision struggling with things like unusual road signs or sudden obstacles, which shows just how vulnerable the system can be to the real world’s chaos.</p>
+
+<h2>4. Regulatory and Ethical Quagmires</h2>
+
+<p>Tesla’s been marketing “Full Self-Driving” (FSD) like it’s just a software update away from being fully autonomous. The name alone—<em>Full Self-Driving</em>—makes it sound like you can kick back and let the car do all the work. But here’s the reality: FSD still requires constant human supervision, and regulators around the world are starting to raise their eyebrows. Countries like Germany and agencies like the U.S. National Highway Traffic Safety Administration (NHTSA) are asking tough questions about whether a camera-only system is safe enough to be called “self-driving.”</p>
+
+<p>Then there’s the ethical side of things. If Tesla’s pushing a system that’s not fully ready, and drivers treat it like it is, who’s responsible when things go wrong? The driver for not staying alert? Tesla for overselling the tech? Or the AI itself? And here’s a tougher question: if a crash could’ve been avoided with extra sensors like radar or LiDAR, does Tesla bear some blame for choosing to skip them? Real-world incidents, like those discussed in posts on X, suggest that Tesla Vision’s limitations have contributed to accidents. That’s a heavy weight to carry when you’re talking about people’s lives.</p>
+
+<h2>5. The Human Trap: Overconfidence Kills</h2>
+
+<p>Let’s talk about us—humans. We’re not great at staying on high alert when we think a machine’s got everything handled. Tesla’s marketing doesn’t help, with all its talk about how Tesla Vision is the future and cameras are “all you need.” That kind of hype can make drivers feel like they’re in a fully self-driving car, even when they’re supposed to be ready to grab the wheel at any moment.</p>
+
+<p>This overconfidence is a recipe for trouble. If you’re lulled into thinking the car’s got this, you might glance at your phone, daydream, or react too slowly when the system suddenly hands control back to you. Research, like studies mentioned in recent web reports, shows that drivers using semi-autonomous systems often have slower reaction times because they’re not fully engaged. When Tesla Vision hits a snag—like misreading a faded lane line or missing a pedestrian in the dark—those split seconds can be the difference between a close call and a tragedy. The more Tesla emphasizes Vision’s capabilities, the bigger the risk that drivers let their guard down.</p>
+
+<h2>Final Thoughts</h2>
+
+<p>Tesla Vision is a wild, ambitious experiment, and you’ve got to hand it to Tesla for pushing the boundaries of what’s possible. The idea of a car driving itself using just cameras and AI is straight out of a sci-fi movie, and their progress is honestly mind-blowing in some ways. But pretending cameras alone can handle every situation ignores decades of robotics and safety research. Redundancy—having multiple sensors like radar and LiDAR to back up the cameras—isn’t just a nice-to-have; it’s a proven way to make self-driving systems safer.</p>
+
+<p>Right now, Tesla Vision feels like a high-stakes bet. It might save money and push AI to new heights, but it’s also playing with real lives on real roads. Until the tech is truly bulletproof (and let’s be real, we’re not there yet), relying on a single sensor type feels like cutting corners. Sometimes, less isn’t more—it’s just riskier.</p>
+
+<p>What’s your take? Are you buying into Tesla’s camera-only dream, or do you think they need to pump the brakes and bring back some extra sensors? Let’s keep the conversation going.</p>
+    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.sofiavicedomini.me/blog/2025-08-25-techex-amsterdam</id>
+    <link type="text/html" rel="alternate" href="https://blog.sofiavicedomini.me/blog/2025-08-25-techex-amsterdam" />
+    <title>Heading to TechEx Amsterdam – 24 &amp; 25 September 🚀</title>
+    <published>2025-08-24T00:00:00+00:00</published>
+    <updated>2025-08-24T00:00:00+00:00</updated>
+    <author>
+        <name>Sofia Vicedomini</name>
+    </author>
+    <summary type="html">A quick update: I’ll be in Amsterdam for TechEx on 24–25 September!
+
+I’m really looking forward to a couple of days full of talks, demos, and hallway chats — the kind where you start off
+talking about APIs and somehow end up sketching half a......</summary>
+    <content type="html"><![CDATA[
+        <p>A quick update: I’ll be in <strong>Amsterdam for TechEx on 24–25 September</strong>!</p>
+
+<p>I’m really looking forward to a couple of days full of talks, demos, and hallway chats — the kind where you start off
+talking about APIs and somehow end up sketching half a product idea on a napkin. That’s the magic of these events.</p>
+
+<p>Mostly, I’m excited to dive into the API and backend sessions, catch up on the latest tools (probably too many), and
+meet people who are just as obsessed with this stuff as I am. And yes, there will definitely be coffee-fueled debates
+about which tech is better for backend, Java, Node, Python or PHP, and whatever else comes up.</p>
+
+<p>If you’re around:</p>
+
+<ul>
+<li>Come say hi during the breaks (I’ll probably be hovering near the espresso machine).</li>
+<li>Wave if you see me wandering the expo hall, hypnotized by another shiny DevOps tool.</li>
+<li>And if you know where to get the best stroopwafels nearby, please, please tell me.</li>
+</ul>
+
+<p>That’s all for now — see you in <strong>Amsterdam, 24–25 September</strong>.<br />
+It’s going to be fun 🚀</p>
+    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.sofiavicedomini.me/blog/2025-01-07-spid</id>
+    <link type="text/html" rel="alternate" href="https://blog.sofiavicedomini.me/blog/2025-01-07-spid" />
+    <title>Come funziona SPID: guida semplice all&#039;identità digitale italiana</title>
+    <published>2025-01-07T00:00:00+00:00</published>
+    <updated>2025-01-07T00:00:00+00:00</updated>
+    <author>
+        <name>Sofia Vicedomini</name>
+    </author>
+    <summary type="html">Proprio pochi giorni fa abbiamo parlato del data breach di InfoCert e delle possibili
+conseguenze sul sistema SPID. È quindi il momento giusto per capire meglio cos’è SPID, come funziona e perché è diventato
+così centrale nella nostra vita......</summary>
+    <content type="html"><![CDATA[
+        <p>Proprio pochi giorni fa abbiamo parlato del <a href="/blog/2024-12-17-infocert-breach">data breach di InfoCert</a> e delle possibili
+conseguenze sul sistema SPID. È quindi il momento giusto per capire meglio cos’è SPID, come funziona e perché è diventato
+così centrale nella nostra vita digitale.</p>
+
+<hr />
+
+<h2>Cos’è SPID</h2>
+
+<p>SPID è l’acronimo di <em>Sistema Pubblico di Identità Digitale</em>. In termini pratici, significa avere un’unica identità
+digitale che ti permette di accedere a una vasta gamma di servizi online della Pubblica Amministrazione e, sempre più
+spesso, anche di aziende private.<br />
+Immaginalo come un “pass universale”: invece di dover creare e ricordare decine di account diversi, ti basta un solo
+profilo con username e password, più eventualmente un codice temporaneo sullo smartphone.</p>
+
+<p>Con SPID puoi, ad esempio, fare la dichiarazione dei redditi, consultare referti medici, iscriverti a un concorso
+pubblico, pagare tasse e tributi o gestire pratiche comunali senza dover passare allo sportello.</p>
+
+<hr />
+
+<h2>Perché è utile</h2>
+
+<p>Il valore di SPID sta tutto nella combinazione tra semplicità e sicurezza.<br />
+Da un lato rende la vita più comoda: un solo accesso per tutto. Dall’altro aumenta la protezione dei tuoi dati grazie a
+diversi livelli di autenticazione.</p>
+
+<ul>
+<li><strong>Livello 1</strong>: username e password.</li>
+<li><strong>Livello 2</strong>: aggiunge l’autenticazione a due fattori (un codice temporaneo generato da app o inviato via SMS).</li>
+<li><strong>Livello 3</strong>: richiede anche un dispositivo fisico, come una smartcard o un token crittografico.</li>
+</ul>
+
+<p>Più il livello è alto, più forte è la garanzia sull’identità dell’utente. Non a caso SPID è conforme al regolamento
+europeo <strong>eIDAS</strong>, che stabilisce regole comuni per le identità digitali in tutta l’Unione.</p>
+
+<hr />
+
+<h2>Come funziona nella pratica</h2>
+
+<p>Il percorso tipico parte dalla <strong>registrazione</strong> presso un <em>Identity Provider</em> (Poste Italiane, Aruba, TIM, Sielte e
+altri), che verifica i tuoi documenti e ti rilascia le credenziali. Da quel momento puoi usare SPID per accedere a tutti
+i servizi aderenti.</p>
+
+<p>Quando entri in un sito o in un’app con SPID, succede questo:</p>
+
+<ol>
+<li>Clicchi sul pulsante “Entra con SPID”.</li>
+<li>Vieni reindirizzato al tuo Identity Provider.</li>
+<li>Inserisci le credenziali (username e password) e, se richiesto, il codice temporaneo.</li>
+<li>L’Identity Provider genera un <strong>token di autenticazione</strong>, cioè una sorta di biglietto digitale che certifica la tua
+identità.</li>
+<li>Il sito che stai visitando controlla il token e, se valido, ti apre l’accesso.</li>
+</ol>
+
+<p><img src="/assets/images/SPID/spid-saml2.png" alt="SPID SAML2 Protocol" /></p>
+
+<p>Questo meccanismo garantisce che i tuoi dati non vengano sparsi ovunque: è sempre il tuo Identity Provider a gestire e
+confermare chi sei, e i servizi che usi ricevono solo le informazioni strettamente necessarie.</p>
+
+<hr />
+
+<h2>Chi fa cosa dentro SPID</h2>
+
+<p>Il sistema si regge su tre attori principali:</p>
+
+<ul>
+<li>Gli <strong>Identity Provider (IdP)</strong>: sono quelli che ti rilasciano SPID e gestiscono le tue credenziali.</li>
+<li>I <strong>Service Provider (SP)</strong>: sono i siti e le piattaforme che permettono l’accesso tramite SPID (come INPS, Comuni,
+Agenzia delle Entrate, ma anche banche o aziende private).</li>
+<li>L’<strong>AgID</strong>: l’Agenzia per l’Italia Digitale, che stabilisce regole, certifica i provider e vigila sul funzionamento
+dell’intero sistema.</li>
+</ul>
+
+<hr />
+
+<h2>Le tecnologie dietro le quinte</h2>
+
+<p>SPID non è una soluzione “fatta in casa”, ma si basa su standard internazionali collaudati:</p>
+
+<ul>
+<li><strong>SAML 2.0</strong>, usato per gestire la federazione delle identità (cioè per permettere a sistemi diversi di riconoscere la
+stessa persona).</li>
+<li><strong>OpenID Connect</strong>, per l’autenticazione basata su token, più leggero e moderno.</li>
+<li><strong>TLS</strong>, che cifra tutte le comunicazioni per evitare intercettazioni.</li>
+<li><strong>Crittografia asimmetrica</strong>, che consente di firmare digitalmente i token e verificarne l’autenticità.</li>
+</ul>
+
+<p>Grazie a questi strumenti, l’intero processo è sicuro, interoperabile e conforme agli standard richiesti a livello
+europeo.</p>
+
+<hr />
+
+<h2>In conclusione</h2>
+
+<p>SPID non è semplicemente un altro account da ricordare, ma un’infrastruttura pensata per semplificare la vita digitale
+dei cittadini e rendere più sicuri i rapporti con la Pubblica Amministrazione.<br />
+Permette di avere meno password da gestire, operazioni più rapide e un riconoscimento valido a livello legale. In un
+Paese che punta sempre di più sulla digitalizzazione, rappresenta un tassello fondamentale per garantire accesso,
+fiducia e sicurezza nelle identità digitali.</p>
+    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.sofiavicedomini.me/blog/2024-12-17-infocert-breach</id>
+    <link type="text/html" rel="alternate" href="https://blog.sofiavicedomini.me/blog/2024-12-17-infocert-breach" />
+    <title>InfoCert sotto attacco: violati i dati di 5,5 milioni di utenti</title>
+    <published>2024-12-27T00:00:00+00:00</published>
+    <updated>2024-12-27T00:00:00+00:00</updated>
+    <author>
+        <name>Sofia Vicedomini</name>
+    </author>
+    <summary type="html">Il 27 dicembre 2024, InfoCert — uno dei principali provider europei di certificazione digitale, SPID e
+gestione documentale — è stata vittima di un grave attacco informatico. Il breach ha portato all’esposizione dei
+dati personali di circa 5,5......</summary>
+    <content type="html"><![CDATA[
+        <p>Il 27 dicembre 2024, <strong>InfoCert</strong> — uno dei principali provider europei di <strong>certificazione digitale</strong>, <strong>SPID</strong> e
+<strong>gestione documentale</strong> — è stata vittima di un grave <strong>attacco informatico</strong>. Il breach ha portato all’esposizione dei
+dati personali di circa <strong>5,5 milioni di utenti</strong>, suscitando preoccupazioni sulla sicurezza delle identità digitali in
+Italia e sulla solidità delle infrastrutture che le supportano.</p>
+
+<blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DEqGqmZsx1R/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/reel/DEqGqmZsx1R/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;">
+    <svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;">Visualizza questo post su Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/reel/DEqGqmZsx1R/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Un post condiviso da Sofia Vicedomini (she/her) 🌈🏳️‍⚧️ (@blacksoulgem95)</a></p></div></blockquote>
+
+<script async src="//www.instagram.com/embed.js"></script>
+
+<h3>Cosa è successo?</h3>
+
+<p>Secondo le prime ricostruzioni, l’attacco avrebbe avuto origine da un <strong>fornitore terzo</strong> utilizzato da InfoCert per la
+gestione delle anagrafiche clienti. I dati sottratti includono:</p>
+
+<ul>
+<li><strong>Nomi completi</strong></li>
+<li><strong>Codici fiscali</strong></li>
+<li><strong>Indirizzi email</strong></li>
+<li><strong>Numeri di telefono</strong></li>
+</ul>
+
+<p>Queste informazioni sono poi state <strong>messe in vendita sul dark web</strong> per circa 1.500 dollari. Alcuni screenshot del
+database sono stati pubblicati come “proof” da chi ha effettuato la violazione.</p>
+
+<h3>I dati sensibili coinvolti</h3>
+
+<p>InfoCert ha rassicurato i propri utenti dichiarando che <strong>non sono stati compromessi né password, né credenziali SPID,
+né certificati digitali</strong>. Tuttavia, l’enorme quantità di informazioni personali esposte rappresenta un rischio
+concreto: da campagne di <strong>phishing</strong> mirato a furti d’identità.</p>
+
+<h3>La risposta di InfoCert</h3>
+
+<p>Dopo aver rilevato la violazione, l’azienda ha messo in atto le seguenti misure:</p>
+
+<ol>
+<li><strong>Indagini interne</strong> per ricostruire l’attacco e contenerne gli effetti.</li>
+<li><strong>Notifica al Garante della Privacy</strong> e alle autorità competenti.</li>
+<li><strong>Comunicazioni agli utenti</strong> con linee guida su come proteggersi da truffe e raggiri.</li>
+</ol>
+
+<p>Nonostante queste azioni, il danno d’immagine e il senso di sfiducia tra gli utenti restano tangibili.</p>
+
+<h3>Le implicazioni sulla sicurezza dell’identità digitale</h3>
+
+<p>Questo incidente solleva interrogativi cruciali sul ruolo dei fornitori terzi nella sicurezza dell’intera catena
+digitale. Anche se i sistemi InfoCert non sono stati direttamente violati, l’attacco dimostra quanto siano vulnerabili
+le infrastrutture distribuite, soprattutto quando coinvolgono dati sensibili e servizi critici come lo SPID.</p>
+
+<p>Essendo uno dei maggiori identity provider in Italia, una violazione legata a InfoCert può avere <strong>effetti a cascata su
+milioni di cittadini e organizzazioni</strong>.</p>
+
+<h3>Cosa possiamo imparare da questo attacco?</h3>
+
+<p>Alcune lezioni da portare a casa:</p>
+
+<ul>
+<li><strong>Per le aziende</strong>: rafforzare le misure di sicurezza lungo tutta la supply chain, effettuare <strong>audit regolari sui
+fornitori</strong>, crittografare i dati e adottare il <em>principio del minimo privilegio</em>.</li>
+<li><strong>Per gli utenti</strong>: essere consapevoli dei rischi digitali, usare password uniche, attivare l’autenticazione a due
+fattori e segnalare comunicazioni sospette.</li>
+</ul>
+
+<hr />
+
+<h3>Phishing: cos'è e come difendersi</h3>
+
+<p>Uno degli impatti più prevedibili di questa violazione è il probabile aumento di <strong>attacchi di phishing</strong>. I
+cybercriminali, in possesso di email e numeri di telefono reali, potrebbero inviare messaggi ingannevoli che sembrano
+provenire da InfoCert o da enti pubblici, con l’obiettivo di rubare ulteriori informazioni o indurre le vittime a
+cliccare su link malevoli.</p>
+
+<p>Ecco alcune <strong>regole pratiche per difendersi</strong>:</p>
+
+<ul>
+<li><strong>Non cliccare su link sospetti</strong>. Verifica sempre l'indirizzo del mittente e diffida di messaggi che richiedono
+azioni urgenti.</li>
+<li><strong>Accedi manualmente ai servizi</strong>. Non cliccare sui link nei messaggi, ma digita l’indirizzo ufficiale nel browser.</li>
+<li><strong>Attiva l’autenticazione a due fattori (2FA)</strong>. Anche se ti rubano le credenziali, senza il secondo fattore non
+possono accedere.</li>
+<li><strong>Aggiorna regolarmente le password</strong> con combinazioni robuste e uniche.</li>
+<li><strong>Usa strumenti di sicurezza</strong>: antivirus, antiphishing e filtri antispam possono fermare molte minacce prima che
+arrivino a te.</li>
+</ul>
+
+<p>Infine, la vera difesa è la consapevolezza: imparare a riconoscere i segnali di pericolo è oggi parte integrante della
+cittadinanza digitale.</p>
+    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.sofiavicedomini.me/blog/2024-11-11-graphql-vs-rest</id>
+    <link type="text/html" rel="alternate" href="https://blog.sofiavicedomini.me/blog/2024-11-11-graphql-vs-rest" />
+    <title>REST vs GraphQL: Is It Really a War?</title>
+    <published>2024-11-11T00:00:00+00:00</published>
+    <updated>2024-11-11T00:00:00+00:00</updated>
+    <author>
+        <name>Sofia Vicedomini</name>
+    </author>
+    <summary type="html">In recent years, REST and GraphQL are often described as if they were competing technologies, locked in some kind of
+“API war.” The reality is a lot less dramatic. REST, defined by Roy Fielding back in 2000, quickly became the dominant
+architectural......</summary>
+    <content type="html"><![CDATA[
+        <h2>REST vs GraphQL: Is It Really a War?</h2>
+
+<h3>Introduction</h3>
+
+<p>In recent years, REST and GraphQL are often described as if they were competing technologies, locked in some kind of
+“API war.” The reality is a lot less dramatic. REST, defined by Roy Fielding back in 2000, quickly became the dominant
+architectural style for APIs on the web. GraphQL, created by Facebook in 2012 and open-sourced in 2015, came later as a
+solution to some practical limitations of REST.</p>
+
+<p>So rather than rivals, it’s more accurate to see them as two different tools in the developer’s toolbox.</p>
+
+<hr />
+
+<h3>Core Concepts</h3>
+
+<p><strong>REST</strong> (Representational State Transfer) is an architectural style that uses HTTP methods (GET, POST, PUT, DELETE…) to
+manage resources. Each resource is accessible through a URL, the communication is stateless (the server doesn’t keep
+track of previous interactions), and data is often exchanged in JSON. REST’s main strengths are its simplicity, the
+ability to leverage caching, and broad support across languages and frameworks.</p>
+
+<p><strong>GraphQL</strong>, on the other hand, is a query language for APIs. Instead of multiple endpoints for different kinds of data,
+you have a single endpoint where the client specifies exactly which data it needs—no more, no less. Everything is
+structured around a typed schema and “resolvers” that fetch the requested data. This approach helps avoid two common
+issues with REST: <em>over-fetching</em> (receiving more data than needed) and <em>under-fetching</em> (making multiple calls to piece
+everything together).</p>
+
+<hr />
+
+<h3>Key Differences</h3>
+
+<p>One of the clearest distinctions is in <strong>data fetching</strong>. With REST, getting complex or related data often requires
+multiple calls. With GraphQL, a single query can return all the data you need—even nested structures. For example:</p>
+
+<p>```graphql
+query {
+  user(id: 123) {
+    name
+    posts {
+      title
+    }
+  }
+}
+````</p>
+
+<p>This query returns just the user’s name and the titles of their posts—nothing extra.</p>
+
+<p>In terms of <strong>flexibility and control</strong>, GraphQL gives more power to the client (the frontend shapes the response),
+while REST gives more control to the server (the response is defined per endpoint).</p>
+
+<p>When it comes to <strong>versioning</strong>, REST typically uses explicit versions in the URL (like <code>/api/v1</code>). GraphQL doesn’t rely
+on versioning—its schema evolves by adding new fields and deprecating old ones.</p>
+
+<p>Finally, the <strong>performance trade-offs</strong>: REST integrates well with existing HTTP caching and CDNs, while GraphQL reduces
+the number of round-trips but can add processing complexity on the server side.</p>
+
+<hr />
+
+<h3>Ecosystem and Tooling</h3>
+
+<p>REST has a very mature ecosystem, supported by tools like Swagger/OpenAPI, cURL, Postman, and countless libraries.
+GraphQL, though younger, comes with powerful tools of its own, such as GraphiQL, Apollo, and schema introspection, which
+lets you explore the API structure dynamically. Both ecosystems are strong, but their approaches differ.</p>
+
+<hr />
+
+<h3>When to Use Each</h3>
+
+<p>There’s no single right answer—it depends on your project.</p>
+
+<p>REST is a great choice for simple CRUD APIs, for applications where caching is critical, or when you need maximum
+compatibility across different clients. It also works well for quick prototyping, thanks to its straightforward design.</p>
+
+<p>GraphQL shines when data is complex and nested, when multiple clients (like web and mobile apps) need different views of
+the same data, or when you want to minimize network requests. It’s also the better option for advanced scenarios like
+real-time subscriptions.</p>
+
+<hr />
+
+<h3>Clearing Up Misconceptions</h3>
+
+<p>There are a few myths worth addressing.</p>
+
+<ul>
+<li><strong>“GraphQL is always better than REST.”</strong> Not true—sometimes REST is simpler and more efficient.</li>
+<li><strong>“REST is outdated.”</strong> REST is still the most widely used style and continues to evolve.</li>
+<li><strong>“You must choose one or the other.”</strong> False. Hybrid architectures that combine both are common and often practical.</li>
+</ul>
+
+<hr />
+
+<h3>Conclusion</h3>
+
+<p>There’s no real “API war.” REST and GraphQL are simply different approaches, each with its own trade-offs. REST is
+stable, simple, and caching-friendly. GraphQL offers flexibility, minimizes over-fetching, and empowers frontend
+developers.</p>
+
+<p>The key is not to follow hype, but to evaluate the actual needs of your project. And in many cases, the smartest choice
+isn’t picking one over the other—but using both where they make the most sense.</p>
+    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.sofiavicedomini.me/blog/2024-11-01-eidas</id>
+    <link type="text/html" rel="alternate" href="https://blog.sofiavicedomini.me/blog/2024-11-01-eidas" />
+    <title>The Hitchhiker’s Guide to eIDAS: Navigating Europe’s Digital Identity Landscape</title>
+    <published>2024-11-01T00:00:00+00:00</published>
+    <updated>2024-11-01T00:00:00+00:00</updated>
+    <author>
+        <name>Sofia Vicedomini</name>
+    </author>
+    <summary type="html">Don’t Panic! If navigating Europe’s digital identity systems feels like hitchhiking across the galaxy, fear not—*
+*eIDAS** (Electronic Identification, Authentication and Trust Services) is the friendly guide ensuring you won’t lose
+your way. Like......</summary>
+    <content type="html"><![CDATA[
+        <p><strong>Don’t Panic!</strong> If navigating Europe’s digital identity systems feels like hitchhiking across the galaxy, fear not—*
+*eIDAS** (Electronic Identification, Authentication and Trust Services) is the friendly guide ensuring you won’t lose
+your way. Like the Hitchhiker’s Guide itself, eIDAS won’t tell you the meaning of life, the universe, and everything (
+that’s obviously <strong>42</strong>), but it will help you sign contracts, log in to foreign websites, and open a bank account in
+another country without leaving your couch.</p>
+
+<p>So grab your (metaphorical) towel and let’s embark on this journey through Europe’s digital identity cosmos.</p>
+
+<hr />
+
+<h2>What is eIDAS and Why Should You Care?</h2>
+
+<p>At its core, <strong>eIDAS</strong> is a regulation established by the EU back in 2014. Think of it as a <strong>rulebook for digital
+identity and trust</strong> that every member state has agreed to follow. Its mission? To make sure electronic IDs and
+signatures work across borders just as smoothly as your passport does at airports—minus the queues and suspicious stares
+from customs officers.</p>
+
+<p>Without eIDAS, you’d need a different login, digital signature, or verification method for each country you interact
+with. With eIDAS, a digital signature issued in Germany must be accepted as legally binding in Italy, Spain, or anywhere
+else in the EU.</p>
+
+<p>For the technically inclined, you can imagine eIDAS as the EU’s <strong>API contract for trust and identity</strong>. Each country
+can have its own backend implementation (smartcards, mobile apps, bank logins), but they all agree to speak the same
+protocol when it comes to identification, authentication, and trust services.</p>
+
+<p>Or, in Hitchhiker’s terms: Europe finally realized that carrying 27 incompatible digital identity systems was like
+carrying 27 guidebooks for the galaxy—so they just wrote one that everyone can read.</p>
+
+<hr />
+
+<h2>Electronic Identification (eID): Your Digital Passport</h2>
+
+<p>One of the main pillars of eIDAS is the <strong>electronic ID (eID)</strong>—a secure digital identity issued by your government. It
+could be:</p>
+
+<ul>
+<li>a smartcard you slide into a reader,</li>
+<li>a mobile app you approve with your fingerprint, or</li>
+<li>a secure login via your bank credentials.</li>
+</ul>
+
+<p>The purpose is simple: to prove that <em>you are you</em> when logging into services or signing documents online.</p>
+
+<p>Now here’s the clever bit: under eIDAS, once a country <strong>“notifies”</strong> its eID scheme to the EU (meaning it meets the
+required standards), all other EU countries must recognize it. Your national eID becomes your <strong>digital passport</strong> for
+the whole EU.</p>
+
+<p><strong>A real-world example:</strong>
+Let’s say you’re from Country A and want to register for a service in Country B that requires proof of identity. Instead
+of creating a new account or sending scanned IDs, Country B’s site redirects you to log in with Country A’s eID.</p>
+
+<p>Behind the curtain, the process looks a bit like two spaceships docking in orbit:</p>
+
+<ul>
+<li>Country B’s <strong>eIDAS connector</strong> reaches out to Country A’s <strong>eIDAS proxy service</strong>,</li>
+<li>which then talks to your country’s identity provider,</li>
+<li>which confirms that yes, this is indeed you (and not, say, Zaphod Beeblebrox trying to impersonate you).</li>
+</ul>
+
+<p>The underlying tech uses secure protocols like <strong>SAML assertions</strong> and <strong>mutual TLS</strong> to shuttle identity data across
+borders safely. But for you as a user, it’s just: click, approve, done.</p>
+
+<hr />
+
+<h2>Trust Services and Digital Signatures in Plain English</h2>
+
+<p>If eIDs are your passport, then <strong>trust services</strong> are the seals, stamps, and notary signatures that make transactions
+official.</p>
+
+<p>Under eIDAS, these services cover things like:</p>
+
+<ul>
+<li><strong>Electronic Signatures</strong>: Your digital handwriting. If it’s a <strong>Qualified Electronic Signature</strong>, it has the same
+legal weight as pen on paper.</li>
+<li><strong>Electronic Seals</strong>: Like signatures, but for organizations—guaranteeing the source and integrity of a document.</li>
+<li><strong>Timestamps</strong>: Proof that something existed or was signed at a particular moment (because in bureaucracy, timing is
+everything).</li>
+<li><strong>Electronic Registered Delivery Service (ERDS)</strong>: A secure way to send and receive electronic documents with proof of
+delivery.</li>
+<li><strong>Website Authentication Certificates</strong>: TLS/SSL certificates verified under EU trust rules to ensure the site you’re
+visiting isn’t some intergalactic scam.</li>
+</ul>
+
+<p>Think of these as the <strong>digital Babel fish of trust</strong>—they ensure that no matter what language or system is used,
+everyone can understand and verify that a transaction is legitimate.</p>
+
+<hr />
+
+<h2>Qualified Trust Service Providers (QTSPs): The Gatekeepers of Trust</h2>
+
+<p>You might now be asking, <em>who actually issues these magical certificates and signatures?</em> That’s the job of <strong>Trust
+Service Providers (TSPs)</strong>.</p>
+
+<p>Some are private companies, others are public agencies, but only a select few are recognized as <strong>Qualified Trust
+Service Providers (QTSPs)</strong>. To earn that title, they have to undergo rigorous audits and meet some of the strictest
+standards in cybersecurity and operations in the world.</p>
+
+<p>QTSPs can issue <strong>Qualified Certificates</strong>, which in turn let you create legally binding electronic signatures or seals
+that are recognized across all EU states.</p>
+
+<p>Think of QTSPs as the <strong>certified towel manufacturers</strong> of the eIDAS galaxy—you could technically trust any towel, but
+when things get serious, you’ll want one with the official seal of approval.</p>
+
+<hr />
+
+<h2>Cross-Border Convenience: How eIDAS Simplifies Digital Life</h2>
+
+<p>So, what does all this tech and legal jargon mean for your everyday life? Quite a lot, actually. With eIDAS in action,
+you can:</p>
+
+<ul>
+<li><strong>Log in to government services abroad</strong> without setting up a new account.</li>
+<li><strong>Open a bank account in another EU country</strong> without mailing notarized papers.</li>
+<li><strong>Enroll in universities or apply for jobs abroad</strong> and sign the paperwork digitally.</li>
+<li><strong>Bid on public tenders across the EU</strong>, no matter where your company is based.</li>
+<li><strong>Sign contracts instantly across borders</strong>, all with full legal recognition.</li>
+</ul>
+
+<p>Or, put another way: eIDAS is the <strong>Interstellar Hitchhiker’s Pass</strong> for European digital life. It cuts through
+bureaucracy like a well-aimed Infinite Improbability Drive.</p>
+
+<hr />
+
+<h2>The Next Frontier: eIDAS 2.0 and the European Digital Identity Wallet</h2>
+
+<p>Of course, no regulation stays static. The EU is now working on <strong>eIDAS 2.0</strong>, which introduces the highly anticipated *
+*European Digital Identity Wallet (EDIW)**.</p>
+
+<p>Imagine a secure app on your phone that holds:</p>
+
+<ul>
+<li>your national eID,</li>
+<li>your driver’s license,</li>
+<li>your diploma,</li>
+<li>your medical prescriptions,</li>
+<li>and possibly even your concert tickets.</li>
+</ul>
+
+<p>You’ll be able to control exactly which attributes you share (for example, proving you’re over 18 without disclosing
+your exact birthdate).</p>
+
+<p>In essence, it’s a <strong>universal login and credential wallet</strong> for Europe, under your control. Hitchhiker’s fans may think
+of it as the <strong>Sub-Etha Sens-O-Matic</strong> for your digital identity—always at hand, always reliable, and always
+interoperable.</p>
+
+<hr />
+
+<h2>Conclusion: Don’t Panic – eIDAS Has You Covered</h2>
+
+<p>As our interstellar tour of eIDAS comes to an end, one thing is clear: <strong>this regulation is the backbone of Europe’s
+digital trust infrastructure.</strong> It makes sure that your electronic IDs, signatures, and certificates are recognized and
+secure across the entire continent.</p>
+
+<p>For the tech-savvy, it’s an elegant federation of identity systems working together through shared standards. For
+everyday users, it’s simply about making life easier—whether you’re signing a lease in Paris, applying for a job in
+Berlin, or paying taxes in Madrid.</p>
+
+<p>In true Hitchhiker’s Guide style, the most important advice is simple: <strong>Don’t Panic.</strong> eIDAS is here to ensure your
+digital identity journeys across Europe are safe, secure, and—most importantly—interoperable.</p>
+
+<p>So go forth, log in, sign, and transact with confidence. And remember: in the vast, bureaucratic galaxy of digital
+identity, <strong>always know where your towel is.</strong></p>
+    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.sofiavicedomini.me/blog/2022-10-01-angular-env</id>
+    <link type="text/html" rel="alternate" href="https://blog.sofiavicedomini.me/blog/2022-10-01-angular-env" />
+    <title>Fighting with Angular Environments</title>
+    <published>2022-12-01T00:00:00+00:00</published>
+    <updated>2022-12-01T00:00:00+00:00</updated>
+    <author>
+        <name>Sofia Vicedomini</name>
+    </author>
+    <summary type="html">Angular is fantastic when it comes to managing configurations—as long as your app has only one customer, one setup,
+and one deployment target. In that scenario, life is simple: you define your &lt;code&gt;environment.ts&lt;/code&gt; file, Angular swaps it
+during......</summary>
+    <content type="html"><![CDATA[
+        <p>Angular is fantastic when it comes to managing configurations—<strong>as long as your app has only one customer, one setup,
+and one deployment target.</strong> In that scenario, life is simple: you define your <code>environment.ts</code> file, Angular swaps it
+during build time, and you’re good to go.</p>
+
+<p>But what if you’re building a <strong>multi-tenant SaaS</strong>, or deploying the same app to <strong>different companies with slightly
+different configurations</strong> (like different API endpoints, login URLs, or feature flags)? Suddenly, your neat setup turns
+into a mess of duplicated files. And let’s be honest—<strong>no one wants to maintain 2000 environment files</strong> just because
+each client has a different backend URL.</p>
+
+<p>Let’s see how we can fix this problem with a little help from <strong>dotenv</strong> and <strong>Handlebars</strong>.</p>
+
+<hr />
+
+<h2>How Angular Environments Work</h2>
+
+<p>Out of the box, Angular uses the <strong><code>src/environments/environment.ts</code></strong> file to manage environment variables.</p>
+
+<p>When you look at your <code>angular.json</code>, you’ll see something like this:</p>
+
+<pre><code class="language-json">{
+  "development": {
+    "buildOptimizer": false,
+    "optimization": false,
+    "vendorChunk": true,
+    "extractLicenses": false,
+    "sourceMap": true,
+    "namedChunks": true,
+    "fileReplacements": [
+      {
+        "replace": "src/environments/environment.ts",
+        "with": "src/environments/environment.dev.ts"
+      }
+    ]
+  }
+}
+</code></pre>
+
+<p>What’s happening here is simple: when you build the app for <code>development</code>, Angular <strong>replaces</strong> the default
+<code>environment.ts</code> with <code>environment.dev.ts</code>. When you build for production, it does the same with <code>environment.prod.ts</code>,
+and so on.</p>
+
+<p>That’s fine when you have a handful of environments. But if you’re building a <strong>white-labeled SaaS</strong> or an <strong>on-premise
+application</strong>, suddenly you could end up with dozens—or even hundreds—of environment files. And no one wants that.</p>
+
+<hr />
+
+<h2>The Problem: Too Many Files</h2>
+
+<p>Here’s the real pain:</p>
+
+<ul>
+<li>Every new client might mean another environment file.</li>
+<li>Changing a common variable means editing multiple files.</li>
+<li>Your repo quickly becomes cluttered.</li>
+</ul>
+
+<p>We need a <strong>dynamic way</strong> to generate environment files at build time, instead of manually creating them all.</p>
+
+<hr />
+
+<h2>Step 1: Install the Tools</h2>
+
+<p>We’ll use two (dev) dependencies:</p>
+
+<pre><code class="language-bash">npm i --save-dev dotenv handlebars
+</code></pre>
+
+<ul>
+<li><strong>dotenv</strong> lets us load variables from a <code>.env</code> file into <code>process.env</code>.</li>
+<li><strong>Handlebars</strong> is a templating engine that makes it easy to generate files with placeholders.</li>
+</ul>
+
+<hr />
+
+<h2>Step 2: Create a Configuration Template</h2>
+
+<p>Inside <code>src/environments</code>, create a file called <code>environment.hbs</code>:</p>
+
+<pre><code class="language-javascript">export const environment = {
+    production: {{PRODUCTION}},
+    apiURL: '{{BACKEND_URL}}',
+    authURL: '{{AUTH_URL}}'
+}
+</code></pre>
+
+<p>This is just like a normal Angular environment file, but with <strong>placeholders</strong> (<code>{{PRODUCTION}}</code>, <code>{{BACKEND_URL}}</code>,
+etc.) instead of hardcoded values.</p>
+
+<p>You can add as many keys as you need—feature flags, service URLs, tenant IDs—whatever your project requires.</p>
+
+<hr />
+
+<h2>Step 3: Parse the Template</h2>
+
+<p>Now the fun part: let’s generate our actual <code>environment.ts</code> from this template.</p>
+
+<p>In your project root, create a file called <code>env-config.js</code>:</p>
+
+<pre><code class="language-javascript">require('dotenv')
+const path = require('path')
+const fs = require('fs')
+const hbs = require('handlebars')
+
+const envPath = path.join(__dirname, 'src', 'environments')
+const templateFilePath = path.join(envPath, 'environment.hbs')
+const environmentFilePath = path.join(envPath, 'environment.ts')
+
+const template = hbs.compile(
+    fs.readFileSync(templateFilePath, {encoding: 'utf-8'})
+)
+
+const data = {
+    PRODUCTION: process.env.PRODUCTION || false,
+    BACKEND_URL: process.env.BACKEND_URL || 'http://localhost:3000',
+    AUTH_URL: process.env.AUTH_URL || 'http://localhost:3000/auth'
+}
+
+fs.writeFileSync(environmentFilePath, template(data), {encoding: 'utf-8'})
+</code></pre>
+
+<p><strong>What’s happening here?</strong></p>
+
+<ol>
+<li><code>dotenv</code> loads values from your <code>.env</code> file into <code>process.env</code>.</li>
+<li>We load our <code>environment.hbs</code> template and compile it with Handlebars.</li>
+<li>We define the data we want to inject (reading from <code>process.env</code>, with fallbacks).</li>
+<li>We run the template with the data, then save the result as <code>src/environments/environment.ts</code>.</li>
+</ol>
+
+<p>The end result: <strong>one generated environment file, customized for your build.</strong></p>
+
+<hr />
+
+<h2>Step 4: Run It During Builds</h2>
+
+<p>We now need to make sure the script runs before each build or serve.</p>
+
+<p>Update your <code>package.json</code> like this:</p>
+
+<pre><code class="language-json">{
+  "scripts": {
+    "ng": "ng",
+    "config": "node env-config.js",
+    "start": "npm run config &amp;&amp; ng serve --configuration=local",
+    "build": "npm run config &amp;&amp; ng build --configuration=production --output-hashing=all",
+    "build-dev": "npm run config &amp;&amp; ng build --configuration=development --output-hashing=all",
+    "build-local": "npm run config &amp;&amp; ng build --configuration=local",
+    "watch": "npm run config &amp;&amp; ng build --watch --configuration=local",
+    "test": "npm run config &amp;&amp; ng test"
+  }
+}
+</code></pre>
+
+<p>Now, every time you run <code>npm run build</code> or <code>npm start</code>, the config script will run first, generating the right
+<code>environment.ts</code> from your <code>.env</code> file.</p>
+
+<hr />
+
+<h2>The Payoff</h2>
+
+<p>With this setup:</p>
+
+<ul>
+<li>You only maintain <strong>one template file</strong> (<code>environment.hbs</code>).</li>
+<li>Each machine, CI/CD pipeline, or deployment server can inject its own environment variables.</li>
+<li>You avoid an explosion of environment files while keeping builds clean and consistent.</li>
+</ul>
+
+<p>In short, you’ve turned Angular’s environment system into a <strong>flexible, dynamic configuration pipeline</strong>.</p>
+
+<p>No more clutter, no more duplicated files. Just one template, one script, and as many environments as you need.</p>
+    ]]></content>
+</entry>
+            <entry>
+    <id>https://blog.sofiavicedomini.me/blog/2022-04-05-jigsaw-review</id>
+    <link type="text/html" rel="alternate" href="https://blog.sofiavicedomini.me/blog/2022-04-05-jigsaw-review" />
+    <title>Building Static Sites with Jigsaw – Honest Review &amp; GitHub Deploy Setup (2025 Update)</title>
+    <published>2022-04-05T00:00:00+00:00</published>
+    <updated>2022-04-05T00:00:00+00:00</updated>
+    <author>
+        <name>Sofia Vicedomini</name>
+    </author>
+    <summary type="html">Jigsaw is a static site generator built on top of Laravel&#039;s Blade templating engine and Laravel Mix. And here’s the
+thing: this blog is built with it.
+
+
+  2024 Author’s Note: This blog was proudly built with Jigsaw in 2022… and then inevitably torn......</summary>
+    <content type="html"><![CDATA[
+        <p><strong>Jigsaw</strong> is a static site generator built on top of Laravel's Blade templating engine and Laravel Mix. And here’s the
+thing: this blog is built with it.</p>
+
+<blockquote>
+  <p><strong>2024 Author’s Note:</strong> This blog was proudly built with <strong>Jigsaw</strong> in 2022… and then inevitably torn down and rebuilt
+  with <strong>Next.js</strong> and headless <strong>Drupal</strong>, because I apparently can’t stop reinventing my own website every time a new
+  tech stack catches my eye. Consider this article a nostalgic look into one of those beautiful, fleeting architectural
+  phases.</p>
+  
+  <p><strong>2025 Author's Note:</strong> Well well well, I redid it in Jigsaw again, as it is more efficient, fast, cheap and easy to
+  maintain.</p>
+</blockquote>
+
+<h3>What is Jigsaw good for?</h3>
+
+<p>Jigsaw shines when you want a site that’s fast, secure, and database-free. Here are the use cases I think it nails:</p>
+
+<ul>
+<li><strong>Portfolio sites</strong>: Static = blazing fast. I use it for my own “Projects” section.</li>
+<li><strong>Markdown-powered blogs</strong>: You can structure posts and categories using collections, write in Markdown, and let
+Jigsaw compile everything beautifully.</li>
+<li><strong>Company landing pages</strong>: Most companies don’t need a CMS or dynamic backend. A static site with a form (even via
+Typeform) does the job.</li>
+<li><strong>Technical documentation</strong>: Perfect for project documentation with native code highlighting support.</li>
+</ul>
+
+<p>For more real-life examples, check out the <a href="https://jigsaw.tighten.com/#built-with-jigsaw">Built with Jigsaw showcase</a>.</p>
+
+<h3>Why I migrated from WordPress</h3>
+
+<p>I spent a weekend migrating this site from WordPress to Jigsaw, and honestly? It felt like a breath of fresh air. I got
+rid of a bloated backend and ended up with something leaner, faster, and much easier to style with <strong>Tailwind CSS</strong>.</p>
+
+<p>Blade templates made layout creation smooth, and since I already knew Laravel, the learning curve was almost flat.
+Jigsaw also comes with great starter templates and is fully customizable out of the box.</p>
+
+<p>In 2025, when I decided to rebuild the site with Jigsaw again, the experience was even smoother thanks to the
+integration with <strong>Vite</strong> instead of Laravel Mix, offering much faster compilation times and an improved development
+experience with hot module replacement (HMR).</p>
+
+<h3>Deployment with GitHub Actions</h3>
+
+<p>Jigsaw generates everything statically, so I automated deployment using GitHub Actions. The updated process in 2025:</p>
+
+<ol>
+<li>Push to the <code>main</code> branch</li>
+<li>GitHub Action runs <code>npm run build</code> (which uses Vite instead of Laravel Mix)</li>
+<li>The build output is uploaded as an artifact</li>
+<li>The artifact is downloaded and published directly to the <code>live</code> branch</li>
+</ol>
+
+<p>GitHub Pages is configured to serve the site from the <code>live</code> branch.</p>
+
+<p>Using GitHub Actions artifacts allows for a cleaner and more reliable deployment process, eliminating the need to manage
+the <code>/docs</code> directory and preventing potential merge conflicts.</p>
+
+<p>And yes – don’t forget to include a <code>CNAME</code> file in the build to keep your custom domain settings intact.</p>
+
+<h3>Final Thoughts</h3>
+
+<p>Working with Jigsaw has been a joy. It’s simple, fast, and powerful enough for real-world use. If you’re tired of
+WordPress, or just want a smooth, modern stack for your personal site or blog, I wholeheartedly recommend giving Jigsaw
+a shot.</p>
+
+<h3>Files required to deploy on GitHub Pages #### CNAME file</h3>
+
+<p><code>/source/CNAME.blade.php</code></p>
+
+<p><strong>Content:</strong></p>
+
+<pre><code class="language-text">permalink: CNAME 
+blog.sofiavicedomini.me
+</code></pre>
+
+<h4>Workflow file</h4>
+
+<p><code>/.github/workflows/build-docs.yml</code></p>
+
+<p><strong>Content:</strong></p>
+
+<pre><code class="language-yaml"># Workflow: deploys a static site to GitHub Pages by publishing to the "live" branch
+name: Deploy to GitHub Pages (live)
+
+# Triggers:
+# - on push to "main" (automatic deploy)
+# - manual run via "workflow_dispatch"
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Prevent concurrent deploy runs; cancel any that are still in progress
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
+# Default GITHUB_TOKEN permissions at workflow level (jobs can override)
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build site
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    # Build job: prepare dependencies, compile assets, and generate the static site
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        # Check out the repository source at the current commit
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          coverage: none
+          extensions: mbstring, intl, dom, json, libxml, curl, openssl, zip
+        # Set up PHP with required extensions for build tools (e.g., Jigsaw/Laravel)
+
+      - name: Cache Composer
+        uses: actions/cache@v4
+        with:
+          path: ~/.composer/cache/files
+          key: composer-${{ hashFiles('**/composer.lock') }}
+          restore-keys: composer-
+        # Speed up Composer installs by reusing downloaded packages
+
+      - name: Install Composer dependencies
+        run: composer install --no-interaction --no-progress --prefer-dist --optimize-autoloader
+        # Install PHP dependencies in a reproducible and quiet way
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+        # Install Node.js and enable npm caching to speed up "npm ci"
+
+      - name: Install Node dependencies
+        run: npm ci
+        # Clean, lockfile-based install for deterministic builds
+
+      - name: Build frontend assets
+        run: npm run build
+        # Compile JS/CSS assets with Vite
+
+      - name: Build Jigsaw site (production)
+        run: vendor/bin/jigsaw build production
+        # Generate the static site in production mode (output in build_production)
+
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: build_production
+          if-no-files-found: error
+        # Upload the generated site as an artifact for the deploy job
+        # Fail if no files are found, to catch build issues
+
+  deploy:
+    name: Deploy to live branch
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    # Deploy job: publish the generated files to the "live" branch
+
+    steps:
+      - name: Download site artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+          path: build_production
+        # Download the artifact produced by the build job
+
+      - name: Publish to live
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ github.token }}
+          publish_dir: build_production
+          publish_branch: live
+          force_orphan: true
+          cname: blog.sofiavicedomini.me
+        # Publish the contents of build_production to the "live" branch
+        # force_orphan: create orphan commits to keep the deploy branch history clean
+        # cname: automatically set the CNAME file for the custom domain
+</code></pre>
+    ]]></content>
+</entry>
+    </feed>

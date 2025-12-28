@@ -151,6 +151,8 @@ In certi contesti, perdere disponibilità è preferibile a perdere **segreti**.
 
 > ⚠️ **Attenzione:**  
 Questo **non significa che Rust sia "meglio" di C++**.  
+
+
 - C e C++ sono generalmente **più efficienti di Rust**: efficienza che è fondamentale per database ad alte prestazioni.
 - **Si può scrivere codice sicuro ed efficiente anche in C!** Un esempio? Il nostro Salvatore Sanfilippo e il suo *Redis*.
 

@@ -12,6 +12,9 @@
             $seoImage = preg_match('/^https?:\/\//', $imageCandidate) ? $imageCandidate : rtrim($page->baseUrl, '/') . $imageCandidate;
         @endphp
 
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6063500575269047"
+     crossorigin="anonymous"></script>
+     
         <meta name="description" content="{{ $seoDescription }}">
         <meta name="robots" content="{{ $page->production ? 'index,follow' : 'noindex,nofollow' }}">
         <link rel="canonical" href="{{ $page->getUrl() }}">

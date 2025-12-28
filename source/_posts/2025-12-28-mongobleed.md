@@ -149,6 +149,15 @@ Un’implementazione in Rust probabilmente avrebbe causato un panic e il crash d
 
 In certi contesti, perdere disponibilità è preferibile a perdere **segreti**.
 
+> ⚠️ **Attenzione:**  
+Questo **non significa che Rust sia "meglio" di C++**.  
+- C e C++ sono generalmente **più efficienti di Rust**: efficienza che è fondamentale per database ad alte prestazioni.
+- **Si può scrivere codice sicuro ed efficiente anche in C!** Un esempio? Il nostro Salvatore Sanfilippo e il suo *Redis*.
+
+La chiave resta sempre la stessa:
+- **Non fidarti mai dell’utente.**
+- **Verifica sempre** che la memoria che utilizzi sia esattamente quella che vuoi utilizzare.
+
 ## Conclusione
 
 Mongobleed è un promemoria brutale:
@@ -160,3 +169,6 @@ Se gestisci database esposti a Internet, questo tipo di bug **non è opzionale d
 Aggiorna. Verifica. E non dare mai per scontato che “è solo memoria spazzatura”.
 
 Perché, quasi sempre, non lo è.
+
+---
+**Proof of Concept della vulnerabilità CVE-2025-14847**: [disponibile qui su GitHub](https://github.com/joe-desimone/mongobleed)

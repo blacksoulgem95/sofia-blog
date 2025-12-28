@@ -3,10 +3,10 @@ extends: _layouts.post
 section: content
 title: "Mongobleed Vulnerability: perché è il nuovo Heartbleed di MongoDB"
 date: 2025-12-28
-description: "Mongobleed: come Babbo Natale ci regala 300 miliardi di dollari su Rainbow Six Siege"
+description: "Mongobleed: come Babbo Natale ci regala 340 triliardi di dollari su Rainbow Six Siege"
 cover_image: /assets/images/mongobleed/image.png
 featured: true
-categories: [ software, databasse, security, it ]
+categories: [ software, database, security, it ]
 ---
 
 Il giorno di Natale è stata resa pubblica una vulnerabilità critica che colpisce **MongoDB**, uno dei database NoSQL più utilizzati al mondo. Il nome informale è **Mongobleed**, e il motivo per cui se ne sta parlando così tanto è semplice:

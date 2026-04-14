@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Sofia&#039;s Blog</title>
+        <link>https://blog.sofiavicedomini.me/blog</link>
+        <description>The Little Web Corner of Sofia Vicedomini</description>
+        <language>en</language>
+        <lastBuildDate>Tue, 14 Apr 2026 09:53:12 +0000</lastBuildDate>
+                    <item>
+    <title><![CDATA[Mongobleed Vulnerability: perché è il nuovo Heartbleed di MongoDB]]></title>
+    <link>https://blog.sofiavicedomini.me/blog/2025-12-28-mongobleed</link>
+    <guid>https://blog.sofiavicedomini.me/blog/2025-12-28-mongobleed</guid>
+    <pubDate>Sun, 28 Dec 2025 00:00:00 +0000</pubDate>
+    <description><![CDATA[Il giorno di Natale è stata resa pubblica una vulnerabilità critica che colpisce MongoDB, uno dei database NoSQL più utilizzati al mondo. Il nome informale è Mongobleed, e il motivo per cui se ne sta parlando così tanto è semplice:
+
+👉 permette a...]]></description>
+</item>
+            <item>
+    <title><![CDATA[Il mestiere perduto dell’ospite perfetto]]></title>
+    <link>https://blog.sofiavicedomini.me/blog/2025-09-17-ospite-perfetto</link>
+    <guid>https://blog.sofiavicedomini.me/blog/2025-09-17-ospite-perfetto</guid>
+    <pubDate>Wed, 17 Sep 2025 00:00:00 +0000</pubDate>
+    <description><![CDATA[C’è stato un tempo in cui andare a una festa non significava solo bere un bicchiere, scambiare due chiacchiere e aspettare che il tempo passasse. Il padrone di casa aveva un ruolo preciso, quasi un’arte: non era solo colui che apriva la porta, ma un...]]></description>
+</item>
+            <item>
+    <title><![CDATA[Perché Obbligare i Team di Sviluppo a Lavorare in Ufficio È un Errore (e Come Evitarlo)]]></title>
+    <link>https://blog.sofiavicedomini.me/blog/2025-09-13-lavoro-in-ufficio</link>
+    <guid>https://blog.sofiavicedomini.me/blog/2025-09-13-lavoro-in-ufficio</guid>
+    <pubDate>Sat, 13 Sep 2025 00:00:00 +0000</pubDate>
+    <description><![CDATA[Imporre la presenza in ufficio a un team di sviluppo può sembrare una scelta innocua, ma spesso è un disastro per produttività e benessere. Non solo: la disorganizzazione, le interruzioni continue e le interminabili call su Teams possono spingere i...]]></description>
+</item>
+            <item>
+    <title><![CDATA[Il paradosso dei salari per i dev italiani]]></title>
+    <link>https://blog.sofiavicedomini.me/blog/2025-09-12-salari-italiani</link>
+    <guid>https://blog.sofiavicedomini.me/blog/2025-09-12-salari-italiani</guid>
+    <pubDate>Fri, 12 Sep 2025 00:00:00 +0000</pubDate>
+    <description><![CDATA[Ti sei mai guardato il conto in banca e pensato: “Ma perché il mio stipendio da dev sembra il budget per un weekend low-cost?” Se sei un programmatore in Italia, probabilmente sì. Lavori sodo, scrivi codice che farebbe invidia a un ingegnere della...]]></description>
+</item>
+            <item>
+    <title><![CDATA[The Hidden Dangers of Tesla Vision]]></title>
+    <link>https://blog.sofiavicedomini.me/blog/2025-08-26-teslavision</link>
+    <guid>https://blog.sofiavicedomini.me/blog/2025-08-26-teslavision</guid>
+    <pubDate>Mon, 25 Aug 2025 00:00:00 +0000</pubDate>
+    <description><![CDATA[Tesla’s been shaking things up in the automotive world with its Tesla Vision system—a camera-only approach to self-driving that ditches radar and LiDAR entirely. Elon Musk is all-in on this, claiming cameras, paired with some seriously smart AI, are...]]></description>
+</item>
+            <item>
+    <title><![CDATA[Heading to TechEx Amsterdam – 24 &amp; 25 September 🚀]]></title>
+    <link>https://blog.sofiavicedomini.me/blog/2025-08-25-techex-amsterdam</link>
+    <guid>https://blog.sofiavicedomini.me/blog/2025-08-25-techex-amsterdam</guid>
+    <pubDate>Sun, 24 Aug 2025 00:00:00 +0000</pubDate>
+    <description><![CDATA[A quick update: I’ll be in Amsterdam for TechEx on 24–25 September!
+
+I’m really looking forward to a couple of days full of talks, demos, and hallway chats — the kind where you start off
+talking about APIs and somehow end up sketching half a...]]></description>
+</item>
+            <item>
+    <title><![CDATA[Come funziona SPID: guida semplice all&#039;identità digitale italiana]]></title>
+    <link>https://blog.sofiavicedomini.me/blog/2025-01-07-spid</link>
+    <guid>https://blog.sofiavicedomini.me/blog/2025-01-07-spid</guid>
+    <pubDate>Tue, 07 Jan 2025 00:00:00 +0000</pubDate>
+    <description><![CDATA[Proprio pochi giorni fa abbiamo parlato del data breach di InfoCert e delle possibili
+conseguenze sul sistema SPID. È quindi il momento giusto per capire meglio cos’è SPID, come funziona e perché è diventato
+così centrale nella nostra vita...]]></description>
+</item>
+            <item>
+    <title><![CDATA[InfoCert sotto attacco: violati i dati di 5,5 milioni di utenti]]></title>
+    <link>https://blog.sofiavicedomini.me/blog/2024-12-17-infocert-breach</link>
+    <guid>https://blog.sofiavicedomini.me/blog/2024-12-17-infocert-breach</guid>
+    <pubDate>Fri, 27 Dec 2024 00:00:00 +0000</pubDate>
+    <description><![CDATA[Il 27 dicembre 2024, InfoCert — uno dei principali provider europei di certificazione digitale, SPID e
+gestione documentale — è stata vittima di un grave attacco informatico. Il breach ha portato all’esposizione dei
+dati personali di circa 5,5...]]></description>
+</item>
+            <item>
+    <title><![CDATA[REST vs GraphQL: Is It Really a War?]]></title>
+    <link>https://blog.sofiavicedomini.me/blog/2024-11-11-graphql-vs-rest</link>
+    <guid>https://blog.sofiavicedomini.me/blog/2024-11-11-graphql-vs-rest</guid>
+    <pubDate>Mon, 11 Nov 2024 00:00:00 +0000</pubDate>
+    <description><![CDATA[In recent years, REST and GraphQL are often described as if they were competing technologies, locked in some kind of
+“API war.” The reality is a lot less dramatic. REST, defined by Roy Fielding back in 2000, quickly became the dominant
+architectural...]]></description>
+</item>
+            <item>
+    <title><![CDATA[The Hitchhiker’s Guide to eIDAS: Navigating Europe’s Digital Identity Landscape]]></title>
+    <link>https://blog.sofiavicedomini.me/blog/2024-11-01-eidas</link>
+    <guid>https://blog.sofiavicedomini.me/blog/2024-11-01-eidas</guid>
+    <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
+    <description><![CDATA[Don’t Panic! If navigating Europe’s digital identity systems feels like hitchhiking across the galaxy, fear not—*
+*eIDAS** (Electronic Identification, Authentication and Trust Services) is the friendly guide ensuring you won’t lose
+your way. Like...]]></description>
+</item>
+            <item>
+    <title><![CDATA[Fighting with Angular Environments]]></title>
+    <link>https://blog.sofiavicedomini.me/blog/2022-10-01-angular-env</link>
+    <guid>https://blog.sofiavicedomini.me/blog/2022-10-01-angular-env</guid>
+    <pubDate>Thu, 01 Dec 2022 00:00:00 +0000</pubDate>
+    <description><![CDATA[Angular is fantastic when it comes to managing configurations—as long as your app has only one customer, one setup,
+and one deployment target. In that scenario, life is simple: you define your <code>environment.ts</code> file, Angular swaps it
+during...]]></description>
+</item>
+            <item>
+    <title><![CDATA[Building Static Sites with Jigsaw – Honest Review &amp; GitHub Deploy Setup (2025 Update)]]></title>
+    <link>https://blog.sofiavicedomini.me/blog/2022-04-05-jigsaw-review</link>
+    <guid>https://blog.sofiavicedomini.me/blog/2022-04-05-jigsaw-review</guid>
+    <pubDate>Tue, 05 Apr 2022 00:00:00 +0000</pubDate>
+    <description><![CDATA[Jigsaw is a static site generator built on top of Laravel's Blade templating engine and Laravel Mix. And here’s the
+thing: this blog is built with it.
+
+
+  2024 Author’s Note: This blog was proudly built with Jigsaw in 2022… and then inevitably torn...]]></description>
+</item>
+        </channel>
+</rss>

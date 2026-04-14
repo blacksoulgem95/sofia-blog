@@ -46,6 +46,7 @@
         <link rel="home" href="{{ $page->baseUrl }}">
         <link rel="icon" href="/favicon.ico">
         <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
+        <link href="/blog/feed.xml" type="application/rss+xml" rel="alternate" title="{{ $page->siteName }} RSS Feed">
 
         <script type="application/ld+json">
         {!! json_encode([
@@ -116,6 +117,13 @@
 
         @include('_nav.menu-responsive')
 
+        <div class="w-full max-w-4xl mx-auto px-4 mt-4">
+            <div class="nes-container is-rounded border-2 border-[var(--color-retro-yellow)] bg-black/80 text-[var(--color-retro-yellow)] text-sm">
+                <strong>Notice:</strong> The blog has moved to
+                <a href="https://blacksoulgem95.substack.com" class="text-[var(--color-trans-light-blue)] hover:text-[var(--color-trans-pink)]" target="_blank" rel="noopener">blacksoulgem95.substack.com</a>.
+            </div>
+        </div>
+
         <main role="main" class="nes-container is-dark is-rounded flex-auto w-full max-w-4xl mx-auto border-x-4 border-b-4 border-[var(--color-trans-pink)] px-8 py-12 mb-8 bg-black/70 pixel-border">
             @yield('body')
         </main>
@@ -124,8 +132,8 @@
             <div class="container max-w-4xl mx-auto px-4">
                 <div class="mb-6">
                     <h3 class="text-lg font-bold text-[var(--color-retro-green)] mb-4 retro-text-glow pixel-border">Sofia Vicedomini</h3>
-                    <p class="text-[var(--color-trans-white)] mb-2">Full Stack Developer & Tech Professional</p>
-                    <p class="text-[var(--color-retro-gray)] text-xs">Available for remote opportunities across Europe</p>
+                    <p class="text-[var(--color-trans-white)] mb-2">Software Engineer & Director of <a href="https://vicedominisoftworks.com" class="text-[var(--color-retro-green)] hover:text-[var(--color-trans-pink)]" target="_blank" rel="noopener">Vicedomini Softworks</a></p>
+                    <p class="text-[var(--color-retro-gray)] text-xs">Since 2025 I direct Vicedomini Softworks</p>
                 </div>
 
                 <div class="flex flex-wrap justify-center gap-4 mb-6">
@@ -148,6 +156,11 @@
                        class="retro-badge text-[var(--color-retro-yellow)] hover:text-[var(--color-trans-pink)] inline-flex items-center gap-2"
                        title="X (Twitter) Profile" target="_blank" rel="noopener">
                         <i class="nes-icon twitter"></i> X
+                    </a>
+                    <a href="/blog/feed.xml"
+                       class="retro-badge text-[var(--color-retro-green)] hover:text-[var(--color-trans-pink)] inline-flex items-center gap-2"
+                       title="RSS Feed">
+                        <i class="nes-icon star"></i> RSS
                     </a>
                 </div>
 

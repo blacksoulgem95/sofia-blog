@@ -11,7 +11,7 @@ description: I'm Sofia Vicedomini, a dedicated software engineering consultant w
         alt="About image"
         class="flex rounded-full h-64 w-64 bg-contain mx-auto md:float-right my-6 md:ml-10">
 
-    <p class="mb-6">Hi there! I'm Sofia Vicedomini, a dedicated software engineering consultant with a passion for building innovative, accessible solutions in a fully remote environment. Based in the EMEA region, I work as a Full-Stack Senior Software Engineer specializing in EU/US/CA/UK markets.</p>
+    <p class="mb-6">Hi there! I'm Sofia Vicedomini, a dedicated software engineering consultant with a passion for building innovative, accessible solutions in a fully remote environment. Since 2025, I have been directing <a href="https://vicedominisoftworks.com" class="text-[var(--color-retro-green)] hover:text-[var(--color-trans-pink)]" target="_blank" rel="noopener">Vicedomini Softworks</a>. Based in the EMEA region, I work as a Full-Stack Senior Software Engineer specializing in EU/US/CA/UK markets.</p>
 
     <p class="mb-6">When I'm not crafting code, you'll find me exploring the world through adventure travel, experimenting with artificial intelligence, or unwinding with action video games. As a self-proclaimed gamer and nerd, my journey into gaming started with Prince of Persia by Jordan Mechner on DOS, and I've been passionate about platformers and RPGs ever since. I'm fascinated by the intersection of technology and education, and I love sharing knowledge about software engineering, history, and investing.</p>
 
@@ -20,7 +20,10 @@ description: I'm Sofia Vicedomini, a dedicated software engineering consultant w
     <div class="mb-6">
         <h3 class="text-lg font-semibold mb-3">Find me online:</h3>
         <ul class="retro-list space-y-3">
-            <li class="flex items-center gap-3"><i class="nes-icon star"></i><a href="https://sofiavicedomini.me" class="text-[var(--color-retro-green)] hover:text-[var(--color-trans-pink)]" target="_blank" rel="noopener">Portfolio</a> - My complete professional portfolio</li>
+            <li class="flex items-center gap-3"><i class="nes-icon star"></i><a href="https://vicedominisoftworks.com" class="text-[var(--color-retro-green)] hover:text-[var(--color-trans-pink)]" target="_blank" rel="noopener">Vicedomini Softworks</a> - Since 2025, the company I direct</li>
+            <li class="flex items-center gap-3"><i class="nes-icon star"></i><a href="https://sofiavicedomini.me" class="text-[var(--color-retro-green)] hover:text-[var(--color-trans-pink)]" target="_blank" rel="noopener">Personal Site</a> - My Personal Website focused on my artistic works</li>
+            <li class="flex items-center gap-3"><i class="nes-icon star"></i><a href="https://blacksoulgem95.substack.com" class="text-[var(--color-retro-green)] hover:text-[var(--color-trans-pink)]" target="_blank" rel="noopener">Substack</a> - Subscribe for my latest articles & tech updates</li>
+       
             <li class="flex items-center gap-3"><i class="nes-icon github"></i><a href="https://github.com/blacksoulgem95" class="text-[var(--color-trans-white)] hover:text-[var(--color-trans-pink)]">GitHub</a> - Check out my code</li>
             <li class="flex items-center gap-3"><i class="nes-icon linkedin"></i><a href="https://www.linkedin.com/in/sofiavicedomini" class="text-[var(--color-trans-light-blue)] hover:text-[var(--color-trans-pink)]">LinkedIn</a> - Professional networking</li>
             <li class="flex items-center gap-3"><i class="nes-icon twitter"></i><a href="https://x.com/blacksoulgem95" class="text-[var(--color-trans-light-blue)] hover:text-[var(--color-trans-pink)]">X (Twitter)</a> - Tech thoughts and updates</li>
